@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+// Font
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+
+// Responsive
+$mq-breakpoints: ( // for example: xs, sm, md, lg, xl
+    'xs': 767px,
+    'md': 768px
+);
+
+$mq-container-widths: (
+    'xs': 100%,
+    'md': 1440px
+);
+
+$mq-container-indents: (
+    'xs': 1rem,
+    'md': 2rem
+);
+
+$mq-grid-gutters: (
+    'xs': 1rem,
+    'md': 2rem
+);
+
+// Not responsive
+$container-width:  1180px;
+$container-indent: 2rem;
+
+$grid-gutter: 2rem;
+
+// Border radius
+$border-radius-base: .5rem;
+
+// Colors
+$color-base:          #1a1a1a;
+$color-base-light:    #666666;
+$color-base-lighter:  #b2b2b2;
+$color-base-lightest: #ededed;
+$color-border:        #ededed;
+
+$color-inverse:       #fff;
+
+$color-brand:         #4885c5;
+
+$color-error:         red;
+$color-warning:       orange;
+$color-success:       green;
+
+// Fonts
+$font-family-text:  'Roboto', sans-serif;;
+$font-family-title: 'Roboto', sans-serif;;
+
+// Forms
+$checkbox-size:    2rem;
+$radiobutton-size: 2rem;
+
+// Headings
+$heading-font-weight-base: 500;
+
+// Transitions
+$transition-duration-base: .2s;
