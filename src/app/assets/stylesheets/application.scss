@@ -1,5 +1,6 @@
 @import "../vendor/normalize-css/normalize";
 @import "../vendor/mdi/css/materialdesignicons";
+@import "../vendor/slick-carousel/slick/slick.scss";
 
 @import "config";
 @import "functions";
@@ -20,6 +21,7 @@
 @import "components/wysiwyg";
 
 @import "components/site_header";
+@import "components/site_navigate";
 @import "components/site_footer";
 @import "components/topbar";
 @import "components/icon_links";

@@ -19,6 +19,7 @@
     "jquery": "^3.2.1",
     "svg4everybody": "^2.1.8",
     "normalize-css": "^7.0.0",
-    "mdi": "^1.9.33"
+    "mdi": "^1.9.33",
+    "slick-carousel": "^1.6.0"
   }
 }

@@ -17,6 +17,15 @@
 
     &__item {
         display: inline-flex;
+        width: 33.33333%;
+
+        &:nth-child(2) {
+            justify-content: center;
+        }
+
+        &:nth-child(3) {
+            justify-content: flex-end;
+        }
 
         a {
             @include interact(opacity,1);

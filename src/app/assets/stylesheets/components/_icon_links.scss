@@ -14,7 +14,7 @@
     }
 
     > i {
-        @include font(2.4rem,2.4rem);
+        @include font(2rem,2rem);
         transition: $transition-duration-base;
         display: block;
     }
