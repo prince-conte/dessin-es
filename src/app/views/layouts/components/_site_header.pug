@@ -1,3 +1,18 @@
 header.site-header
     .container
-        p Site header
+        .site-header__top-line
+            .site-header__top-line-item
+                form.site-header__search-block
+                    button.icon-button-big.icon-button-big--search
+                        i.mdi.mdi-magnify
+
+                    .site-header__search-block-input
+                        input(type='search' placeholder='Поиск по сайту')
+
+
+            .site-header__top-line-item.site-header__top-line-item--logo-box
+                a(href='#')
+                    img(src='img/logo.jpg' alt='bubble')
+
+            .site-header__top-line-item
+

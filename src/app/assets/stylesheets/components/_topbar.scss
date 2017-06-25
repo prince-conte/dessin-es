@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.topbar {
+    display: none;
+    background: #12161a;
+
+    @include mq(md) {
+        display: block;
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 0  1.6rem;
+    }
+
+
+    &__item {
+        display: inline-flex;
+
+        a {
+            @include interact(opacity,1);
+            display: block;
+            color: #fff;
+            opacity: .7;
+
+            &:not(:last-child) {
+                margin-right: 2.8rem;
+            }
+        }
+
+        &--delimiter {
+            position: relative;
+
+            > span {
+                display: block;
+                margin: 0 1.4rem;
+                color: #fff;
+            }
+
+            > a:first-child {
+                margin-right: 0;
+            }
+
+        }
+    }
+
+
+}

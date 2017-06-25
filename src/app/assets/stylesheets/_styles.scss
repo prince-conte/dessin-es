@@ -19,6 +19,7 @@ body {
     min-height: 100vh;
     background: $color-inverse;
     color: $color-base;
+    font-family: $font-family-text;
 
     @if $enable-sticky-footer == true {
         display: flex;
@@ -28,6 +29,7 @@ body {
 
 // Links
 a {
+    text-decoration: none;
     transition: all $transition-duration-base;
 
     &.is-current {
@@ -50,6 +52,7 @@ textarea {
     border: none;
     color: inherit;
     font: inherit;
+    outline: none;
 }
 
 fieldset {

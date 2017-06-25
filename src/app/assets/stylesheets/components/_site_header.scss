@@ -2,4 +2,109 @@
 
 .site-header {
 
+    &__top-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0 3rem;
+
+        @include mq(md) {
+            padding: 2.5rem 0;
+        }
+    }
+
+    &__top-line-item {
+
+
+        &--logo-box {
+            display: flex;
+            justify-content: center;
+            flex-flow: 5;
+            flex: 1;
+            width: 100%;
+            margin: 0 2.5rem;
+            height: 5rem;
+
+            @include mq(md) {
+                width: auto;
+                height: auto;
+
+                > img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+
+            > img {
+                height: 100%;
+                width: auto;
+                vertical-align: top;
+            }
+        }
+    }
+
+
+    // search
+
+    &__search-block {
+        display: none;
+
+        @include mq(md) {
+            display: flex;
+            align-items: stretch;
+            max-width: 26rem;
+        }
+    }
+
+    &__search-block-input {
+        position: relative;
+        flex-flow: 5;
+        flex: 1;
+        width: 100%;
+        margin-left: 1rem;
+        border-bottom: 1px solid $color-border;
+
+        > input {
+            @include size(100%);
+
+            &.placeholder { color:rgba($color-base, .3); }
+            &:-moz-placeholder { color:rgba($color-base, .3); }
+            &::-moz-placeholder { color:rgba($color-base, .3); }
+            &:-ms-input-placeholder { color:rgba($color-base, .3); }
+            &::-webkit-input-placeholder { color:rgba($color-base, .3); }
+        }
+    }
+
+    // basket
+
+    &__basket {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            position: relative;
+            display: block;
+
+            &::before {
+                @include font(1.5rem, 1.5rem);
+                content: attr(data-order);
+                position: absolute;
+                display: none;
+                top: 50%;
+                left: -1rem;
+                transform: translate(-100%,-50%);
+                color: $color-base;
+
+                @include mq(md) {
+                    display: block;
+                }
+            }
+
+        }
+    }
+
+
+
+
+
 }
