@@ -205,17 +205,22 @@
     }
 
     &__slider-stuf {
-        margin-right: -11.5rem;
+        margin-right: -10rem;
     }
 
     &__slider-item {
-        display: inline-block;
+        display: block;
         margin-right: 1.8rem;
         outline: none;
+        max-width: 13rem;
+
+        &--stuf {
+            max-width: 18rem;
+        }
 
         > img {
-            margin: 0;
-            width: auto;
+            margin: 0 auto;
+            width: 100%;
             height: auto;
             vertical-align: top;
         }
@@ -229,7 +234,8 @@
     &__price {
         @include text-base();
         @include interact(color,$color-brand);
-        display: block;
+        display: inline-block;
+        width: 100%;
         text-align: center;
         color: $color-base;
         transition: $transition-duration-base;

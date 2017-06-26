@@ -2,6 +2,7 @@ $(function() {
 
     $('.js-menu-popular-slider').slick({
         arrows: false,
+        variableWidth: true,
         slidesToShow: 5
     });
 
@@ -21,6 +22,7 @@ $(function() {
 
     $('.js-menu-popular-slider-stuf').slick({
         arrows: false,
+        variableWidth: true,
         slidesToShow: 4
     });
 
