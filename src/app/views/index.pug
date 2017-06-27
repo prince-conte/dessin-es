@@ -4,5 +4,62 @@ block title
     title Index / Neo
 
 block main
-    .container
-        p Site main
+    .section-box
+        .container
+            .promo-news
+                .promo-news__box
+
+                // desktop
+
+                .promo-news__grid
+                    .promo-news__top-news
+                        .promo-news__news-body
+                            a.promo-news__link(href='#')
+                                .promo-news__news-image
+                                    img(src='img/promonews.jpg' alt='news title')
+                                    .promo-news__box-shadow
+
+                            .promo-news__news-content-box.promo-news__news-content-box--promo
+                                .promo-news__news-content.promo-news__news-content--promo
+                                    .promo-news__news-event-info
+                                        span Мероприятие
+
+                                    h3 Успей посетить Хомякон 2017
+
+                                    .promo-news__button-block
+                                        a.button-message(href='#') Участвовать
+
+                    .promo-news__all-news
+                        .promo-news__all-news_item
+                            a.promo-news__link(href='#')
+
+                                .promo-news__news-body
+                                    .promo-news__news-image
+                                        img(src='http://via.placeholder.com/380x210/5e40c1/ffffff' alt='news title')
+                                    .promo-news__news-content-box
+                                        .promo-news__news-content.promo-news__news-content
+
+                                            h3 25 мая выходит новая<br>книга Майор Гром
+
+
+                        .promo-news__all-news_item
+                            a.promo-news__link(href='#')
+
+                                .promo-news__news-body
+                                    .promo-news__news-image
+                                        img(src='http://via.placeholder.com/380x210/5e40c1/ffffff' alt='news title')
+                                    .promo-news__news-content-box
+                                        .promo-news__news-content
+
+                                            h3 Только 24 часа Черная Пятница на Bubble
+
+
+
+    include layouts/components/index_catalogs/_magazine_catalog
+
+
+
+
+
+
+

@@ -1,4 +1,11 @@
 .site-navigate {
+    margin-bottom: 5rem;
+    z-index: 105;
+
+    &__link {
+        color: inherit;
+        outline: none;
+    }
 
     &__menu {
         position: relative;
@@ -201,7 +208,8 @@
     }
 
     &__slider {
-        margin-right: -8.5rem;
+        margin-left: 1.1rem;
+        transform: translateX(-1rem);
     }
 
     &__slider-stuf {
@@ -209,6 +217,7 @@
     }
 
     &__slider-item {
+        position: relative;
         display: block;
         margin-right: 1.8rem;
         outline: none;
@@ -218,6 +227,11 @@
             max-width: 18rem;
         }
 
+    }
+
+    &__item-image {
+        position: relative;
+
         > img {
             margin: 0 auto;
             width: 100%;
@@ -226,6 +240,7 @@
         }
     }
 
+
     &__slide-information {
         margin-top: 1.5rem;
     }
@@ -233,7 +248,6 @@
     &__title,
     &__price {
         @include text-base();
-        @include interact(color,$color-brand);
         display: inline-block;
         width: 100%;
         text-align: center;
@@ -244,6 +258,11 @@
             margin-bottom: .5rem;
         }
     }
+
+    &__price {
+        font-weight: 500;
+    }
+
 
 
     // slick next

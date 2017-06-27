@@ -3,12 +3,12 @@ $(function() {
     $('.js-menu-popular-slider').slick({
         arrows: false,
         variableWidth: true,
-        slidesToShow: 5
+        slidesToShow: 6
     });
 
 
 
-    $('.js-promo-slider-next').css('top', $('.js-menu-popular-slide > img').outerHeight() / 2);
+    $('.js-promo-slider-next').css('top', $('.js-menu-popular-slide img').outerHeight() / 2);
 
     $('.js-promo-slider-next').on('click',function(){
         $('.js-menu-popular-slider').slick('slickNext');
@@ -17,7 +17,6 @@ $(function() {
 
 
     // two slider
-
 
 
     $('.js-menu-popular-slider-stuf').slick({

@@ -1,0 +1,70 @@
+.magazine-catalog {
+
+    &__link {
+        color: inherit;
+    }
+
+    &__grid {
+        @include grid(x, flex-start, stretch);
+        margin-bottom: -4rem;
+
+        @include mq(md) {
+            margin-bottom: -5rem;
+        }
+    }
+
+    &__item {
+        @include grid-col;
+        @include col-size(1/2);
+        margin-bottom: 4rem;
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1/6);
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__item-image {
+        position: relative;
+
+        img {
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+
+    &__item-information {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    &__title,
+    &__price {
+        @include text-base();
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: $color-base;
+        transition: $transition-duration-base;
+        min-height: 1px;
+
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+        }
+    }
+
+    &__price {
+        font-weight: 500;
+    }
+
+    &__button-block {
+        margin-top: auto;
+    }
+
+}

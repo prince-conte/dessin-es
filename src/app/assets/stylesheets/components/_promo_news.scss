@@ -1,0 +1,114 @@
+.promo-news {
+
+    &__link {
+        color: inherit;
+    }
+
+    &__box {
+
+    }
+
+    &__grid {
+        display: none;
+
+        @include mq(md) {
+            @include grid(x, center, stretch);
+        }
+    }
+
+    &__top-news {
+        @include grid-col;
+        @include col-size(2/3);
+    }
+
+    &__all-news {
+        @include grid-col;
+        @include col-size(1/3);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__all-news_item {
+        &:last-child {
+            margin-top: auto;
+        }
+    }
+
+
+    &__news-body {
+        position: relative;
+    }
+
+    &__news-image {
+        position: relative;
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__box-shadow {
+        @include size(100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: $transition-duration-base;
+        background-image: -moz-linear-gradient( -135deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
+        background-image: -webkit-linear-gradient( -135deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
+        background-image: -ms-linear-gradient( -135deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
+        z-index: 75;
+    }
+
+    &__news-content-box {
+        @include size(100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        z-index: 99;
+
+        &--promo {
+            padding: 6rem;
+        }
+    }
+
+    &__news-content {
+        margin-top: auto;
+
+        > h3 {
+            @include h5();
+            color: #fff;
+        }
+
+        &--promo {
+
+            > h3 {
+                @include font(3rem, 4.5rem);
+                margin-top: 2rem;
+            }
+        }
+
+    }
+
+    &__news-event-info {
+        margin-bottom: 2rem;
+
+        > span {
+            display: inline-block;
+            padding-bottom: .8rem;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+    }
+
+    &__button-block {
+        margin-top: 2rem;
+    }
+
+
+
+}
