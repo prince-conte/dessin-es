@@ -3,7 +3,7 @@ $(function() {
     $('.js-menu-popular-slider').slick({
         arrows: false,
         variableWidth: true,
-        slidesToShow: 6
+        slidesToShow: 5
     });
 
 

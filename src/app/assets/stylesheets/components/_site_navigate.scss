@@ -146,7 +146,7 @@
 
     &__sub-menu-catalog {
         display: flex;
-        width: 30%;
+        width: 36rem;
     }
 
     &__catalog-box {
@@ -193,7 +193,7 @@
 
     &__sub-menu-catalog-popular {
         position: relative;
-        width: 70%;
+        width: 74rem;
         padding-left: 3.9rem;
         border-left: 1px solid $color-border;
     }
@@ -208,8 +208,8 @@
     }
 
     &__slider {
-        margin-left: 4.1rem;
-        transform: translateX(-4rem);
+        margin-right: -8.1rem;
+        transform: translateX(0rem);
     }
 
     &__slider-stuf {
@@ -219,7 +219,7 @@
     &__slider-item {
         position: relative;
         display: block;
-        margin-right: 1.8rem;
+        margin-right: 2rem;
         outline: none;
         max-width: 13rem;
 
