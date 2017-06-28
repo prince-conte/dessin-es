@@ -1,0 +1,79 @@
+.new-issue {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+    }
+
+    &__box {
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: #10243d;
+        background-image: url(../img/issue-back.jpg);
+        padding: 11rem 10rem 0;
+        min-height: 520px;
+    }
+
+    &__grid {
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__image {
+        max-width: 54rem;
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        padding-left: 6rem;
+
+        &:not(a) {
+            color: #fff;
+        }
+    }
+
+    &__title {
+        @include h3();
+        @include font(3rem,4rem);
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        margin-bottom: 3.6rem;
+
+        > p {
+            @include text-base;
+            color: #fff;
+        }
+    }
+
+    &__event-info {
+        margin-bottom: 1.5rem;
+        transform: translateY(-.3rem);
+
+        > span {
+            display: inline-block;
+            padding-bottom: .8rem;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+    }
+
+    &__button-block {
+        margin-top: 3.6rem;
+
+        > a {
+            color: $color-base;
+        }
+
+    }
+
+
+}
