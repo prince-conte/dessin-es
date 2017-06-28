@@ -1,0 +1,63 @@
+.about-shop {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+    }
+
+    &__title {
+        @include h2();
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    &__grid {
+        @include mq(md) {
+            @include grid(x, center, stretch);
+        }
+    }
+
+    &__item {
+        @include grid-col;
+        @include col-size(1/5);
+
+        //&:nth-child(2) {
+        //    transform: translateY(-15px);
+        //}
+    }
+
+    &__icon-block {
+        margin-bottom: 1.8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        > img {
+            display: block;
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__description {
+        @include font(1.5rem,2.2rem);
+        text-align: center;
+    }
+
+    &__rating {
+        margin-top:1.8rem;
+        text-align: center;
+
+        > .rating {
+            display: inline-block;
+        }
+    }
+
+
+
+
+
+
+}

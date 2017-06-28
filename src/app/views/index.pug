@@ -18,6 +18,7 @@ block main
                                 .promo-news__news-image
                                     img(src='img/promonews.jpg' alt='news title')
                                     .promo-news__box-shadow
+                                    .promo-news__box-shadow-alt
 
                             .promo-news__news-content-box.promo-news__news-content-box--promo
                                 .promo-news__news-content.promo-news__news-content--promo
@@ -36,6 +37,8 @@ block main
                                 .promo-news__news-body
                                     .promo-news__news-image
                                         img(src='http://via.placeholder.com/380x210/5e40c1/ffffff' alt='news title')
+                                        .promo-news__box-shadow
+                                        .promo-news__box-shadow-alt
                                     .promo-news__news-content-box
                                         .promo-news__news-content.promo-news__news-content
 
@@ -48,6 +51,8 @@ block main
                                 .promo-news__news-body
                                     .promo-news__news-image
                                         img(src='http://via.placeholder.com/380x210/5e40c1/ffffff' alt='news title')
+                                        .promo-news__box-shadow
+                                        .promo-news__box-shadow-alt
                                     .promo-news__news-content-box
                                         .promo-news__news-content
 
@@ -56,6 +61,9 @@ block main
 
 
     include layouts/components/index_catalogs/_magazine_catalog
+    include layouts/components/_promo_section
+    include layouts/components/_about_shop
+    include layouts/components/index_catalogs/_magazine_catalog_2
 
 
 

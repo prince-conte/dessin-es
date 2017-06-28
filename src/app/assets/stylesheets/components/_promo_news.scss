@@ -19,6 +19,13 @@
     &__top-news {
         @include grid-col;
         @include col-size(2/3);
+
+        &:hover {
+
+            .promo-news__box-shadow-alt {
+                opacity: 1;
+            }
+        }
     }
 
     &__all-news {
@@ -32,6 +39,14 @@
         &:last-child {
             margin-top: auto;
         }
+
+        &:hover {
+
+            .promo-news__box-shadow-alt {
+                opacity: 1;
+            }
+        }
+
     }
 
 
@@ -54,11 +69,20 @@
         position: absolute;
         left: 0;
         top: 0;
-        transition: $transition-duration-base;
-        background-image: -moz-linear-gradient( -135deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
-        background-image: -webkit-linear-gradient( -135deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
-        background-image: -ms-linear-gradient( -135deg, rgb(0,0,0) 0%, rgb(0,0,0) 100%);
+        transition: all .6s;
+        background: linear-gradient(-135deg, rgba(18,22,26,0) 0%, rgba(18,22,26,1) 100%);
         z-index: 75;
+    }
+
+    &__box-shadow-alt {
+        @include size(100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all .6s;
+        background: linear-gradient(-135deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+        opacity: 0;
+        z-index: 76;
     }
 
     &__news-content-box {

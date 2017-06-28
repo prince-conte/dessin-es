@@ -1,0 +1,48 @@
+.promo-section {
+
+
+    &__grid {
+
+        @include mq(md) {
+            @include grid(x, center, stretch);
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        @include mq(xs) {
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1/2);
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__item-body {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 2rem 2rem 4rem;
+
+        @include mq(md) {
+            padding: 2rem 2rem 9rem;
+        }
+
+    }
+
+}

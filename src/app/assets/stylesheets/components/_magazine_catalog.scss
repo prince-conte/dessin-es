@@ -23,6 +23,30 @@
             @include col-size(1/6);
             margin-bottom: 5rem;
         }
+
+        &--col-8 {
+            @include col-size(1/8);
+
+            .magazine-catalog__title {
+                position: relative;
+                overflow: hidden;
+                white-space: nowrap;
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: -moz-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 30%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,1) 100%);
+                    background: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 30%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,1) 100%);
+                    background: -o-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 30%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,1) 100%);
+                    background: -ms-linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 30%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,1) 100%);
+                    background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 30%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,1) 100%);
+                    width: 3rem;
+                    height: 100%;
+                    content: ''
+                }
+            }
+        }
     }
 
     &__item-image {
