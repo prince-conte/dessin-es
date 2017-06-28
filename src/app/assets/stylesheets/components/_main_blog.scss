@@ -1,0 +1,64 @@
+.main-blog {
+
+    &__link {
+        color: inherit;
+    }
+
+    &__grid {
+
+        @include mq(md) {
+            @include grid(x, flex-start, stretch);
+        }
+    }
+
+    &__item {
+        @include grid-col;
+        @include col-size(1/4);
+    }
+
+    &__image {
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+
+    }
+
+    &__time {
+        @include font(1.3rem,1.3rem);
+        margin: 1.8rem 0;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &__title {
+        @include h5();
+        margin-bottom: 1.8rem;
+    }
+
+    &__statistics {
+        margin-top: auto;
+
+
+        > i {
+            @include font(1.6rem,1.6rem);
+            display: inline-block;
+            margin-right: 1rem;
+            color: #d4d6d7;
+
+            &::after {
+                @include font(1.3rem,1.3rem);
+                color: $color-base;
+                opacity: .4;
+                content: attr(data-quantity);
+
+
+            }
+        }
+
+    }
+
+
+}

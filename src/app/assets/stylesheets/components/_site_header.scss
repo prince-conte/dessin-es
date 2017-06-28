@@ -93,6 +93,7 @@
 
             &::before {
                 @include font(1.5rem, 1.5rem);
+                font-family: $font-family-text;
                 content: attr(data-order);
                 position: absolute;
                 display: none;
@@ -126,6 +127,7 @@
         a[data-order-quantity] {
 
             &::after {
+                font-family: $font-family-text;
                 content: attr(data-order-quantity);
             }
         }
