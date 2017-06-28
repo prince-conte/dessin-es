@@ -39,4 +39,12 @@
 
     }
 
+    + .teaser {
+        margin-top: -2rem;
+
+        @include mq(md) {
+            margin-top: -5rem;
+        }
+    }
+
 }

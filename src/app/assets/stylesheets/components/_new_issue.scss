@@ -6,13 +6,13 @@
     }
 
     &__box {
+        padding: 11rem 10rem 0;
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-color: #10243d;
         background-image: url(../img/issue-back.jpg);
-        padding: 11rem 10rem 0;
-        min-height: 520px;
+
     }
 
     &__grid {
@@ -72,8 +72,6 @@
         > a {
             color: $color-base;
         }
-
     }
-
 
 }

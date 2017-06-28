@@ -1,0 +1,30 @@
+.teaser {
+    margin: 4rem 0;
+
+    @include mq(md) {
+        margin: 5rem 0;
+    }
+
+    &__link-box {
+
+        @include mq(md) {
+            margin: 0 -2rem;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+
+    }
+
+    + .section-box {
+        margin-top: 4rem;
+
+        @include mq(md) {
+            margin-top: 5rem;
+        }
+    }
+
+}

@@ -3,3 +3,19 @@
 .lead {
     @include text-large;
 }
+
+.is-desktop {
+    display: none !important;
+
+    @include mq(md) {
+        display: block !important;
+    }
+}
+
+.is-mobile {
+    display: block !important;
+
+    @include mq(md) {
+        display: none !important;
+    }
+}

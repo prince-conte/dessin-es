@@ -25,7 +25,9 @@
         }
 
         &--col-8 {
-            @include col-size(1/8);
+            @include mq(md) {
+                @include col-size(1/8);
+            }
 
             .magazine-catalog__title {
                 position: relative;

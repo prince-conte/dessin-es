@@ -1,0 +1,163 @@
+.contest {
+
+    @include mq(xs) {
+        margin-right: -2rem;
+        margin-left: -2rem;
+    }
+
+    &__box {
+        padding: 4.5rem 2rem 0;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-color: #10243d;
+        background-image: url(../img/contest-back.jpg);
+
+
+        @include mq(md) {
+            padding: 9rem 9rem 0;
+
+        }
+    }
+
+    &__grid {
+
+        @include mq(md) {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    &__card-info-box {
+        position: relative;
+
+
+
+    }
+
+    &__card-info-body {
+        position: relative;
+        padding: 3.8rem 2rem;
+        background: #f2f2f2;
+        z-index: 999;
+
+        @include mq(md) {
+            width: 62rem;
+            padding: 6rem 5.6rem;
+        }
+    }
+
+    &__frame {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        opacity: .7;
+        transform: translate(1rem,2.5rem);
+        z-index: 0;
+    }
+
+
+
+
+    &__content {
+        color: #fff;
+
+        @include mq(xs) {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            text-align: center;
+
+        }
+        @include mq(md) {
+            flex: 1;
+            padding-right: 6rem;
+
+        }
+    }
+
+    &__title {
+        @include h3();
+        @include font(3rem,4rem);
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        margin-bottom: 3.6rem;
+
+        > p {
+            @include text-base;
+            color: #fff;
+        }
+    }
+
+    &__event-info {
+        margin-bottom: 1.5rem;
+        transform: translateY(-.3rem);
+
+        > span {
+            display: inline-block;
+            padding-bottom: .8rem;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+    }
+
+    &__button-block {
+        margin-top: 3.6rem;
+
+        > a {
+            color: $color-base;
+        }
+    }
+
+    &__card-info-title {
+        @include font(1.9rem,2rem);
+        font-weight: 500;
+        color: $color-base;
+        margin-bottom: .6rem;
+        transform: translateX(-.2rem);
+
+        > i {
+            @include font(2.4rem,2.4rem);
+            display: inline-block;
+            margin-right: .6rem;
+            color: #ffa700;
+            transform: translateY(.2rem);
+
+        }
+    }
+
+    &__card-info-description {
+        margin-top: 2.4rem;
+
+        > p {
+            @include text-base();
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    }
+
+    &__time-and-name {
+        @include interact(color,$color-base);
+        @include interact(opacity,.5);
+        @include font(1.3rem,2rem);
+        text-transform: uppercase;
+        color: $color-base;
+        opacity: .3;
+    }
+
+    &__rating {
+        margin-top: 1rem;
+        margin-bottom: -2.2rem;
+        transform: translateX(-.4rem);
+        pointer-events: none;
+    }
+
+
+}
