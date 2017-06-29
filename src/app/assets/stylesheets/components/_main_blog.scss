@@ -12,6 +12,9 @@
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        color: $color-base;
 
         @include mq(xs) {
             &:not(:last-child) {
@@ -44,7 +47,7 @@
 
     &__title {
         @include h5();
-        margin-bottom: 1.8rem;
+        margin-bottom: 1.6rem;
     }
 
     &__statistics {
@@ -54,6 +57,7 @@
         > i {
             @include font(1.6rem,1.6rem);
             display: inline-block;
+            margin-right: 1rem;
             color: #d4d6d7;
 
             &::after {
@@ -64,6 +68,7 @@
                 font-style: normal;
                 opacity: .4;
                 content: attr(data-quantity);
+                transform: translateY(-.2rem);
 
 
             }
