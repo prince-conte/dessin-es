@@ -31,8 +31,6 @@
     &__card-info-box {
         position: relative;
 
-
-
     }
 
     &__card-info-body {
@@ -45,6 +43,33 @@
             width: 62rem;
             padding: 6rem 5.6rem;
         }
+    }
+
+
+    &__elips {
+        @include size(13rem);
+        @include font(1.5rem,2rem);
+        text-align: center;
+        position: absolute;
+        right: 6rem;
+        top: -4rem;
+        border-radius: 50%;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+        background: $color-brand-alt;
+
+        @include mq(xs) {
+            display: none;
+        }
+
+        > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
     }
 
     &__frame {
