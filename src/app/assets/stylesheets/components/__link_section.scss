@@ -1,0 +1,47 @@
+.link-section {
+    margin: 5rem 0;
+
+    &__grid {
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__description {
+        @include mq(md) {
+            display: flex;
+        }
+
+        > p {
+
+            @include mq(xs) {
+                margin: 2rem 0;
+            }
+
+            @include mq(md) {
+                margin-right: 2rem;
+                text-align: right;
+            }
+        }
+    }
+
+    &__title {
+        @include font(2.5rem,3.2rem);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $color-base;
+
+        @include mq(xs) {
+            margin-bottom: 2rem;
+        }
+
+        @include mq(md) {
+
+        }
+    }
+
+}

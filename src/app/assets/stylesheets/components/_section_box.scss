@@ -39,7 +39,21 @@
 
     }
 
-    + .teaser {
+
+    &__black-title {
+        @include h3();
+        margin-bottom: 3.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-base;
+
+        @include mq(md) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    + .teaser,
+    + .link-section {
         margin-top: -2rem;
 
         @include mq(md) {
