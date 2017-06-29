@@ -6,6 +6,7 @@
     }
 
     &__link-box {
+        display: block;
 
         @include mq(md) {
             margin: 0 -2rem;

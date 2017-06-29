@@ -12,8 +12,17 @@
     }
 
     &__item {
-        @include grid-col;
-        @include col-size(1/4);
+
+        @include mq(xs) {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1/4);
+        }
     }
 
     &__image {
@@ -45,12 +54,14 @@
         > i {
             @include font(1.6rem,1.6rem);
             display: inline-block;
-            margin-right: 1rem;
             color: #d4d6d7;
 
             &::after {
                 @include font(1.3rem,1.3rem);
+                display: inline-block;
+                margin-left: 1rem;
                 color: $color-base;
+                font-style: normal;
                 opacity: .4;
                 content: attr(data-quantity);
 
