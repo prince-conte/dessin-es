@@ -20,3 +20,29 @@
         color: #d0d0d1;
     }
 }
+
+.tape-tag {
+    @include font(1.3rem,1.3rem);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    padding: .8rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    transform: rotate(-45deg) translate(-5.9rem,-3.5rem);
+    color: #fff;
+    background: $color-base;
+
+    &[data-hit] {
+        background: #f4653f;
+    }
+
+    &[data-new] {
+        background: #6fc054;
+    }
+
+
+}

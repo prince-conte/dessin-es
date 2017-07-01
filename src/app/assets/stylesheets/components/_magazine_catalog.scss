@@ -1,7 +1,32 @@
 .magazine-catalog {
 
+    &__category-box {
+        margin: 4rem 0;
+        padding-bottom: 4rem ;
+        border-bottom: 1px solid $color-border;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include mq(md) {
+            margin: 4.5rem 0;
+            padding-bottom: 5rem ;
+        }
+    }
+
     &__link {
+        display: block;
         color: inherit;
+    }
+
+    &__tag-box {
+        @include size(100%);
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        overflow: hidden;
     }
 
     &__grid {

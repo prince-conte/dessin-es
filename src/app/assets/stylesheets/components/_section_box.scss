@@ -52,6 +52,36 @@
         }
     }
 
+    &__page-title {
+        @include h2();
+        text-transform: uppercase;
+        text-align: center;
+        color: $color-base;
+    }
+
+    &__title-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+        > a {
+            @include interact(color,$color-brand);
+            @include font(1.5rem,1.5rem);
+            display: block;
+            color: $color-base;
+        }
+
+        > .is-active {
+            @include interact(color,#b7b9ba);
+            color: #b7b9ba;
+        }
+
+        > span {
+            margin: 0 1.2rem;
+        }
+    }
+
     + .teaser,
     + .link-section {
         margin-top: -2rem;
