@@ -1,4 +1,195 @@
 .product-filter {
     padding-bottom: 3rem;
     border-bottom: 1px solid $color-border;
+
+    &__grid {
+
+        @include mq(md) {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    &__item {
+        @include font(1.5rem,1.5rem);
+        @include interact(color,$color-brand);
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 1.8rem;
+        color: $color-base;
+
+        @include mq(md) {
+            &:not(:last-child) {
+                margin-right: 2.8rem;
+            }
+        }
+
+        &::after {
+            @include size(2.4rem);
+            @include font(1.4rem,1.4rem);
+            display: inline-block;
+            margin: 0 .6rem;
+            padding: .6rem .4rem;
+            border-radius: 50%;
+            color: #aeb0b1;
+            background: #f2f2f2;
+            transform: translateY(-.1rem);
+            text-align: center;
+        }
+
+
+        &[data-quantity] {
+
+            &::after {
+                content: attr(data-quantity);
+            }
+        }
+
+
+        > i {
+            @include font(1.4rem,1.4rem);
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            color: #bcbdbe;
+        }
+
+        &:last-child {
+            @include mq(md) {
+                margin-left: auto;
+            }
+        }
+
+        &--clear {
+            text-decoration: underline;
+            color: #bcbdbe;
+        }
+    }
+
+    &__item.is-active {
+
+        .product-filter__select-popup-box {
+            top: 100%;
+            left: 50%;
+            visibility: visible;
+
+            &::after {
+                content: '';
+            }
+        }
+
+    }
+
+    &__select-popup-box {
+        position: absolute;
+        display: block;
+        top: -999999px;
+        left: -999999px;
+        padding: 1.2rem 0;
+        visibility: hidden;
+        width: 18rem;
+        transform: translate(-50%,-.4rem);
+
+        &::after {
+            @include size(2.2rem);
+            position: absolute;
+            top: 1.4rem;
+            left: 50%;
+            border: 1px solid transparent;
+            border-left: 1px solid $color-border;
+            border-top: 1px solid $color-border;
+            transform: translateX(-50%) rotate(45deg);
+            background: #fff;
+        }
+
+
+    }
+
+
+    &__select-popup {
+        position: absolute;
+        display: flex;
+        align-items: stretch;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(237, 237, 237);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 8px 16px 0px rgba(179, 179, 179, 0.5);
+
+
+        > ul {
+            display: block;
+            width: 100%;
+            z-index: 50;
+
+            > li {
+                position: relative;
+                display: block;
+
+            }
+        }
+    }
+
+
+    // checkbox
+
+    &__checkbox {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 2;
+
+        > input {
+            @include size(100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 3;
+
+            + i {
+                @include size(100%);
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+
+            }
+
+            &:checked + i  {
+                display: block;
+                background: $color-border;
+            }
+        }
+    }
+
+    &__label-checkbox {
+        @include font(1.5rem,1.5rem);
+        @include interact(background,#ededed);
+        display: block;
+        width: 100%;
+        padding: .7rem 2.8rem;
+        color: $color-base;
+        background: #fff;
+        z-index: 50;
+
+        span {
+            position: relative;
+            display: block;
+            z-index: 99;
+        }
+    }
+
+
+
+
 }
