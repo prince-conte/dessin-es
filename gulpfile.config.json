@@ -23,7 +23,8 @@
           "src/app/assets/javascripts/utilities.babel.js",
           "src/app/assets/javascripts/components/icons.babel.js",
           "src/app/assets/javascripts/components/menu_slider.js",
-          "src/app/assets/javascripts/components/in_slider.js"
+          "src/app/assets/javascripts/components/in_slider.js",
+          "src/app/assets/javascripts/components/filter_slider.js"
         ],
         "watch": "src/app/assets/javascripts/**/*.js"
       },

@@ -1,0 +1,89 @@
+.filter-slider {
+    position: relative;
+    margin-top: 3.5rem;
+    overflow: hidden;
+    outline: none;
+
+    @include mq(md) {
+        margin-top: 4.5rem;
+    }
+
+    &__body {
+        outline: none;
+
+        @include mq(md) {
+            margin-right: -13rem;
+            transform: translateX(-17rem);
+        }
+    }
+
+    &__item {
+        @include font(1.5rem,2rem);
+        display: flex !important; // slick
+        justify-content: center;
+        align-items: center;
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+        width: 13rem;
+        height: 8rem;
+        opacity: .4;
+        background: $color-base;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        outline: none;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        @include mq(md) {
+
+        }
+
+        &:hover {
+            box-shadow: 0px 15px 30px 0px rgba(18, 22, 26, 0.3);
+        }
+
+        &[data-mantis] {
+            background: #6fc054;
+
+            &:hover {
+                box-shadow: 0px 15px 30px 0px rgba(111, 192, 84, 0.3);
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__slick-next {
+        display: none;
+
+        @include mq(md) {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 8rem;
+            width: 6rem;
+            background: #f2f2f2;
+            color: $color-brand;
+        }
+
+        > i {
+            @include font(2.4rem);
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
+            color: $color-brand;
+        }
+
+    }
+    .slick-center {
+        opacity: 1;
+    }
+
+}
