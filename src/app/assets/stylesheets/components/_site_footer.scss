@@ -3,5 +3,160 @@
 .site-footer {
     @if $enable-sticky-footer == true {
         margin-top: auto;
+
+    padding: 3rem 0;
+
+    @include mq(md) {
+        padding: 5rem 0;
     }
+
+    }
+
+
+    &__grid {
+
+        @include mq(md) {
+            display: flex;
+            align-items: stretch;
+        }
+
+    }
+
+    &__logo-block {
+        @include mq(md) {
+            width: 18rem;
+        }
+    }
+
+    &__logo-link {
+        position: relative;
+        display: block;
+        background: #12161a;
+        max-width: 13rem;
+
+        @include mq(xs) {
+            margin: 0 auto;
+        }
+
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    // menu
+
+    &__menu-box {
+        display: flex;
+
+        @include mq(xs) {
+            margin: 3rem 0;
+            justify-content: space-between;
+        }
+
+        @include mq(md) {
+            flex: 1;
+        }
+    }
+
+    &__menu {
+
+        @include mq(md) {
+            display: block;
+            width: 22rem;
+            transform: translateY(-.5rem);
+        }
+
+        > li {
+            display: block;
+            > a {
+                @include interact(color,$color-brand);
+                @include font(1.3rem,3rem);
+
+                color: $color-base;
+
+                @include mq(md) {
+                    @include font(1.5rem,3rem);
+                    padding: 0 2rem;
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+    // contact block
+
+    &__contacts {
+
+        @include mq(xs) {
+            padding-top: 3rem;
+            border-top: 1px solid $color-border;
+        }
+
+
+        @include mq(md) {
+            padding-left: 6rem;
+            width: 34rem;
+            border-left: 1px solid $color-border;
+        }
+    }
+
+    &__contacts-grid-link {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+    }
+    &__contacts-link {
+        @include interact(background,#13151f);
+        position: relative;
+        display: block;
+        width: 13rem;
+        height: 4rem;
+        background: #12161a;
+
+        > img {
+            @include size(auto);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 9rem;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__contacts-content {
+        text-align: center;
+
+        > p {
+            @include text-base();
+            color: $color-base;
+            opacity: .3;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            &:hover {
+                a {
+                    @include interact(color,$color-brand);
+                    color: $color-brand;
+                }
+            }
+
+            > a {
+                color: inherit;
+            }
+        }
+    }
+
+
+
 }

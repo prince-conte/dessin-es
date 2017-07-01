@@ -25,4 +25,32 @@
         }
     }
 
+
+    &--facebook {
+        background: #3b5997;
+    }
+
+    &--twitter {
+        background: #0fb5ee;
+    }
+
+    &--ok {
+        background: #f58220;
+    }
+
+    &--insta {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+
+    &--youtube {
+        background: #cc181e;
+    }
+
+    &--telegram {
+        background: #2ca5e0;
+    }
+
+
+
 }
