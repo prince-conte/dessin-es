@@ -123,7 +123,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 0;
         border-style: solid;
         border-width: 1px;
         border-color: rgb(237, 237, 237);
@@ -133,15 +133,16 @@
 
         > ul {
             display: block;
+            width: 100%;
 
             > li {
                 display: block;
 
                 > a {
                     @include font(1.5rem,1.5rem);
-                    @include interact(color,$color-brand);
+                    @include interact(background,#ededed);
                     display: block;
-                    padding: .6rem 1rem;
+                    padding: .6rem 2rem;
                     color: $color-base;
                 }
             }

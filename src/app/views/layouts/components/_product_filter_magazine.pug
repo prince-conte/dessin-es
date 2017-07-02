@@ -1,0 +1,70 @@
+form.product-filter.js-product-filter
+
+    ul.product-filter__grid
+
+        li.product-filter__item.product-filter__item--first
+
+            a.js-product-filer-item(href='#' data-quantity='2')
+                span Цена
+                i.mdi.mdi-chevron-down
+            .product-filter__select-popup-box
+                .product-filter__select-popup
+                    ul
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='checkbox')
+                                    i
+                                span Персонажи
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='checkbox')
+                                    i
+                                span Кино
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='checkbox')
+                                    i
+                                span Мультики
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='checkbox')
+                                    i
+                                span Игрушки
+
+        li.product-filter__item.product-filter__item--clear
+
+            button(type='reset')
+                span Очистить фильтр
+
+        li.product-filter__item.product-filter__item--last
+
+            a.js-product-filer-item(href='#')
+                span Сортировка
+                i.mdi.mdi-chevron-down
+            .product-filter__select-popup-box
+                .product-filter__select-popup
+                    ul
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span По дате
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span По цене
+
+
