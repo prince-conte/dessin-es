@@ -193,6 +193,7 @@
 @mixin h1($font-weight: $heading-font-weight-base) {
     @include heading;
     @include font(3rem, 3.5rem);
+    margin-top: 0;
     font-weight: $font-weight;
 
     @include mq(md) {
