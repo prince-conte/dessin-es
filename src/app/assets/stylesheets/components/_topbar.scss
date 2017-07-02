@@ -28,6 +28,7 @@
         }
 
         a {
+            @include interact(color,#fff);
             @include interact(opacity,1);
             display: block;
             color: #fff;

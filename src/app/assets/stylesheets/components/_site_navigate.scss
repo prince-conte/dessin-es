@@ -272,6 +272,7 @@
     // slick next
 
     &__menu-popular-slider-next {
+        @include interact(color,$color-brand);
         position: absolute;
         display: block;
         top: 50%;

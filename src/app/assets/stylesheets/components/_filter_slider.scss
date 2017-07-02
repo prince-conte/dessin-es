@@ -23,6 +23,7 @@
     }
 
     &__item {
+        @include interact(color,#fff);
         @include font(1.5rem,2rem);
         display: flex !important; // slick
         justify-content: center;
