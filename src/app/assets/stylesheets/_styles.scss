@@ -21,14 +21,26 @@ body {
     color: $color-base;
     font-family: $font-family-text;
 
+    @include mq(md) {
+        opacity: 0;
+        transition: .4s;
+    }
+
     @if $enable-sticky-footer == true {
         display: flex;
         flex-direction: column;
     }
 }
 
+::selection {
+    color: #fff;
+    background: $color-base;
+}
+
 // Links
 a {
+    @include interact(color, $color-brand-alt);
+    color: $color-brand;
     text-decoration: none;
     transition: all $transition-duration-base;
 

@@ -26,7 +26,8 @@
           "src/app/assets/javascripts/components/in_slider.js",
           "src/app/assets/javascripts/components/filter_slider.js",
           "src/app/assets/javascripts/components/product_filter.js",
-          "src/app/assets/javascripts/components/news_promo_slider.js"
+          "src/app/assets/javascripts/components/news_promo_slider.js",
+          "src/app/assets/javascripts/components/body_fade_in.js"
         ],
         "watch": "src/app/assets/javascripts/**/*.js"
       },
