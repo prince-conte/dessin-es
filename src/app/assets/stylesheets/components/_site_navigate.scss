@@ -2,6 +2,10 @@
     margin-bottom: 5rem;
     z-index: 105;
 
+    @include mq(xs) {
+        display: none;
+    }
+
     &__link {
         color: inherit;
         outline: none;

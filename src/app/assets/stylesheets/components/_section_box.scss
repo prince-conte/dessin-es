@@ -13,6 +13,16 @@
         margin: 8rem 0;
     }
 
+    &--over {
+        .container {
+            overflow: hidden;
+        }
+    }
+
+    &--post-promo {
+        margin-top: .5rem;
+    }
+
     &__title {
         margin-bottom: 3rem;
         text-align: center;
@@ -63,13 +73,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         margin-top: 2rem;
+        margin-bottom: -1rem;
 
         > a {
             @include interact(color,$color-brand);
             @include font(1.5rem,1.5rem);
             display: block;
             color: $color-base;
+            margin-bottom: 1rem;
         }
 
         > .is-active {
@@ -78,7 +91,7 @@
         }
 
         > span {
-            margin: 0 1.2rem;
+            margin: 0 1.2rem 1rem;
         }
     }
 

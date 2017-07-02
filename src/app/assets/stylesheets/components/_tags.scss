@@ -22,26 +22,25 @@
 }
 
 .tape-tag {
-    @include font(1.3rem,1.3rem);
-    display: block;
+    @include size(7.7rem);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 20rem;
-    padding: .8rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 500;
-    transform: rotate(-45deg) translate(-5.9rem,-3.5rem);
-    color: #fff;
-    background: $color-base;
+    top: -.3rem;
+    left: -.3rem;
+    background-position: 50% 50%;
+    background-size: contain;
+    font-size: 0;
+    color: transparent;
+
 
     &[data-hit] {
-        background: #f4653f;
+        background-image: url(../img/hit.png);
     }
 
     &[data-new] {
-        background: #6fc054;
+        background-image: url(../img/new.png);
+    }
+    &[data-sale] {
+        background-image: url(../img/sale.png);
     }
 
 

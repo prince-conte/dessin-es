@@ -6,6 +6,10 @@
 
     &__box {
 
+        @include mq(xs) {
+            margin-top: 3rem;
+        }
+
     }
 
     &__grid {
@@ -133,6 +137,71 @@
         margin-top: 2rem;
     }
 
+}
+
+.promo-news-slider {
+    margin: 0 -2rem;
+    outline: none;
+
+    &__item {
+        margin: 0 .5rem;
+        outline: none;
+    }
+
+    &__title {
+        @include font(1.9rem,2.5rem);
+        margin-top: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        color: $color-base;
+        visibility: hidden;
+    }
+
+    &__image {
+        display: block;
+
+        > img {
+            width: auto;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+
+
+    // style for slick
+
+    .slick-center {
+        .promo-news-slider__title {
+            visibility: visible;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.8rem;
+
+        > li {
+
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            span {
+                @include size(.7rem);
+                display: block;
+                border-radius: 50%;
+                background: #b3b3b3;
+            }
+        }
+
+        li.slick-active {
+            span {
+                background: $color-brand;
+            }
+        }
+    }
 
 
 }

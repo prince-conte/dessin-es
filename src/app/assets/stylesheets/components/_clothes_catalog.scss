@@ -20,7 +20,6 @@
     }
 
     &__grid {
-        margin-bottom: -4rem;
 
         @include mq(md) {
             @include grid(x, flex-start, stretch);
@@ -40,7 +39,6 @@
 
     &__item-image {
         position: relative;
-        overflow: hidden;
 
         img {
             margin: 0 auto;

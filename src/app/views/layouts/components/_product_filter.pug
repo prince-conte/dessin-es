@@ -1,11 +1,54 @@
-form.product-filter
+form.product-filter.js-product-filter
 
-    .product-filter__grid
+    ul.product-filter__grid
 
-        a.product-filter__item.is-active(href='#' data-quantity='1')
-            span Категория
-            i.mdi.mdi-chevron-down
+        li.product-filter__item.product-filter__item--first
 
+            a.js-product-filer-item(href='#')
+                span Категория
+                i.mdi.mdi-chevron-down
+
+            .product-filter__select-popup-box
+                .product-filter__select-popup
+                    ul
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Персонажи
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Кино
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Мультики
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Игрушки
+
+
+
+
+
+        li.product-filter__item
+
+            a.js-product-filer-item(href='#')
+                span Пол
+                i.mdi.mdi-chevron-down
             .product-filter__select-popup-box
                 .product-filter__select-popup
                     ul
@@ -38,37 +81,121 @@ form.product-filter
                                     i
                                 span Игрушки
 
+            li.product-filter__item
 
+                a.js-product-filer-item(href='#' data-quantity='2')
+                    span Размер
+                    i.mdi.mdi-chevron-down
 
+                .product-filter__select-popup-box
+                    .product-filter__select-popup
+                        ul
 
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span M
 
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span L
 
-        a.product-filter__item(href='#')
-            span Пол
-            i.mdi.mdi-chevron-down
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span XL
 
-        a.product-filter__item(href='#')
-            span Размер
-            i.mdi.mdi-chevron-down
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span XXL
 
-        a.product-filter__item(href='#')
-            span Цена
-            i.mdi.mdi-chevron-down
+            li.product-filter__item
 
-        a.product-filter__item(href='#')
-            span Категория
-            i.mdi.mdi-chevron-down
+                a.js-product-filer-item(href='#' data-quantity='2')
+                    span Цена
+                    i.mdi.mdi-chevron-down
+                .product-filter__select-popup-box
+                    .product-filter__select-popup
+                        ul
 
-        a.product-filter__item(href='#')
-            span Категория
-            i.mdi.mdi-chevron-down
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span Персонажи
 
-        a.product-filter__item.product-filter__item--clear(href='#')
-            span Очистить фильтр
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span Кино
 
-        a.product-filter__item(href='#')
-            span Сортировка
-            i.mdi.mdi-chevron-down
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span Мультики
 
+                            li
+                                label.product-filter__label-checkbox
+                                    em.product-filter__checkbox
+                                        input(type='checkbox')
+                                        i
+                                    span Игрушки
+
+        li.product-filter__item.product-filter__item--clear
+
+            button(type='reset')
+                span Очистить фильтр
+
+        li.product-filter__item.product-filter__item--last
+
+            a.js-product-filer-item(href='#')
+                span Сортировка
+                i.mdi.mdi-chevron-down
+            .product-filter__select-popup-box
+                .product-filter__select-popup
+                    ul
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Персонажи
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Кино
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Мультики
+
+                        li
+                            label.product-filter__label-checkbox
+                                em.product-filter__checkbox
+                                    input(type='radio' name='lal')
+                                    i
+                                span Игрушки
 
 

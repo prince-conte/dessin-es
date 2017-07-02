@@ -29,6 +29,7 @@
 @import "components/site_footer";
 @import "components/topbar";
 @import "components/promo_news";
+@import "components/promo_news";
 @import "components/icon_links";
 @import "components/magazine_catalog";
 @import "components/promo_section";
@@ -44,4 +45,7 @@
 @import "components/_clothes_catalog";
 @import "components/_filter_slider";
 @import "components/_product_filter";
+@import "components/_pagination";
 
+
+// .product-filter__select-popup-box - z index 99

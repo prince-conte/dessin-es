@@ -26,12 +26,10 @@
         display: block;
         top: 0;
         left: 0;
-        overflow: hidden;
     }
 
     &__grid {
         @include grid(x, flex-start, stretch);
-        margin-bottom: -4rem;
 
         @include mq(md) {
             margin-bottom: -5rem;

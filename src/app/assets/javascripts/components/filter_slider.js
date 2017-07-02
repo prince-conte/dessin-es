@@ -21,8 +21,22 @@ $(function() {
     });
 
 
+    $('.js-filter-slider a').on('click',function(){
+
+        var cuttentTo =  $(this).data('slick-index');
+
+        $('.js-filter-slider').slick('slickGoTo',cuttentTo);
+
+        return false;
+
+    });
+
+
+
     $('.js-filter-slider-next').on('click',function(){
+
         $('.js-filter-slider').slick('slickNext');
+
         return false;
     });
 

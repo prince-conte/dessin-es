@@ -1,0 +1,72 @@
+.pagination {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    @include mq(md) {
+        margin-top: 5rem;
+    }
+
+
+
+    > a,span {
+        @include font(1.9rem,1.9rem);
+        @include interact(color, $color-brand);
+        display: inline-block;
+        padding: .5rem;
+        color: #b6b6b6;
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+
+            @include mq(xs) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+
+    .is-active {
+        color: $color-brand;
+    }
+
+
+
+    &__nav-button {
+        @include interact(color,$color-brand);
+        @include size(4.2rem);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #b6b6b6;
+        border-radius: 50%;
+        background: #f2f2f2;
+
+        @include mq(md) {
+            @include size(6rem);
+        }
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+
+            @include mq(md) {
+                margin-right: 5rem;
+            }
+        }
+
+        > i {
+            @include font(2rem,2rem);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: $transition-duration-base;
+            display: block;
+        }
+    }
+
+}
