@@ -1,6 +1,7 @@
 @import "../vendor/normalize-css/normalize";
 @import "../vendor/mdi/css/materialdesignicons";
 @import "../vendor/slick-carousel/slick/slick.scss";
+@import "../vendor/jssocials/dist/jssocials.css";
 
 @import "config";
 @import "functions";
@@ -46,6 +47,8 @@
 @import "components/_filter_slider";
 @import "components/_product_filter";
 @import "components/_pagination";
+@import "components/_article";
+@import "components/_social_share";
 
 
 // .product-filter__select-popup-box - z index 99

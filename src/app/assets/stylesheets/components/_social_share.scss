@@ -1,0 +1,99 @@
+.social-share {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(xs) {
+        justify-content: center;
+    }
+
+    > a {
+        @include interact(color, #fff);
+        @include interact(opacity, .9);
+        @include font(1.2rem);
+        display: inline-flex;
+        align-items: center;
+        padding: .5rem;
+        border-radius: .2rem;
+        color: #fff;
+        min-width: 2.5rem;
+
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
+
+        @include mq(xs) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    > i {
+        @include font(1.2rem,1.2rem);
+        display: block;
+    }
+
+    &__title {
+        @include font(1.2rem,1.2rem);
+        margin-left: .5rem;
+    }
+
+    &__twitter {
+        background: #5cabe6;
+    }
+
+    &__vk {
+        background: #45668f;
+
+        > i {
+            @include font(1.4rem,1.4rem);
+            transform: translateY(.1rem);
+        }
+    }
+
+    &__facebook {
+        background: #3b5999;
+    }
+
+    &__google {
+        background: #d15249;
+
+        > i {
+            @include font(1.4rem,1.4rem);
+            transform: translateY(.1rem);
+        }
+    }
+
+    &__ok {
+        background: #ed802b;
+    }
+
+    &__alt {
+        background: #e94357;
+
+        > i {
+            display: block;
+            width: 1.4rem;
+            height: 1.3rem;
+            background-size: contain;
+            background-position: 50% 50%;
+            background-image: url(../img/altt.png);
+            transform: translateY(.1rem);
+        }
+    }
+
+    &__counter {
+        margin-left: .5rem;
+        opacity: .8;
+
+        &::after {
+           content: attr(data-counter);
+        }
+
+        &[data-counter='0'] {
+            display: none;
+        }
+    }
+
+
+
+
+}

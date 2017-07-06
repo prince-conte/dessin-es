@@ -3,6 +3,36 @@
 @if $enable-wysiwyg == true {
     .wysiwyg {
 
+        > h1 {
+            @include h1();
+            text-align: center;
+        }
+
+        > h2, h3, h4, h5, h6 {
+            text-align: left;
+        }
+
+        > h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 2rem;
+            text-align: left;
+
+            &:not(:first-child) {
+                margin-top: 3.8rem;
+            }
+
+            @include mq(md) {
+                margin-bottom: 3rem;
+
+                &:not(:first-child) {
+                    margin-top: 5.8rem;
+                }
+            }
+        }
+
+        > h2 {
+            @include h2();
+        }
+
         > p {
             @include text-base();
 
@@ -17,6 +47,97 @@
             }
         }
 
+        > ul {
+            @include text-base();
+
+            &:not(:last-child) {
+                margin-bottom: 1.8rem;
+            }
+
+            @include mq(md) {
+                &:not(:last-child) {
+                    margin-bottom: 2.2rem;
+                }
+            }
+
+            > li {
+                position: relative;
+                display: block;
+                padding-left: 2rem;
+
+                &::before {
+                    @include size(.6rem);
+                    position: absolute;
+                    left: 0;
+                    top: .8rem;
+                    display: block;
+                    background: $color-border;
+                    border-radius: 50%;
+                    content: '';
+                }
+
+
+                &:not(:last-child) {
+                    margin-bottom: 2.2rem;
+                }
+
+                @include mq(md) {
+                    &:not(:last-child) {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+
+            }
+        }
+
+        > blockquote {
+            @include font(1.9rem, 2.5rem);
+            position: relative;
+            display: block;
+            margin: 2.4rem 0 3rem;
+            padding-top: 6rem;
+            text-align: center;
+            font-weight: 500;
+            color: $color-brand;
+
+            &::before {
+                font: normal normal normal 24px/1 "Material Design Icons";
+                @include font(2rem, 2rem);
+                @include size(5rem);
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-base;
+                background: #f2f2f2;
+                border-radius: 50%;
+                content: "\F756";
+            }
+
+            @include mq(md) {
+                margin: 2.4rem 10rem 3rem;
+            }
+        }
+
+        figure {
+            margin: 3rem 0;
+
+            @include mq(md) {
+                margin: 6rem 0;
+            }
+
+        }
+
+        figcaption {
+            display: block;
+            margin-top: 1.5rem;
+            text-align: center;
+            opacity: .3;
+        }
+
 
         img {
             display: block;
@@ -25,5 +146,19 @@
             margin: 0 auto;
         }
 
+        > img {
+            display: block;
+            max-width: 100%;
+
+
+            @include mq(md) {
+                margin: 6rem auto;
+            }
+
+            @include mq(xs) {
+                width: 100%;
+                margin: 3rem 0;
+            }
+        }
     }
 }

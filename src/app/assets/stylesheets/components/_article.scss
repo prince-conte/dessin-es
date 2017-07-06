@@ -1,0 +1,102 @@
+.article {
+
+    &__title {
+        @include h1();
+        margin: 1.8rem 0 2rem;
+        text-align: center;
+    }
+
+    &__article-label {
+        margin: 2.4rem 0 3rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $color-border;
+
+        &:last-child {
+            margin: 3rem 0 0;
+        }
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+            margin: 2.4rem 0 4.4rem;
+
+            &:last-child {
+                margin: 4.4rem 0 0;
+            }
+        }
+    }
+
+    &__article-label-item {
+
+        @include mq(xs) {
+            &:not(:last-child) {
+                margin-bottom: 3.5rem;
+            }
+        }
+
+    }
+
+
+    &__content {
+        @include mq(md) {
+            padding: 0 20rem;
+        }
+    }
+
+    &__statistics {
+        display: flex;
+        align-items: center;
+        color: #d4d6d7;
+
+        @include mq(xs) {
+            justify-content: center;
+        }
+
+
+        > i {
+            @include font(1.6rem,1.6rem);
+            display: inline-block;
+            margin-right: 1rem;
+
+            &::after {
+                @include font(1.3rem,1.3rem);
+                display: inline-block;
+                margin-left: .5rem;
+                color: $color-base;
+                font-style: normal;
+                opacity: .4;
+                content: attr(data-quantity);
+                transform: translateY(-.2rem);
+            }
+        }
+
+        > time {
+            @include font(1.3rem,1.5rem);
+            margin-right: 2rem;
+            text-transform: uppercase;
+
+            @include mq(md) {
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    &__tag-block {
+        display: flex;
+
+        > a {
+            @include font(1.3rem,1.3rem);
+            padding: .8rem 1.6rem;
+            display: inline-block;
+            background: $color-border;
+            border-radius: 2rem;
+            color: $color-base;
+            opacity: .4;
+
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+
+        }
+    }
+}

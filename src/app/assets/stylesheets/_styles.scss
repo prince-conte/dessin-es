@@ -39,7 +39,6 @@ body {
 
 // Links
 a {
-    @include interact(color, $color-brand-alt);
     color: $color-brand;
     text-decoration: none;
     transition: all $transition-duration-base;
