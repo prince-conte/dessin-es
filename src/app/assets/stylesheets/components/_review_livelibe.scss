@@ -1,0 +1,87 @@
+.review-livelibe {
+    border-bottom: 1px solid $color-border;
+
+    @include mq(md) {
+        padding: 0 20rem;
+    }
+
+
+    &__item {
+
+
+        &:not(:last-child) {
+            margin-bottom: 2.6rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid $color-border;
+        }
+
+        @include mq(md) {
+            padding-bottom: 4rem;
+
+            &:not(:last-child) {
+                margin-bottom: 3.6rem;
+            }
+        }
+    }
+
+
+    &__title-grid {
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+
+
+    &__title-block {
+        @include mq(xs) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__name {
+        @include font(1.9rem,2rem);
+        margin-bottom: 1rem;
+        font-weight: 500;
+
+        @include mq(md) {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        > img {
+            max-width: 3rem;
+            height: auto;
+            vertical-align: top;
+            margin-right: 1rem;
+        }
+
+    }
+
+    &__rating-block {
+
+
+    }
+
+    &__date {
+        @include font(1.3rem,2rem);
+        color: #bababa;
+        text-transform: uppercase;
+
+        @include mq(md) {
+            margin-top: .4rem;
+            margin-left: auto;
+        }
+
+        @include mq(xs) {
+            margin-top: 1rem;
+        }
+    }
+
+    &__content {
+        @include text-base();
+    }
+}

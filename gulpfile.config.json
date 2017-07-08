@@ -29,6 +29,8 @@
           "src/app/assets/javascripts/components/product_filter.js",
           "src/app/assets/javascripts/components/news_promo_slider.js",
           "src/app/assets/javascripts/components/body_fade_in.js",
+          "src/app/assets/javascripts/components/card_slider.js",
+          "src/app/assets/javascripts/components/content_video.js",
           "src/app/assets/javascripts/vendor/jquery.smoothscroll.js"
         ],
         "watch": "src/app/assets/javascripts/**/*.js"

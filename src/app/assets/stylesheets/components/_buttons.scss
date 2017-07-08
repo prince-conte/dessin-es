@@ -43,6 +43,28 @@
             box-shadow: 0px 8px 16px 0px rgba(179, 179, 179, 0.5);
         }
     }
+
+
+    &--for-card {
+        @include font(1.5rem,1.5rem);
+        padding: 1.8rem 1.5rem 1.5rem;
+
+        @include mq(xs) {
+            display: block;
+            width: 100%;
+        }
+
+        @include mq(md) {
+            flex: 1;
+        }
+
+        > i {
+            @include font(1.6rem,1.6rem);
+            margin-right: 1rem;
+        }
+
+    }
+
 }
 
 .button-bubble {
@@ -60,5 +82,20 @@
         @include mq(md) {
             box-shadow: 0px 10px 20px 0px rgba(64, 106, 128, 0.2);
         }
+    }
+
+    &--for-card {
+        @include font(1.5rem,1.5rem);
+        padding: 1.8rem 1.5rem 1.5rem;
+
+        @include mq(xs) {
+            display: block;
+            width: 100%;
+        }
+
+        @include mq(md) {
+            flex: 1;
+        }
+
     }
 }

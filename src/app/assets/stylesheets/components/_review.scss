@@ -1,0 +1,90 @@
+.rewiew-box {
+    border-bottom: 1px solid $color-border;
+
+    @include mq(md) {
+        padding: 0 20rem;
+    }
+}
+
+.review {
+
+    &:not(:last-child) {
+        margin-bottom: 2.6rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $color-border;
+    }
+
+    @include mq(md) {
+        padding-bottom: 4rem;
+
+        &:not(:last-child) {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+    &__title-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &__title-block {
+
+    }
+
+    &__name {
+        @include font(1.9rem,2rem);
+        font-weight: 500;
+        margin-bottom: .8rem;
+    }
+
+    &__date {
+        @include font(1.3rem,2rem);
+        color: #bababa;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        @include text-base();
+    }
+
+
+
+    &__like-block {
+        @include size(5rem);
+        position: relative;
+        margin-left: 4rem;
+        border-radius: 50%;
+        background: #f2f2f2;
+
+        > i {
+            @include font(2.2rem,2.2rem);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: $color-base;
+            opacity: .4;
+            transform: translate(-50%,-50%);
+        }
+
+        > span {
+            @include font(1.7rem);
+            position: absolute;
+            top: 50%;
+            left: -1rem;
+            transform: translate(-100%,-50%);
+            color: $color-base;
+            opacity: .4;
+            font-weight: 500;
+        }
+    }
+
+    &__like-block.is-active {
+
+        > i {
+            color: #ee4623;
+            opacity: 1;
+        }
+    }
+
+}

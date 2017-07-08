@@ -1,0 +1,156 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box.section-box--over
+        .container
+
+            .section-box__title-nav
+
+                a(href='#') Главная
+                span |
+                a(href='#') Комиксы
+                span |
+                a(href='#') Майор Гром
+                span |
+                a.is-active(href='#') Последнее дело #6
+
+
+
+            include layouts/components/card/_card
+
+    .section-box.about-shop
+        .container
+
+            h2.about-shop__title Официальный магазин BUBBLE
+
+            .about-shop__grid
+
+                .about-shop__item
+                    .about-shop__icon-block
+                        img(src='img/svg/icon-1.svg' alt='')
+                    .about-shop__description Читайте только лучшие<br>комиксы. Рейтинг<br>на LiveLib
+                    .about-shop__rating
+                        include _rating
+
+
+                .about-shop__item
+                    .about-shop__icon-block
+                        img(src='img/svg/icon-2.svg' alt='')
+                    .about-shop__description Бесплатно доставляем<br>заказы от 3000 рублей<br>по Москве
+
+
+                .about-shop__item
+                    .about-shop__icon-block
+                        img(src='img/svg/icon-3.svg' alt='')
+                    .about-shop__description Удобная оплата.<br>Наличными при получении,<br>картами на сайте
+
+
+                .about-shop__item
+                    .about-shop__icon-block
+                        img(src='img/svg/icon-4.svg' alt='')
+                    .about-shop__description Накопительная скидка от 3%<br>до 15% для постоянных<br>покупателей
+
+            .section-box__page-buffer
+
+    .section-box
+        .container
+            h2.section-box__black-title из этой серии
+
+            .magazine-catalog
+
+                .magazine-catalog__grid
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title Бумажный порез #1
+                            .magazine-catalog__price 50Р
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title Бумажный порез #1
+                            .magazine-catalog__price 50Р
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title Бумажный порез #1
+                            .magazine-catalog__price 50Р
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title Бумажный порез #1
+                            .magazine-catalog__price 50Р
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title Бумажный порез #1
+                            .magazine-catalog__price 50Р
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title Бумажный порез #1
+                            .magazine-catalog__price 50Р
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+
+
+    include layouts/components/_main_subscription

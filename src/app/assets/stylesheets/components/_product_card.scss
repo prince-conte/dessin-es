@@ -1,0 +1,304 @@
+.product-card {
+    margin: 3rem 0 0rem;
+
+    @include mq(md) {
+        margin: 4rem 0 7rem;
+    }
+
+
+    &__grid {
+
+        @include mq(md) {
+            margin: 0 10rem;
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    // sliders
+
+    &__slider-box {
+
+        @include mq(md) {
+            width: 48rem;
+            margin-right: 6rem;
+            display: flex;
+        }
+    }
+
+
+    &__slider-nav {
+        display: none;
+        width: 9rem;
+        margin-right: 1rem;
+
+        @include mq(md) {
+            display: block;
+        }
+
+    }
+
+    &__slider {
+
+
+        .slick-dots {
+            display: flex !important;
+            justify-content: center;
+            margin-top: 2.4rem;
+
+            > li {
+
+                &:not(:last-child) {
+                    margin-right: 1.5rem;
+                }
+
+                span {
+                    @include size(.7rem);
+                    display: block;
+                    border-radius: 50%;
+                    background: #b3b3b3;
+                }
+            }
+
+            li.slick-active {
+                span {
+                    background: $color-brand;
+                }
+            }
+        }
+
+        @include mq(md) {
+            width: 38rem;
+
+        }
+
+        @include mq(xs) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__slider-item {
+
+        > img {
+            width: auto;
+            height: auto;
+            vertical-align: top;
+
+            @include mq(xs) {
+                width: 100%;
+            }
+        }
+    }
+
+
+    // information
+
+    &__information-box {
+        @include mq(md) {
+            width: 44rem;
+        }
+    }
+
+
+    &__vendor-grid {
+
+        @include mq(xs) {
+            margin-bottom: 1.5rem;
+        }
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__vendor-item {
+        @include text-base();
+
+        @include mq(xs) {
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        > i {
+            @include font(2rem,2rem);
+            position: relative;
+            display: inline-block;
+            margin-right: .5rem;
+            color: #6fc054;
+            top: .3rem;
+        }
+
+        &--vendor-code {
+            color: #bababa;
+        }
+    }
+
+    &__title {
+        @include font(2.5rem,3.5rem);
+        margin: 1rem 0 2rem;
+        font-weight: 500;
+        text-align: center;
+
+        @include mq(md) {
+            @include font(3rem,4rem);
+            margin: 2rem 0 2.5rem;
+
+            text-align: left;
+        }
+    }
+
+    &__version-information {
+        @include text-base();
+        margin-bottom: 1rem;
+
+        @include mq(xs) {
+            text-align: center;
+        }
+    }
+
+    &__price {
+        @include h2();
+        margin-bottom: 2rem;
+
+        @include mq(xs) {
+            @include font(3.6rem, 4rem);
+            text-align: center;
+        }
+    }
+
+
+    &__button-block {
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        > a {
+
+            @include mq(xs) {
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @include mq(md) {
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+
+    &__sub-block {
+        margin: 3rem 0;
+
+        > p {
+            @include text-base();
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        > ul {
+            @include text-base();
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            > li {
+                position: relative;
+                display: block;
+                padding-left: 2rem;
+
+                &::before {
+                    @include size(.6rem);
+                    position: absolute;
+                    left: 0;
+                    top: .8rem;
+                    display: block;
+                    background: $color-border;
+                    border-radius: 50%;
+                    content: '';
+                }
+
+
+                &:not(:last-child) {
+                    margin-bottom: 2.2rem;
+                }
+
+                @include mq(md) {
+                    &:not(:last-child) {
+                        margin-bottom: .5rem;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    &__information-sub-title {
+        @include font(1.5rem,2.2rem);
+        margin-bottom: 1rem;
+        display: block;
+        font-weight: 500;
+        text-transform: none;
+    }
+
+
+    &__social-share {
+        margin: 1.8rem 0 0;
+    }
+
+
+    // description
+
+    &__description {
+        margin: 6rem 0;
+
+        @include mq(md) {
+            margin: 6rem 20rem;
+        }
+
+    }
+
+    &__list-grid {
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+
+            &:first-child {
+                padding-right: 2rem;
+            }
+        }
+
+    }
+
+    &__list-grid-item {
+
+        @include mq(xs) {
+
+            &:not(:last-child) {
+                margin-bottom: 2.8rem;
+            }
+        }
+
+        @include mq(md) {
+            width: 50%;
+        }
+    }
+
+
+}
