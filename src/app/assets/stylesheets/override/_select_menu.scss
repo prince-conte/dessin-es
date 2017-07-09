@@ -19,8 +19,8 @@ select {
 
     .ui-selectmenu-text {
         @include ellipsis;
-        padding: 1.1rem 3.6rem 1.2rem 1rem;
-        font-size: 1.4rem;
+        padding: .8rem 2.4rem .8rem 1.4rem;
+        font-size: 1.5rem;
         pointer-events: none;
         vertical-align: top;
         user-select: none;
@@ -114,20 +114,24 @@ select {
 }
 
 .ui-selectmenu-icon {
-    @include size(3.8rem);
+    @include size(4.2rem);
     position: absolute;
     top: 0;
     right: 0;
     will-change: transform;
 
     &::after {
-        @include triangle(6px 6px, transparent $color-base, up-left);
+        @include font(2.2rem,2.2rem);
+        content: "\F140";
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-        background: #fff;
-        content: '';
+        transform: translate(-50%,-50%);
+        display: inline-block;
+        font-family: "Material Design Icons";
+        text-rendering: auto;
+        opacity: .7;
+        transition: all $transition-duration-base;
 
     }
 }
@@ -137,11 +141,11 @@ select {
 .ui-selectmenu-button-open {
 
     .ui-selectmenu-icon {
-        transform: rotate(180deg);
 
-        &:after {
-            top: 1.6rem;
+        &::after {
+            transform: translate(-50%,-50%) rotate(180deg);
         }
+
     }
 }
 .search-filter {

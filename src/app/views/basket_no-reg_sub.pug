@@ -1,0 +1,17 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    form.form.section-box
+        .container
+            h1.section-box__page-title
+                span Оформление подписки
+
+            include layouts/components/basket/_production_sub
+            include layouts/components/basket/_delivery_no-reg
+
+
+
+    include layouts/components/_main_subscription

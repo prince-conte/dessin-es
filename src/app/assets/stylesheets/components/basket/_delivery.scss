@@ -31,6 +31,15 @@
         margin-bottom: 3rem;
     }
 
+    &__description {
+        @include text-base();
+        margin-bottom: 3rem;
+        text-align: center;
+        opacity: .7;
+    }
+
+
+
     &__forms {
 
     }
@@ -62,6 +71,7 @@
     }
 
     &__check-grid {
+        display: none;
         margin: 3rem 0;
 
         @include mq(md) {
@@ -135,14 +145,17 @@
                 opacity: 1;
 
                 > span {
+
                     opacity: 1;
                 }
 
                 .basket-delivery__check-img {
+                    color: $color-brand;
                     filter: grayscale(0);
                 }
 
                 .basket-delivery__check-img.basket-delivery__check-img--icon {
+                    color: $color-brand;
                     opacity: 1;
                 }
 
@@ -158,10 +171,12 @@
                     }
 
                     .basket-delivery__check-img {
+                        color: $color-brand;
                         filter: grayscale(0);
                     }
 
                     .basket-delivery__check-img.basket-delivery__check-img--icon {
+                        color: $color-brand;
                         opacity: 1;
                     }
                 }
@@ -202,13 +217,14 @@
         &--icon-pay-card {
             @include font(4.4rem);
             color: $color-brand;
-            filter: grayscale(0);
+            filter: grayscale(100%);
             margin-bottom: 0;
         }
 
         &--icon-pay-logo {
             @include size(3.2rem);
             filter: grayscale(0);
+            opacity: 1;
 
             background: {
                 size: contain;
@@ -218,14 +234,20 @@
         }
 
         &--ya {
+            opacity: 1;
+            filter: grayscale(100%);
             background-image: url(../img/ya.jpg);
         }
 
         &--qw {
+            opacity: 1;
+            filter: grayscale(100%);
             background-image: url(../img/qiwi.jpg);
         }
 
         &--sb {
+            opacity: 1;
+            filter: grayscale(100%);
             background-image: url(../img/sb.jpg);
         }
     }
@@ -297,12 +319,16 @@
                 z-index: 2;
 
                 > span {
+                    opacity: .4;
+                }
+
+                > span {
                     display: block;
                 }
             }
 
             &:checked + span {
-                border-color: $color-brand;
+
             }
 
             &:checked + span + span  {
@@ -395,6 +421,12 @@
         margin: 2rem 0 4rem;
         text-align: center;
 
+        @include mq(xs) {
+            br {
+                display: none;
+            }
+        }
+
         span {
             color: #b2b2b2;
         }
@@ -453,6 +485,41 @@
             display: block;
         }
     }
+
+
+    &__delivery-point {
+        @include font(1.5rem,2.2rem);
+        margin: 3rem 0 0;
+        text-align: center;
+    }
+
+    &__delivery-point-title {
+        margin-bottom: .6rem;
+        font-weight: 500;
+    }
+
+    &__delivery-point-button {
+        margin-top: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__delivery-point-hide {
+        display: none;
+    }
+
+    &__delivery-point-open-hide {
+        @include interact(opacity,1);
+        @include interact(color,$color-brand);
+        text-decoration: underline;
+        color: $color-base;
+        opacity: .7;
+    }
+
+    &__delivery-point-shelf-life {
+        margin-top: 1.2rem;
+    }
+
+
 
 }
 

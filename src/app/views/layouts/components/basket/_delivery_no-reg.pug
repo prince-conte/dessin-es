@@ -1,6 +1,8 @@
 section.basket-delivery
     h2.basket-delivery__title 1. Куда доставить заказ
 
+    .basket-delivery__description Доставка осуществляется Почтой России в течение 7-10 дней с момента отправки.<br>Комиксы отправляются в конце каждого месяца вашей подписки.
+
     .basket-delivery__forms
 
         .basket-delivery__forms-grid
@@ -24,7 +26,7 @@ section.basket-delivery
             .basket-delivery__check-label-box
                 label
                     span.basket-delivery__checkbox
-                        input(type='radio' name='delivery' checked)
+                        input(type='radio' name='delivery')
                         span
                             span
                                 i.mdi.mdi-truck.basket-delivery__check-img.basket-delivery__check-img--icon
@@ -50,7 +52,7 @@ section.basket-delivery
             .basket-delivery__check-label-box
                 label
                     span.basket-delivery__checkbox
-                        input(type='radio' name='delivery')
+                        input(type='radio' name='delivery' checked)
                         span
                             span
                                 i.basket-delivery__check-img.basket-delivery__check-img--post
@@ -124,6 +126,14 @@ section.basket-delivery
         .basket-delivery__forms-grid
             .form__input-block.form__input-block--absolute-label.is-error
                 label(data-pflichtfeld) Отчество
+                input(type='text')
+                .error-message Даже у супергероев есть отчество
+
+
+
+        .basket-delivery__forms-grid
+            .form__input-block.form__input-block--absolute-label
+                label(data-pflichtfeld) Эл. почта
                 input(type='text')
                 .error-message Даже у супергероев есть отчество
 

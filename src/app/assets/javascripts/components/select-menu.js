@@ -8,17 +8,12 @@ $(function () {
 
     $selectmenu.selectmenu( {
 
-        // disabled: true,
-
         open: function(event, ui) {
             $(document)
                 .find('.ui-selectmenu-menu.ui-selectmenu-open .ui-menu')
                 .css('width', $(event.currentTarget).width());
-        },
-
-        change: function () {
-            window.location.href = $(this).val();
         }
+
     });
 
 

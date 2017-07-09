@@ -1,0 +1,17 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    form.form.section-box
+        .container
+            h1.section-box__page-title
+                span Корзина
+
+            include layouts/components/basket/_production
+            include layouts/components/basket/_delivery_reg-sam
+
+
+
+    include layouts/components/_main_subscription

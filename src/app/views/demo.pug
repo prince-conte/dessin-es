@@ -7,28 +7,47 @@ block main
 
     .section-box
         .container
-            .wysiwyg.align-center
+            .article
 
-                h1 demo
+                h1.article__title demo
 
-                p
-                    <a href='index.html'>Главная</a>
 
-                p
-                    <a href='2_category.html'>Категория (одежда)</a>
+                .wysiwyg.align-center
 
-                p
-                    <a href='2_category_comics.html'>Категория (комиксы)</a>
+                    p
+                        <a href='index.html'>Главная</a>
 
-                p
-                    <a href='2_sub_category.html'>Подкатегория (одежда)</a>
+                    p
+                        <a href='2_category.html'>Категория (одежда)</a>
 
-                p
-                    <a href='2_sub_category_comics.html'>Покатегория (комиксы)</a>
+                    p
+                        <a href='2_category_comics.html'>Категория (комиксы)</a>
 
-                p
-                    img(src='img/logo-content.jpg' alt='bubble')
+                    p
+                        <a href='2_sub_category.html'>Подкатегория (одежда)</a>
 
+                    p
+                        <a href='2_sub_category_comics.html'>Покатегория (комиксы)</a>
+
+                    p
+                        <a href='content.html'>Статья</a>
+
+                    p
+                        <a href='content-simple.html'>Статья (simple)</a>
+
+                    h5(style='text-align: center') Корзина / Подписка (Все состояния, кроме выбора пункта доставки)
+
+                    p
+                        <a href='basket.html'>Корзина (рег.)</a>
+
+                    p
+                        <a href='basket.html'>Подписка (не рег.)</a>
+
+                    p
+                        <a href='basket.html'>Корзина (рег. самовывоз)</a>
+
+                    p
+                        img(src='img/logo-content.jpg' alt='bubble')
 
     include layouts/components/_main_subscription
 

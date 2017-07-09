@@ -24,7 +24,7 @@ section.basket-delivery
             .basket-delivery__check-label-box
                 label
                     span.basket-delivery__checkbox
-                        input(type='radio' name='delivery' checked)
+                        input(type='radio' name='delivery')
                         span
                             span
                                 i.mdi.mdi-truck.basket-delivery__check-img.basket-delivery__check-img--icon
@@ -37,7 +37,7 @@ section.basket-delivery
             .basket-delivery__check-label-box
                 label
                     span.basket-delivery__checkbox
-                        input(type='radio' name='delivery')
+                        input(type='radio' name='delivery' checked)
                         span
                             span
                                 i.mdi.mdi-store.basket-delivery__check-img.basket-delivery__check-img--icon
@@ -59,48 +59,26 @@ section.basket-delivery
                             span 3-5 дней
 
 
-        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
-            .basket-delivery__forms-col(data-col='1/3')
-                .form__input-block.form__input-block--absolute-label
-                    label(data-pflichtfeld) Индекс
-                    input(type='text')
 
+        .basket-delivery__delivery-point
 
-        .basket-delivery__forms-grid
-            .form__input-block.form__input-block--absolute-label
-                label(data-pflichtfeld) Улица
-                input(type='text')
+            .basket-delivery__delivery-point-title Доставка в г. Москва, ул. Яблочкова, д. 21а
 
-        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
+            div Пн, 9 июня: 0:00–24:00
+            div Вт, 9 июня: 0:00–24:00
+            div Ср, 9 июня: 0:00–24:00
 
-            .basket-delivery__forms-col(data-col='1/3')
-                .form__input-block.form__input-block--absolute-label
-                    label(data-pflichtfeld) Дом
-                    input(type='text')
+            .basket-delivery__delivery-point-hide
+                div Чт, 9 июня: 12:00–22:00
+                div Пт, 9 июня: 12:00–20:00
+                div Сб, 9 июня: 12:00–20:00
 
-            .basket-delivery__forms-col(data-col='1/3')
-                .form__input-block.form__input-block--absolute-label
-                    label(data-pflichtfeld) Строение, корпус
-                    input(type='text')
+            a.basket-delivery__delivery-point-open-hide.js-open-delivery-point-hide(href='#') Еще 4 дня
 
+            .basket-delivery__delivery-point-shelf-life Срок хранения заказа: 9 дней
 
-        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
-
-            .basket-delivery__forms-col(data-col='1/3')
-                .form__input-block.form__input-block--absolute-label
-                    label Подъезд
-                    input(type='text')
-
-            .basket-delivery__forms-col(data-col='1/3')
-                .form__input-block.form__input-block--absolute-label
-                    label(data-pflichtfeld) Квартира
-                    input(type='text')
-
-
-        .basket-delivery__forms-grid
-            .form__input-block.form__input-block--absolute-label
-                label Комментарий к заказу
-                textarea
+            .basket-delivery__delivery-point-button
+                a.button-bubble(href='#') карта точек самовывоза
 
 
 
@@ -167,7 +145,8 @@ section.basket-delivery.basket-delivery--alt
                         input(type='radio' name='pay1')
                         span
                         span
-                            i.basket-delivery__check-img.basket-delivery__check-img--icon-pay-logo.basket-delivery__check-img--ya
+                            span
+                                i.basket-delivery__check-img.basket-delivery__check-img--icon-pay-logo.basket-delivery__check-img--ya
 
                             span Яндекс.Деньги
 
@@ -247,3 +226,4 @@ section.basket-delivery.basket-delivery--alt
             .basket-delivery__information-label-item
                 img(src='img/mailer.png')
                 span Быстрая доставка по России
+
