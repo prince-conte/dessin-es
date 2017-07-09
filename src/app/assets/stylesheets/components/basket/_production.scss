@@ -4,12 +4,12 @@
     border-bottom: 1px solid $color-border;
 
     @include mq(md) {
-        padding: 0 20rem;
+
     }
 
     @include mq(md) {
+        padding: 0 20rem 4rem;
         margin-bottom: 3rem;
-        padding-bottom: 4rem;
     }
 
     &__line-grid {
@@ -125,12 +125,12 @@
         @include mq(xs) {
             order: 1;
             margin-right: 2rem;
+            transform: translateY(.2rem);
         }
 
         @include mq(md) {
             display: block;
             margin-left: 4rem;
-            transform: translateY(.2rem);
         }
     }
 

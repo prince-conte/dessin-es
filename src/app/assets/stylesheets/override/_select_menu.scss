@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+select {
+    .mod_js & {
+        visibility: hidden; // Hiding native select until selectize.js initialization
+    }
+}
+
+// Button
+.ui-selectmenu-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid $color-border;
+    color: $color-base;
+    cursor: pointer;
+    outline: none;
+
+    .ui-selectmenu-text {
+        @include ellipsis;
+        padding: 1.1rem 3.6rem 1.2rem 1rem;
+        font-size: 1.4rem;
+        pointer-events: none;
+        vertical-align: top;
+        user-select: none;
+    }
+
+
+
+    .ui-selectmenu-icon {
+        @include size(3.8rem);
+        position: absolute;
+        top: 0;
+        right: 0;
+        will-change: transform;
+    }
+}
+
+.add-opening-hours__input-block {
+    .ui-selectmenu-button .ui-selectmenu-text {
+        padding: 1rem 3.6rem .8rem 1rem;
+        color: $color-base;
+    }
+
+    .ui-selectmenu-icon.ui-icon.ui-icon-triangle-1-s {
+        height: 3.4rem;
+    }
+}
+
+.catalog-search__inline-select {
+
+    .ui-selectmenu-button {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+.catalog-search__select-grid {
+    .ui-selectmenu-button {
+        display: block;
+        width: 100%;
+    }
+}
+
+.catalog-search__inline-select--sub-select {
+    .ui-selectmenu-button {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+// Menu
+.ui-selectmenu-menu {
+    position: absolute !important;
+    z-index: 1100 !important;
+    display: none;
+    border: 1px solid $color-border;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+
+    .ui-menu {
+
+    }
+
+    .ui-menu-item {
+        transition: $transition-duration-base;
+
+        &:hover {
+            background: $color-border;
+        }
+    }
+
+    .ui-menu-item:last-child .ui-menu-item-wrapper {
+        border-radius: 3px;
+    }
+
+    .ui-menu-item-wrapper {
+        padding: .8rem .8rem;
+        color: $color-base;
+        cursor: pointer;
+        font-size: 1.5rem;
+
+        &.ui-state-active {
+            color: $color-base;
+        }
+    }
+
+    &.ui-selectmenu-open {
+        display: block;
+    }
+}
+
+.ui-selectmenu-icon {
+    @include size(3.8rem);
+    position: absolute;
+    top: 0;
+    right: 0;
+    will-change: transform;
+
+    &::after {
+        @include triangle(6px 6px, transparent $color-base, up-left);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: #fff;
+        content: '';
+
+    }
+}
+
+
+
+.ui-selectmenu-button-open {
+
+    .ui-selectmenu-icon {
+        transform: rotate(180deg);
+
+        &:after {
+            top: 1.6rem;
+        }
+    }
+}
+.search-filter {
+
+
+}
+
+
+
+.ui-datepicker-title {
+    display: flex;
+
+    .ui-selectmenu-button {
+        @include font(1.5rem,1.5rem);
+        margin: 0 1rem;
+    }
+
+    .ui-selectmenu-button .ui-selectmenu-text {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        padding: .5rem 2.2rem .5rem .9rem;
+        font-size: 1.5rem;
+        pointer-events: none;
+        vertical-align: top;
+        user-select: none;
+    }
+
+    .add-opening-hours__input-block {}
+
+
+    .ui-selectmenu-icon {
+        @include size(2.2rem);
+        position: absolute;
+        top: 0;
+        right: 0;
+        will-change: transform;
+    }
+
+    .ui-selectmenu-button {
+        text-align: left !important;
+    }
+
+    .tournament-select .ui-selectmenu-button-open .ui-selectmenu-text {
+        padding-bottom: .5rem;
+    }
+
+}
+
+.ui-menu {
+    background: #fff;
+    z-index: 9999 !important;
+}
+
+.profile-information-edit__input-block {
+    .ui-selectmenu-text {
+        color: $color-base;
+    }
+}
+
+.ui-selectmenu-disabled {
+    background: #f1f1f1;
+}
