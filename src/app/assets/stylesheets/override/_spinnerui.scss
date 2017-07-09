@@ -1,0 +1,54 @@
+
+.basket-production__line-spinner {
+
+    .ui-spinner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > input {
+            @include size(4rem);
+            @include font(1.5rem,1.5rem);
+            order: 2;
+            padding: 1rem;
+            text-align: center;
+            border: solid 1px $color-border;
+
+            @include mq(xs) {
+                margin: 0 1rem;
+            }
+        }
+    }
+
+
+    .ui-button {
+        @include size(2.2rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &::before {
+            @include font(2.6rem);
+            color: $color-base;
+            opacity: .7;
+        }
+    }
+
+    .ui-spinner-up {
+        order: 3;
+        &::before {
+            content: '+'
+        }
+    }
+
+    .ui-spinner-down {
+        order: 1;
+        &::before {
+            content: '—'
+        }
+    }
+
+
+}
+
