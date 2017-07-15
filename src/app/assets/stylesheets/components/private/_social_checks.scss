@@ -1,0 +1,116 @@
+.social-checks {
+    display: flex;
+
+    @include mq(xs) {
+        justify-content: center;
+    }
+
+    &__item {
+        @include size(5rem);
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        background: #cdcdcd;
+        color: #fff;
+        transition: all $transition-duration-base;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        > i {
+           @include font(2.2rem,2.2rem);
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+        .social-checks__item--vk {
+            @include interact(background,#507299);
+        }
+
+        .social-checks__item--facebook {
+            @include interact(background,#3b5997);
+        }
+
+        .social-checks__item--twitter {
+            @include interact(background,#0fb5ee);
+        }
+
+        .social-checks__item--ok {
+            @include interact(background,#f58220);
+        }
+
+    }
+
+    &--vk {
+        @include interact(background,#507299);
+    }
+
+    &--facebook {
+        @include interact(background,#3b5997);
+    }
+
+    &--twitter {
+        @include interact(background,#0fb5ee);
+    }
+
+    &--ok {
+        @include interact(background,#f58220);
+    }
+
+    &__item.is-active {
+
+        .social-checks__close {
+            display: block;
+        }
+    }
+
+    .social-checks__item--vk.is-active {
+        @include interact(background,#507299);
+        background: #507299;
+    }
+
+    .social-checks__item--facebook.is-active {
+        @include interact(background,#3b5997);
+        background: #3b5997;
+    }
+
+    .social-checks__item--twitter.is-active {
+        @include interact(background,#0fb5ee);
+        background: #0fb5ee;
+    }
+
+    .social-checks__item--ok.is-active {
+        @include interact(background,#f58220);
+        background: #f58220;
+    }
+
+
+    &__close {
+        @include size(2.4rem);
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(25%,-25%);
+        border-radius: 50%;
+        background: #f2f2f2;
+        color: #cdcdcd;
+
+        > i {
+            @include font(1rem,1rem);
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+    }
+
+
+}

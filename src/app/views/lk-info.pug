@@ -1,0 +1,194 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    form.section-box.form
+        .container
+            h1.section-box__page-title
+                span личный кабинет
+
+            include layouts/components/private/_sale
+
+            .private-navigate
+                .private-navigate__box
+                    a(href='#') История заказов
+                    a.is-current(href='#') Персональные данные
+
+            section.basket-delivery
+
+                .basket-delivery__forms
+
+
+                    .basket-delivery__tab
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Фамилия
+                                input(type='text')
+
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Имя
+                                input(type='text')
+
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Отчество
+                                input(type='text')
+
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Телефон
+                                input(type='text' value='+7 (920) 660-30-98')
+
+
+                        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
+
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Дата рождения
+                                    select.js-select-menu
+                                        option не указано
+                                        option До перестройки
+                                        option После перестройки
+
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Пол
+                                    select.js-select-menu
+                                        option не указано
+                                        option Муж.
+                                        option Жен.
+
+
+                    .basket-delivery__tab
+
+
+
+                        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Индекс
+                                    input(type='text')
+
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Улица
+                                input(type='text')
+
+                        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
+
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Дом
+                                    input(type='text')
+
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Строение, корпус
+                                    input(type='text')
+
+
+                        .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
+
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Подъезд
+                                    input(type='text')
+
+                            .basket-delivery__forms-col(data-col='1/3')
+                                .form__input-block.form__input-block--absolute-label
+                                    label Квартира
+                                    input(type='text')
+
+                    .basket-delivery__tab
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Род занятий
+                                select.js-select-menu
+                                    option не указано
+                                    option Работа
+                                    option Учеба
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Образование
+                                select.js-select-menu
+                                    option не указано
+                                    option Работа
+                                    option Учеба
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Любимые комиксы
+                                select.js-select-menu
+                                    option не указано
+                                    option Работа
+                                    option Учеба
+
+                    .basket-delivery__tab
+                        .basket-delivery__forms-grid.basket-delivery__forms-grid--social-checks
+                            .form__input-block.form__input-block--absolute-label
+                                label Привязка соцсетей
+
+                                .social-checks
+
+                                    a.social-checks__item.social-checks__item--facebook.is-active(href='#')
+                                        i.mdi.mdi-facebook
+                                        .social-checks__close
+                                            i.mdi.mdi-close
+
+                                    a.social-checks__item.social-checks__item--vk(href='#')
+                                        i.mdi.mdi-vk
+                                        .social-checks__close
+                                            i.mdi.mdi-close
+
+                                    a.social-checks__item.social-checks__item--twitter(href='#')
+                                        i.mdi.mdi-twitter
+                                        .social-checks__close
+                                            i.mdi.mdi-close
+
+                                    a.social-checks__item.social-checks__item--ok(href='#')
+                                        i.mdi.mdi-odnoklassniki
+                                        .social-checks__close
+                                            i.mdi.mdi-close
+                                            
+                        .basket-delivery__forms-grid.basket-delivery__forms-grid--checkbox
+                            .form__input-block.form__input-block--absolute-label
+                                label Рассылка
+                                label.form__label-checkbox
+                                    span.form__checkbox
+                                        input(type='checkbox' checked)
+                                        span
+                                        i.mdi.mdi-check
+                                    span.form__label-checkbox-txt Получать информацию о скидках и распродажах
+
+                    .basket-delivery__tab
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Текущий пароль
+                                input(type='text')
+
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Новый пароль
+                                input(type='text')
+
+
+                        .basket-delivery__forms-grid
+                            .form__input-block.form__input-block--absolute-label
+                                label Поворите пароль
+                                input(type='text')
+
+
+
+    include layouts/components/_main_subscription

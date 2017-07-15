@@ -1,0 +1,41 @@
+.private-navigate {
+    margin: 4.5rem 0 3.5rem;
+
+    @include mq(xs) {
+        overflow-x: auto;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid $color-border;
+
+        > a {
+            @include font(2rem,2rem);
+            @include interact(color, $color-brand);
+            @include interact(opacity, 1);
+            display: inline-block;
+            padding-bottom: 1.5rem;
+            border-bottom: 4px solid transparent;
+            transform: translateY(1px);
+            text-transform: uppercase;
+            color: $color-base;
+            opacity: .7;
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+
+        > .is-current {
+            @include interact(color, $color-brand);
+            color: $color-brand;
+            border-color: $color-brand;
+            opacity: 1;
+        }
+
+    }
+
+
+
+}
