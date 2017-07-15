@@ -1,0 +1,18 @@
+doctype html
+
+html.mod_no-js(lang='RU-ru')
+    include _head
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+
+
+    body.js-page-body
+        include components/_topbar
+        include components/_site_header
+        include components/_site_navigate
+
+        main
+            block main
+
+        include components/_site_footer
+
+        include _scripts

@@ -1,0 +1,278 @@
+extends layouts/application_map
+
+
+block title
+    title U-f
+
+block main
+    form.form.section-box
+        .container
+            h1.section-box__page-title
+                span Корзина
+
+            include layouts/components/basket/_production
+
+            section.basket-delivery.basket-delivery--min
+                h2.basket-delivery__title 1. Куда доставить заказ
+
+                .basket-delivery__forms
+
+                    .basket-delivery__forms-grid
+                        .form__input-block
+                            input(type='text' value='Мурманск')
+                            i.form__icon.mdi.mdi-map-marker
+
+
+                    .basket-delivery__forms-grid.is-mobile
+                        .form__input-block
+                            select.js-select-menu
+                                option Доставка курьером до двери
+                                option Доставка до пункта выдачи
+                                option Доставка Почтой России
+
+
+                    .basket-delivery__check-grid
+
+
+
+                        .basket-delivery__check-label-box
+                            label
+                                span.basket-delivery__checkbox
+                                    input(type='radio' name='delivery')
+                                    span
+                                        span
+                                            i.mdi.mdi-truck.basket-delivery__check-img.basket-delivery__check-img--icon
+                                        span.basket-delivery__check-title Доставка курьером<br>до двери
+                                        span 415 Р
+                                        span 3-5 дней
+
+
+
+                        .basket-delivery__check-label-box
+                            label
+                                span.basket-delivery__checkbox
+                                    input(type='radio' name='delivery' checked)
+                                    span
+                                        span
+                                            i.mdi.mdi-store.basket-delivery__check-img.basket-delivery__check-img--icon
+                                        span.basket-delivery__check-title Доставка до пункта<br>выдачи
+                                        span 200 Р
+                                        span 3-5 дней
+
+
+
+                        .basket-delivery__check-label-box
+                            label
+                                span.basket-delivery__checkbox
+                                    input(type='radio' name='delivery')
+                                    span
+                                        span
+                                            i.basket-delivery__check-img.basket-delivery__check-img--post
+                                        span.basket-delivery__check-title Доставка Почтой <br>России
+                                        span 519 Р
+                                        span 3-5 дней
+
+
+
+                    .basket-map
+                        .basket-map__box
+                            .basket-map__body#mapy
+
+                        .basket-map__list
+                            .basket-map__list-title-block
+                                h5 Точки самовывоза в г. Москва
+                                span Точки самовывоза в г. Москва
+
+                            ul.basket-map__list-body
+
+                                li
+                                    .basket-map__item-title Тимирязевская<br>г. Москва, ул. Яблочкова, д. 21а
+                                    .basket-map__information
+                                        b Бесплатно
+
+                                        span Завтра, 9 июня
+
+                                    .basket-map__information-min
+                                        span PickPoint
+                                        span Срок хранения: 14 дней
+
+
+                                li
+                                    .basket-map__item-title Тимирязевская<br>г. Москва, ул. Яблочкова, д. 21а
+                                    .basket-map__information
+                                        b Бесплатно
+
+                                        span Завтра, 9 июня
+
+                                    .basket-map__information-min
+                                        span PickPoint
+                                        span Срок хранения: 14 дней
+
+
+                                li
+                                    .basket-map__item-title Тимирязевская<br>г. Москва, ул. Яблочкова, д. 21а
+                                    .basket-map__information
+                                        b Бесплатно
+
+                                        span Завтра, 9 июня
+
+                                    .basket-map__information-min
+                                        span PickPoint
+                                        span Срок хранения: 14 дней
+
+
+
+
+
+
+
+            section.basket-delivery
+                h2.basket-delivery__title 2. Кому доставить заказ
+
+                .basket-delivery__forms
+
+                    .basket-delivery__forms-grid
+                        .form__input-block.form__input-block--absolute-label
+                            label(data-pflichtfeld) Фамилия
+                            input(type='text')
+
+
+                    .basket-delivery__forms-grid
+                        .form__input-block.form__input-block--absolute-label
+                            label(data-pflichtfeld) Имя
+                            input(type='text')
+
+
+                    .basket-delivery__forms-grid
+                        .form__input-block.form__input-block--absolute-label.is-error
+                            label(data-pflichtfeld) Отчество
+                            input(type='text')
+                            .error-message Даже у супергероев есть отчество
+
+
+                    .basket-delivery__forms-grid
+                        .form__input-block.form__input-block--absolute-label
+                            label(data-pflichtfeld) Телефон
+                            input(type='text' value='+7 (920) 660-30-98')
+
+
+            section.basket-delivery.basket-delivery--alt
+                h2.basket-delivery__title 3. Выбор способа оплаты
+
+                .basket-delivery__forms
+
+                    .basket-delivery__forms-grid.is-mobile
+                        .form__input-block
+                            select.js-select-menu
+                                option Банковская карта
+                                option Яндекс.Деньги
+                                option QIWI Wallet
+                                option Сбербанк-онлайн
+                                option Наличными при получении
+
+                    .basket-delivery__check-grid
+
+                        .basket-delivery__check-label-pay-box
+                            label
+                                span.basket-delivery__checkbox-pay
+                                    input(type='radio' name='pay1')
+                                    span
+                                    span
+                                        span
+                                            i.mdi.mdi-credit-card.basket-delivery__check-img.basket-delivery__check-img--icon-pay-card
+
+                                        span Банковская карта
+
+                        .basket-delivery__check-label-pay-box
+                            label
+                                span.basket-delivery__checkbox-pay
+                                    input(type='radio' name='pay1')
+                                    span
+                                    span
+                                        span
+                                            i.basket-delivery__check-img.basket-delivery__check-img--icon-pay-logo.basket-delivery__check-img--ya
+
+                                        span Яндекс.Деньги
+
+
+                        .basket-delivery__check-label-pay-box
+                            label
+                                span.basket-delivery__checkbox-pay
+                                    input(type='radio' name='pay1')
+                                    span
+                                    span
+                                        span
+                                            i.basket-delivery__check-img.basket-delivery__check-img--icon-pay-logo.basket-delivery__check-img--qw
+
+                                        span QIWI Wallet
+
+
+                        .basket-delivery__check-label-pay-box
+                            label
+                                span.basket-delivery__checkbox-pay
+                                    input(type='radio' name='pay1')
+                                    span
+                                    span
+                                        span
+                                            i.basket-delivery__check-img.basket-delivery__check-img--icon-pay-logo.basket-delivery__check-img--sb
+
+                                        span Сбербанк-онлайн
+
+
+                        .basket-delivery__check-label-pay-box
+                            label
+                                span.basket-delivery__checkbox-pay
+                                    input(type='radio' name='pay1')
+                                    span
+                                    span
+                                        span
+                                            i.mdi.mdi-database.basket-delivery__check-img.basket-delivery__check-img--icon-pay-card
+
+                                        span Наличными<br>при получении
+
+                    .basket-delivery__total
+
+                        .basket-delivery__total-line
+                            a(href='#') Есть купон на скидку?
+
+                        .basket-delivery__total-line
+                            span Доставка
+                            span Бесплатно
+
+                        .basket-delivery__total-line
+                            span Скидка
+                            span – 50 Р
+
+                        .basket-delivery__total-line.basket-delivery__total-line--totals
+                            span Итого к оплате
+                            span 1600 Р
+
+                        .basket-delivery__total-button
+                            a.button-in-basket.button-in-basket--for-card
+                                span перейти к оплате
+
+                    .basket-delivery__privacy <span> Нажимая на кнопку «Перейти к оплате», вы подтверждаете свое согласие с</span> <a href='#' target='_blank'>Правилами сервиса</a> <span>и</span><br> <a href='#' target='_blank'>Политикой конфиденциальности</a>
+
+
+                    .basket-delivery__information-label
+
+
+                        .basket-delivery__information-label-item
+                            i.mdi.mdi-checkbox-marked-circle-outline
+                            span Официальный магазин BUBBLE
+
+
+                        .basket-delivery__information-label-item
+                            img(src='img/lock.png')
+                            span Надёжная защита данных при оплате онлайн
+
+
+                        .basket-delivery__information-label-item
+                            img(src='img/mailer.png')
+                            span Быстрая доставка по России
+
+
+
+
+
+    include layouts/components/_main_subscription

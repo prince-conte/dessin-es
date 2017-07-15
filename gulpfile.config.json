@@ -16,7 +16,9 @@
         "src/app/assets/vendor/slick-carousel/slick/slick.js",
         "src/app/assets/vendor/slick-carousel/slick/slick.js",
         "src/app/assets/javascripts/vendor/jquery.smoothscroll.js",
-        "src/app/assets/vendor/jquery-ui/jquery-ui.js"
+        "src/app/assets/vendor/jquery-ui/jquery-ui.js",
+        "src/app/assets/javascripts/components/mapy.js"
+
       ],
       "scripts": {
         "build": [

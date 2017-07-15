@@ -9,6 +9,12 @@
         padding: 0 20rem 4rem;
     }
 
+    &--min {
+        @include mq(md) {
+            padding: 0 30rem 4rem;
+        }
+    }
+
     &--alt {
 
         @include mq(md) {

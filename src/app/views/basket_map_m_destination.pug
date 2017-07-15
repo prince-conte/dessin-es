@@ -1,0 +1,44 @@
+extends layouts/application_m_popup
+
+
+block title
+    title U-f
+
+block main
+    .container
+
+        .basket-map
+
+            .basket-map__list
+
+                .basket-map__list-title-block
+                    h5 Точки самовывоза в г. Москва
+                    span Точки самовывоза в г. Москва
+
+                    a.basket-map__destination-title(href='#')
+                        i.mdi.mdi-chevron-left
+                        span Назад к списку
+
+
+                .basket-map__destination
+
+                    .basket-map__item-title Тимирязевская<br>г. Москва, ул. Яблочкова, д. 21а
+                    .basket-map__information
+                        b Бесплатно
+
+                        span Завтра, 9 июня
+
+                    .basket-map__information-min
+                        span PickPoint
+                        span Срок хранения: 14 дней
+
+                    .basket-map__destination-button
+                        a.button-in-basket(href='#') выбрать пункт
+
+                .basket-map__destination
+                    .basket-map__destination-description
+                        h6 Как добраться:
+                        p м. Марьина Роща, первый вагон из центра. Далее, наземным транспортом до остановки "Поликлиника". На светофоре перейти Шереметьевскую улицу и пройти прямо по 11-му проезду Марьиной Рощи 350 метров до Анненского проезда. Возле здание бело-желтого цвета (складской центр) с левой стороны войти на территорию за шлагбаум, далее двигаться прямо. м. Марьина Роща, первый вагон из центра. Далее, наземным транспортом до остановки "Поликлиника".
+
+            a.basket-map__mobile-back-button(href='#')
+                i.mdi.mdi-close

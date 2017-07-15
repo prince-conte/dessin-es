@@ -1,0 +1,227 @@
+.basket-map {
+    margin: 4rem 0;
+
+    @include mq(md) {
+        display: flex;
+        align-items: stretch;
+        margin: 4rem -30rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__box {
+        position: relative;
+        min-height: 42rem;
+
+        @include mq(xs) {
+            height: 42rem;
+            margin: 2rem -2rem 0;
+        }
+
+        @include mq(md) {
+            width: 78rem;
+            min-height: 58rem;
+        }
+    }
+
+    &__body {
+        @include size(100%);
+        top: 0;
+        left: 0;
+    }
+
+
+
+    // list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(md) {
+            width: 40rem;
+            border: 1px solid $color-border;
+        }
+    }
+
+    &__list-title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+
+        @include mq(xs) {
+            padding-top: 0;
+        }
+
+        @include mq(md) {
+            border-bottom: 1px solid $color-border;
+        }
+
+        > h5 {
+            text-transform: uppercase;
+        }
+
+        > span {
+            @include font(1.3rem,2.5rem);
+        }
+
+    }
+
+    &__list-button {
+        @include mq(xs) {
+            margin: 1rem 0;
+
+            > a {
+                display: block;
+            }
+        }
+    }
+
+
+    &__list-body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+
+        > li {
+            flex: 1;
+            padding: 2rem 0;
+            transition: $transition-duration-base;
+
+            @include mq(md) {
+                padding: 2rem;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-border;
+            }
+
+            @include mq(md) {
+
+                &:hover {
+                    box-shadow: 0px 10px 20px 0px rgba(64, 106, 128, 0.2);
+                }
+            }
+        }
+    }
+
+    &__item-title {
+        @include font(1.7rem,2.2rem);
+    }
+
+    &__information {
+        @include font(1.5rem,3rem);
+
+        > b {
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        > span {
+            position: relative;
+            display: inline-block;
+            margin-left: 2rem;
+            color: #5e5e5e;
+
+            &::before {
+                @include size(.4rem);
+                position: absolute;
+                left: -1.2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background: #5e5e5e;
+                content: '';
+
+            }
+        }
+    }
+
+    &__information-min {
+        margin-top: .6rem;
+
+        > span {
+            @include font(1.3rem,2.1rem);
+            display: block;
+            color: #b2b2b2;
+        }
+    }
+
+    &__destination-title {
+        @include font(1.5rem,1.5rem);
+        padding: 1.2rem;
+        color: $color-base;
+        opacity: .7;
+        text-align: center;
+        border-bottom: 1px solid $color-border;
+
+        @include mq(xs) {
+            display: block;
+            width: 100%;
+        }
+
+        > i {
+            display: inline-block;
+            margin-right: .6rem;
+        }
+
+    }
+
+    &__destination {
+        padding: 3rem 0;
+
+        @include mq(xs) {
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+
+        @include mq(md) {
+            padding: 3rem 2rem;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-border;
+        }
+    }
+
+    &__destination-button {
+        margin-top: .8rem;
+    }
+
+    &__destination-description {
+
+        > h6 {
+            @include font(1.5rem,3rem);
+            text-transform: none;
+            font-weight: 500;
+        }
+
+        > p {
+            @include text-base();
+        }
+
+    }
+
+    &__mobile-back-button {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        padding: 1.6rem;
+        color: $color-base;
+        opacity: .7;
+
+        > i {
+            @include font(1.6rem,1.6rem)
+        }
+
+    }
+
+}

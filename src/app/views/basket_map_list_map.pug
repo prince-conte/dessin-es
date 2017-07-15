@@ -1,0 +1,24 @@
+extends layouts/application_m_popup
+
+
+block title
+    title U-f
+
+block main
+    .container
+
+        .basket-map
+
+            .basket-map__list
+                .basket-map__list-title-block
+                    h5 Точки самовывоза в г. Москва
+                    span Всего 236 точек самовывоза
+
+                .basket-map__list-button
+                    a.button-bubble(href='#') показать списком
+
+                .basket-map__box
+                    .basket-map__body#mapy
+
+            a.basket-map__mobile-back-button(href='#')
+                i.mdi.mdi-close
