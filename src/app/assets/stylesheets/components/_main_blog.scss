@@ -43,6 +43,8 @@
         margin: 1.8rem 0;
         text-transform: uppercase;
         font-weight: 500;
+        color: $color-base;
+        opacity: .4;
     }
 
     &__title {
@@ -52,6 +54,7 @@
 
     &__statistics {
         margin-top: auto;
+        color: $color-base;
 
 
         > i {
@@ -64,11 +67,11 @@
                 @include font(1.3rem,1.3rem);
                 display: inline-block;
                 margin-left: .5rem;
-                color: $color-base;
                 font-style: normal;
-                opacity: .4;
                 content: attr(data-quantity);
                 transform: translateY(-.2rem);
+                color: $color-base;
+                opacity: .4;
             }
         }
 

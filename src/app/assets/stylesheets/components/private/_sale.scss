@@ -16,6 +16,11 @@
         display: flex;
         align-items: center;
         overflow: hidden;
+
+        @include mq(xs) {
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
     }
 
     &__item {

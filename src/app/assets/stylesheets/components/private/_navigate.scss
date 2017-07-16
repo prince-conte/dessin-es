@@ -3,6 +3,7 @@
 
     @include mq(xs) {
         overflow-x: auto;
+        margin: 4.5rem 0 2rem;
     }
 
     &__box {
@@ -20,6 +21,7 @@
             transform: translateY(1px);
             text-transform: uppercase;
             white-space: nowrap;
+            font-weight: 500;
             color: $color-base;
             opacity: .7;
 

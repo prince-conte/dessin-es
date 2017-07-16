@@ -1,0 +1,147 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    .section-box.form
+        .container
+            h1.section-box__page-title
+                span личный кабинет
+
+            .private-navigate
+                .private-navigate__box
+                    a.is-current(href='#') История заказов
+                    a(href='#') Персональные данные
+
+
+
+
+            .private-history
+                .private-history__box
+
+
+                    .private-history__line.private-history__line--title
+                        .private-history__line-box
+                            .private-history__line-title
+                                span Заказ
+                            .private-history__line-content
+                                span Дата
+                                span Статус
+                                span Сумма
+
+
+
+
+                    a.private-history__line.js-private-history-line(href='#')
+                        .private-history__line-box
+                            .private-history__line-title
+                                span.private-history__is-desktop Заказ
+                                span 23456789765
+                            .private-history__line-content
+                                span.private-history__is-desktop Дата
+                                span 22.04.17 в 19:47
+                                span.private-history__is-desktop Статус
+                                span Ожидает отправки
+                                span.private-history__is-desktop Сумма
+                                span 5900 Р
+
+                            i.private-history__icon.mdi.mdi-chevron-down
+
+                        .private-history__item
+
+                            .private-history__item-col
+                                span.private-history__item-title Мантикора
+                                span.private-history__item-vendor-code Артикул: 34567890-09
+                                span.private-history__item-vendor-version Печатная версия
+
+                        .private-history__item
+
+                            .private-history__item-col
+                                span.private-history__item-title Футболка «Майор Гром»
+                                span.private-history__item-vendor-code Артикул: 34567890-09
+                                span.private-history__item-vendor-version Мужская, размер S
+
+                        .private-history__item
+
+                            .private-history__item-col
+                                span.private-history__item-title Доставка «Почта России»
+                                span.private-history__item-vendor-version Россия, Краснодар, ул. Маяковского, д. 29, кв. 6
+
+                            .private-history__item-col
+                                span.private-history__item-price 0 Р
+
+
+
+
+
+                    a.private-history__line.js-private-history-line(href='#')
+                        .private-history__line-box
+                            .private-history__line-title
+                                span.private-history__is-desktop Заказ
+                                span 23456789765
+                            .private-history__line-content
+                                span.private-history__is-desktop Дата
+                                span 22.04.17 в 19:47
+                                span.private-history__is-desktop Статус
+                                span Отправлен
+                                span.private-history__is-desktop Сумма
+                                span 5900 Р
+
+                            i.private-history__icon.mdi.mdi-chevron-down
+
+                        .private-history__item
+
+                            .private-history__item-col
+                                span.private-history__item-title Мантикора
+                                span.private-history__item-vendor-code Артикул: 34567890-09
+                                span.private-history__item-vendor-version Печатная версия
+
+                            .private-history__item-col
+                                span.private-history__item-price 300 Р
+
+                        .private-history__item
+
+                            .private-history__item-col
+                                span.private-history__item-title Доставка «Почта России»
+                                span.private-history__item-vendor-version Россия, Краснодар, ул. Маяковского, д. 29, кв. 6
+
+                            .private-history__item-col
+                                span.private-history__item-price 0 Р
+
+
+
+
+
+                    a.private-history__line.js-private-history-line(href='#')
+                        .private-history__line-box
+                            .private-history__line-title
+                                span.private-history__is-desktop Заказ
+                                span 23456789765
+                            .private-history__line-content
+                                span.private-history__is-desktop Дата
+                                span 22.04.17 в 19:47
+                                span.private-history__is-desktop Статус
+                                span Ожидает отправки
+                                span.private-history__is-desktop Сумма
+                                span 1500 Р
+
+                            i.private-history__icon.mdi.mdi-chevron-down
+
+                        .private-history__item
+
+                            .private-history__item-col
+                                span.private-history__item-title Футболка «Майор Гром»
+                                span.private-history__item-vendor-code Артикул: 34567890-09
+                                span.private-history__item-vendor-version Мужская, размер S
+
+                            .private-history__item-col
+                                span.private-history__item-price 1500 Р
+
+
+
+
+
+
+
+    include layouts/components/_main_subscription
