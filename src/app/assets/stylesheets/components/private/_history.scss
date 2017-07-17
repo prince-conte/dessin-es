@@ -110,8 +110,6 @@
         display: none;
         justify-content: space-between;
 
-
-
     }
 
 
@@ -149,7 +147,7 @@
         cursor: default;
 
         .private-history__item {
-            display: block;
+            display: flex;
         }
 
         .private-history__line-content {

@@ -35,7 +35,7 @@
             $container-width: nth($mq-container-width, 2);
 
             @include mq($mq) {
-                max-width: $container-width;
+                width: $container-width;
             }
         }
 
@@ -51,7 +51,7 @@
             }
         }
     } @else {
-        max-width: $container-width;
+        width: $container-width;
 
         padding: {
             right: $container-indent;
