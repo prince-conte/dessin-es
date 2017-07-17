@@ -554,8 +554,9 @@
         text-align: center;
 
 
-        a {
+        a, button {
             display: inline-block;
+            min-width: 25.5rem;
         }
     }
 
