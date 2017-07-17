@@ -72,6 +72,9 @@
 
         > input {
             @include size(100%);
+            position: absolute;
+            top: 0;
+            left: 0;
 
             &.placeholder { color:rgba($color-base, .3); }
             &:-moz-placeholder { color:rgba($color-base, .3); }
