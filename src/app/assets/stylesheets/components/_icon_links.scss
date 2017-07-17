@@ -1,5 +1,6 @@
 .icon-button-big {
     @include size(5rem);
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +10,10 @@
 
     &:hover {
         > i {
-            opacity: .8;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
         }
     }
 
@@ -21,7 +25,7 @@
 
     &--search {
         > i {
-            transform: scaleX(-1) translateY(.2rem);
+
         }
     }
 
