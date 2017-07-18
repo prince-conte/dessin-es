@@ -11,7 +11,7 @@
     outline: none;
 
     > i {
-        @include font(1.6rem);
+        @include font(1.8rem);
         position: absolute;
         display: block;
         left: 50%;
@@ -19,6 +19,23 @@
         transform: translate(-50%,-50%);
         color: #d0d0d1;
     }
+
+    > i.mdi-book-open-variant {
+        @include size(1.4rem);
+        background: {
+            image: url(../img/svg/book.svg);
+            position: 50% 50%;
+            size: contain;
+            repeat: no-repeat;
+        };
+
+        &::before,
+        &::after {
+            display: none;
+        }
+
+    }
+
 }
 
 .tape-tag {

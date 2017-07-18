@@ -108,6 +108,11 @@
         }
     }
 
+    &__old-price {
+        opacity: .7;
+        text-decoration: line-through;
+    }
+
     &__title[data-fade] {
         position: relative;
         overflow: hidden;

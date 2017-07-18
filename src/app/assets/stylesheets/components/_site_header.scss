@@ -104,6 +104,7 @@
                 left: -1rem;
                 transform: translate(-100%,-50%);
                 color: $color-base;
+                opacity: .7;
                 white-space: nowrap;
 
                 @include mq(md) {

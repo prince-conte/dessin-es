@@ -32,8 +32,15 @@
     }
 
     &--search {
-        > i {
 
+        > i {
+            @include size(1.6rem)
+            background: {
+                image: url(../img/loop.svg);
+                position: 50% 50%;
+                size: contain;
+                repeat: no-repeat;
+            };
         }
     }
 
