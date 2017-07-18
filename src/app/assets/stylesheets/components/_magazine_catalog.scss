@@ -108,6 +108,21 @@
         }
     }
 
+    &__title,
+    &__price {
+        @include text-base();
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: $color-base;
+        transition: $transition-duration-base;
+        min-height: 1px;
+
+        &:not(:last-child) {
+            margin-bottom: .8rem;
+        }
+    }
+
     &__old-price {
         opacity: .7;
         text-decoration: line-through;
