@@ -3,7 +3,8 @@ $(function() {
     $('.js-menu-popular-slider').slick({
         arrows: false,
         variableWidth: true,
-        slidesToShow: 5
+        slidesToShow: 5,
+        slidesToScroll: 2
     });
 
 
@@ -22,7 +23,8 @@ $(function() {
     $('.js-menu-popular-slider-stuf').slick({
         arrows: false,
         variableWidth: true,
-        slidesToShow: 4
+        slidesToShow: 4,
+        slidesToScroll: 2
     });
 
 
