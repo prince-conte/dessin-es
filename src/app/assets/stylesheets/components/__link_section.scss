@@ -30,7 +30,7 @@
     }
 
     &__title {
-        @include font(2.5rem,3.2rem);
+        @include font(3rem,5rem);
         text-align: center;
         text-transform: uppercase;
         font-weight: 500;

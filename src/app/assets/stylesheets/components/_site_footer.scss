@@ -73,9 +73,11 @@
             display: block;
             > a {
                 @include interact(color,$color-brand);
+                @include interact(opacity,1);
                 @include font(1.3rem,3rem);
 
                 color: $color-base;
+                opacity: .7;
 
                 @include mq(md) {
                     @include font(1.5rem,3rem);

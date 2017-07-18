@@ -231,11 +231,10 @@
     }
 }
 
-@mixin h5($font-weight: $heading-font-weight-base) {
-    @include font(1.9rem, 2.5rem);
+@mixin h5() {
+    @include font(1.9rem, 2.4rem);
     @include heading;
-    @include text-large;
-    font-weight: 700;
+    font-weight: 500;
 
 }
 

@@ -34,11 +34,13 @@
             margin-bottom: 4rem;
         }
 
-        > span {
+        > span, a  {
             @include font(2.5rem,3rem);
+            @include interact(color, $color-brand);
             display: inline-block;
             padding-bottom: .8rem;
             border-bottom: 1px solid;
+            color: inherit;
 
             @include mq(md) {
                 @include font(3rem,3rem);

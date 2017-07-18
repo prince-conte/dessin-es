@@ -79,6 +79,7 @@
     }
 
     &__input-block {
+        background: #fff;
 
         @include mq(md) {
             display: flex;
@@ -103,6 +104,7 @@
 
         > button {
             @include font(1.3rem,1.5rem);
+            @include interact(opacity,.8);
             display: block;
             width: 100%;
             padding: 1.8rem 1.8rem 1.7rem;
@@ -110,9 +112,16 @@
             text-align: center;
             text-transform: uppercase;
             color: #fff;
+            transition: $transition-duration-base;
 
             @include mq(md) {
-               width: 14rem;
+                width: 14rem;
+
+                &:active,
+                &:focus {
+                    opacity: .8;
+                }
+
             }
         }
     }
