@@ -30,11 +30,23 @@
 
     &__grid {
         @include grid(x, flex-start, stretch);
+        display: flex;
 
         @include mq(md) {
             margin-bottom: -5rem;
         }
     }
+
+    &__slider {
+        outline: none;
+
+        @include mq(xs) {
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+    }
+
 
     &__item {
         @include grid-col;
@@ -73,6 +85,26 @@
             }
         }
     }
+
+    &__item-slide {
+        outline: none;
+
+        @include mq(xs) {
+            margin: 0 1rem;
+        }
+
+        @include mq(md) {
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+
+        .magazine-catalog__item-image {
+            width: auto;
+            height: auto;
+        }
+    }
+
 
     &__item-image {
         position: relative;

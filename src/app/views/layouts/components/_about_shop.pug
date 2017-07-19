@@ -5,12 +5,32 @@
 
         .about-shop__grid
 
-            .about-shop__item
+            form.about-shop__item
                 .about-shop__icon-block
                     img(src='img/svg/icon-1.svg' alt='')
                 .about-shop__description Читайте только лучшие<br>комиксы. Рейтинг<br>на LiveLib
                 .about-shop__rating
-                    include _rating
+                    fieldset.rating
+                        input#star5-1(type='radio', name='rating', value='5')
+                        label.full(for='star5-1', title='Awesome - 5 stars')
+                        input#star4half-1(type='radio', name='rating', value='4 and a half', checked)
+                        label.half(for='star4half-1', title='Pretty good - 4.5 stars')
+                        input#star4-1(type='radio', name='rating', value='4')
+                        label.full(for='star4-1', title='Pretty good - 4 stars')
+                        input#star3half-1(type='radio', name='rating', value='3 and a half')
+                        label.half(for='star3half-1', title='Meh - 3.5 stars')
+                        input#star3-1(type='radio', name='rating', value='3')
+                        label.full(for='star3-1', title='Meh - 3 stars')
+                        input#star2half-1(type='radio', name='rating', value='2 and a half')
+                        label.half(for='star2half-1', title='Kinda bad - 2.5 stars')
+                        input#star2-1(type='radio', name='rating', value='2')
+                        label.full(for='star2-1', title='Kinda bad - 2 stars')
+                        input#star1half-1(type='radio', name='rating', value='1 and a half')
+                        label.half(for='star1half-1', title='Meh - 1.5 stars')
+                        input#star1-1(type='radio', name='rating', value='1')
+                        label.full(for='star1-1', title='Sucks big time - 1 star')
+                        input#starhalf-1(type='radio', name='rating', value='half')
+                        label.half(for='starhalf-1', title='Sucks big time - 0.5 stars')
 
 
             .about-shop__item

@@ -47,6 +47,7 @@
     font-weight: 500;
     color: #fff;
     background: $color-brand;
+    cursor: default;
 
 
     &:hover {
@@ -94,6 +95,7 @@
     font-weight: 500;
     border:  solid 1px;
     color: $color-brand;
+    cursor: default;
 
     &:hover {
         @include mq(md) {

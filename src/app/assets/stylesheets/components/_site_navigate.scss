@@ -170,7 +170,7 @@
                 display: block;
 
                 > a {
-                    @include font(1.5rem,3rem);
+                    @include font(1.3rem,2.8rem);
                     @include interact(color,$color-brand);
                     color: $color-base;
                 }
@@ -281,6 +281,20 @@
         right: -.5rem;
         color: #b3b3b3;
         transform: translate(100%,-50%);
+
+        > i {
+            @include font(3.2rem);
+        }
+    }
+
+    &__menu-popular-slider-prev {
+        @include interact(color,$color-brand);
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: -.5rem;
+        color: #b3b3b3;
+        transform: translate(-100%,-50%);
 
         > i {
             @include font(3.2rem);

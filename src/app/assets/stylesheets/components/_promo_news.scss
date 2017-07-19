@@ -115,8 +115,9 @@
 
         &--promo {
 
-            > h3 {
+            h3 {
                 @include font(3rem, 4.5rem);
+                color: #fff;
                 margin-top: 2rem;
             }
         }
