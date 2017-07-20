@@ -4,7 +4,7 @@ $(function() {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         arrows: false,
         responsive: [
             {
@@ -18,5 +18,18 @@ $(function() {
         ]
     });
 
+
+    $('.js-magazine-catalog-slider-prev').css('top', $('.magazine-catalog__item-image img').outerHeight() / 2);
+    $('.js-magazine-catalog-slider-next').css('top', $('.magazine-catalog__item-image img').outerHeight() / 2);
+
+    $('.js-magazine-catalog-slider-next').on('click',function(){
+        $('.js-new-magazine').slick('slickNext');
+        return false;
+    });
+
+    $('.js-magazine-catalog-slider-prev').on('click',function(){
+        $('.js-new-magazine').slick('slickPrev');
+        return false;
+    });
 
 });

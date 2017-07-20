@@ -1,4 +1,5 @@
 .magazine-catalog {
+    position: relative;
 
     &__category-box {
         margin: 4rem 0;
@@ -18,6 +19,7 @@
     &__link {
         position: relative;
         color: inherit;
+        outline: none;
     }
 
     &__tag-box {
@@ -39,6 +41,7 @@
 
     &__slider {
         outline: none;
+        margin-bottom: -2rem;
 
         @include mq(xs) {
             margin-left: -2rem;
@@ -88,6 +91,7 @@
 
     &__item-slide {
         outline: none;
+        padding-bottom: 2rem;
 
         @include mq(xs) {
             margin: 0 1rem;
@@ -108,12 +112,14 @@
 
     &__item-image {
         position: relative;
+        outline: none;
 
         img {
             margin: 0 auto;
             width: 100%;
             height: auto;
             vertical-align: top;
+            outline: none;
         }
     }
 
@@ -196,5 +202,37 @@
         color: $color-base;
         opacity: .3;
     }
+
+
+    // slick arrows
+
+    &__slider-next {
+        @include interact(color,$color-brand);
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: -.5rem;
+        color: #b3b3b3;
+        transform: translate(100%,-50%);
+
+        > i {
+            @include font(3.2rem);
+        }
+    }
+
+    &__slider-prev {
+        @include interact(color,$color-brand);
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: -.5rem;
+        color: #b3b3b3;
+        transform: translate(-100%,-50%);
+
+        > i {
+            @include font(3.2rem);
+        }
+    }
+
 
 }
