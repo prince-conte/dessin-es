@@ -1,0 +1,279 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            .movies-about
+                .movies-about__trailer.wysiwyg
+                    iframe(width='720', height='405', src='//rutube.ru/play/embed/7265075', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+                .movies-about__title-block
+                    h1 Бульвары разбитых витрин: последнее дело майора
+
+                    .movies-about__share
+
+                        .social-share
+
+                            a.social-share__twitter(href='#')
+                                i.mdi.mdi-twitter
+                                .social-share__title Твитнуть
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__facebook(href='#')
+                                i.mdi.mdi-facebook
+                                .social-share__title Поделиться
+                                .social-share__counter(data-counter='4')
+
+                            a.social-share__vk(href='#')
+                                i.mdi.mdi-vk
+                                .social-share__title Поделиться
+                                .social-share__counter(data-counter='2')
+
+                            a.social-share__google(href='#')
+                                i.mdi.mdi-google-plus
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__ok(href='#')
+                                i.mdi.mdi-odnoklassniki
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__alt(href='#')
+                                i
+
+
+                .private-navigate.private-navigate--movies
+                    .private-navigate__box
+                        a.is-current(href='#') О фильме
+                        a(href='#') За кадром
+                        a(href='#') Саундтрек
+
+
+                .main-blog__grid.main-blog__grid--alt
+
+                    a.main-blog__item(href='#')
+                        .main-blog__image
+                            img(src='http://via.placeholder.com/280x220/b20054/ffffff' alt='title magazine')
+                        .main-blog__time 1 сентября
+                        .main-blog__title Прямой эфир с Антоном Габреляновым
+                        .main-blog__statistics
+                            i.mdi.mdi-eye(data-quantity='314')
+                            i.mdi.mdi-comment(data-quantity='28')
+
+                    a.main-blog__item(href='#')
+                        .main-blog__image
+                            img(src='http://via.placeholder.com/280x220/b20054/ffffff' alt='title magazine')
+                        .main-blog__time 1 сентября
+                        .main-blog__title Премьера экранизации «Майора Грома»
+                        .main-blog__statistics
+                            i.mdi.mdi-eye(data-quantity='314')
+                            i.mdi.mdi-comment(data-quantity='28')
+
+                    a.main-blog__item(href='#')
+                        .main-blog__image
+                            img(src='http://via.placeholder.com/280x220/b20054/ffffff' alt='title magazine')
+                        .main-blog__time 1 сентября
+                        .main-blog__title Bubble посетил Хомякон 17
+                        .main-blog__statistics
+                            i.mdi.mdi-eye(data-quantity='314')
+                            i.mdi.mdi-comment(data-quantity='28')
+
+                    a.main-blog__item(href='#')
+                        .main-blog__image
+                            img(src='http://via.placeholder.com/280x220/b20054/ffffff' alt='title magazine')
+                        .main-blog__time 1 сентября
+                        .main-blog__title По комиксу «Метеора» снимут фильм
+                        .main-blog__statistics
+                            i.mdi.mdi-eye(data-quantity='314')
+                            i.mdi.mdi-comment(data-quantity='28')
+
+
+                .movies-about__description.wysiwyg
+
+                    h3.align-center Знаете ли вы, что
+
+                    ul
+
+                        li Фильм снят по мотивам одноименного российского комикса.
+                        li На роль Игоря Грома также рассматривался актёр Григорий Добрыгин.
+                        li В первоначальной версии примерный хронометраж фильма составлял 7 минут, но в процессе работы сценарий оброс деталями, и в конечном итоге хронометраж вырос до 25 минут.
+                        li Рабочее название фильма — «Майор Гром. Выходной».
+                        li Бинт на правой руке майора Грома не задумка сценаристов, а форс-мажор. Александр Горбатов сильно поранил руку прямо накануне съёмок – врачи наложили ему 5 швов и перебинтовали кисть. В таком состоянии актёру пришлось сниматься весь месяц, при этом большую часть всех трюков Александр выполнял сам.
+                        li Для боевых сцен в банке была разработана специальная технология съёмки в 360 градусов, ранее не применявшаяся ни в России, ни в мире.
+                        li Действие фильма частично разворачивается в отделении Росгарантбанка — вымышленного банка из комикса «Майор Гром».
+                        li Весь интерьер банка был построен с нуля: было продумано всё — от стоек и кабинетов до банкоматов, дизайна фирменных бланков и банковских карт.
+                        li Общая сумма денег, изготовленных для фильма, чтобы заполнить банковское хранилище, превысила 5 миллиардов долларов.
+                        li Статуи Посейдона в заброшенном отеле изначально не было, её изготовили и установили специально для фильма, её высота составила 5 метров.
+                        li Чтобы написать музыку для фильма, композитор Роман Селиверстов и режиссёр Владимир Беседин заперлись в студии в Санкт-Петербурге почти на 2 месяца. Вся работа над саундтреком для 25-минутного фильма заняла 5 месяцев.
+                        li Оркестр был записан на Abbey Road Studio One. В составе были те же музыканты, что работали над саундтреками для фильмов «Властелин колец», «Звёздные войны», «Гарри Поттер» и многими другими.
+                        li Переговоры о покупке прав на песню Ya Mama от Fatboy Slim длились более 3 месяцев. На финальной стадии (прямо перед запуском фильма) появился риск, что сделка сорвётся. Команда решила подстраховаться и записала альтернативный трек для сцены с беспорядочной пальбой Главаря — именно эта версия и пошла в прямой эфир на life.ru в день премьеры. Однако попытки договориться с музыкантом предпринимались до последнего, вплоть до релиза фильма на YouTube, который в ущерб просмотрам пришлось отложить на 2 дня в ожидании финального подтверждения. Ставка сыграла, и в итоге «Майор Гром» был опубликован именно в том виде, в котором его задумывали авторы.
+                        li Открывающая сцена фильма снималась с коптера, в один из дублей он зацепился за провода и упал, разбившись вдребезги. Однако необходимый кадр был снят.
+                        li Для съёмки сцен с автомобильной погоней и аварией перекрывали целый квартал в центре города. Был разработан альтернативный маршрут движения общественного транспорта.
+                        li Для создания масок бандитов были куплены права на использования образов героев мультфильма «Шайбу! Шайбу!».
+                        li Специально к премьере издательство BUBBLE подготовило эксклюзивный комикс «Майор Гром. Шанс», который стал приквелом к фильму.
+                        li Специально для фильма команда переосмыслила внешний вид российской полиции. Был разработан новый, уникальный дизайн служебной формы, машин и снаряжения.
+
+
+    .section-box.section-box--post-promo
+        .container
+            h2.section-box__title
+                a(href='#') комиксы майор гром
+
+            .magazine-catalog
+
+                .magazine-catalog__grid
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+            hr
+
+    .section-box.section-box--post-promo
+        .container
+
+            .clothes-catalog.clothes-catalog--no-buffer
+                h2.section-box__title
+                    a(href='https://burdastyle.ru/') толстовки майор гром
+
+                .clothes-catalog__grid
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+                            a.tape-tag(href='https://www.buro247.ru/' data-hit) хит
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Толстовка худи Майор Гром</a>
+                            .clothes-catalog__price 1950<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='https://burdastyle.ru/') в корзину
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+                            a.tape-tag(href='#' data-new) новинка
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Свитшот Майор Гром</a>
+                            .clothes-catalog__price 1750<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+                            a.tape-tag(href='#' data-new) новинка
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Футболка с вышивкой</a>
+                            .clothes-catalog__price 900<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Стикерпак Майор Гром #1</a>
+                            .clothes-catalog__price 490<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+    include layouts/components/_main_subscription

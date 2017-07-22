@@ -15,6 +15,12 @@
         margin: 4.5rem 0;
         padding-bottom: 5rem ;
     }
+
+    &--no-buffer {
+        border: 0;
+    }
+
+
     &__link {
         color: inherit;
     }

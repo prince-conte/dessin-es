@@ -1,0 +1,94 @@
+.movies-catalog {
+
+    &__link {
+        color: inherit;
+    }
+
+    &__grid {
+        margin-top: 4rem;
+        margin-bottom: -3.5;
+
+        @include mq(md) {
+            @include grid(x, flex-start, stretch);
+            margin-top: 5rem;
+            margin-right: -4.5;
+        }
+    }
+
+    &__item {
+        margin-bottom: 3.5rem;
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1/2);
+            margin-bottom: 4.5rem;
+        }
+    }
+
+    &__image {
+        img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        vertical-align: top;
+        }
+    }
+
+    &__title {
+        @include h3();
+        margin: 1rem 0 .8rem;
+        color: $color-base;
+        text-align: left;
+
+        @include mq(md) {
+            margin: 2rem 0 1.6rem;
+        }
+    }
+
+    &__description {
+        @include text-base();
+        color: $color-base;
+        opacity: .7;
+    }
+
+
+    &__statistics {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        color: $color-base;
+
+
+        > i {
+            @include font(1.6rem,1.6rem);
+            display: inline-block;
+            margin-right: 1rem;
+            color: #d4d6d7;
+
+            &::after {
+                @include font(1.3rem,1.3rem);
+                display: inline-block;
+                margin-left: .5rem;
+                font-style: normal;
+                content: attr(data-quantity);
+                transform: translateY(-.2rem);
+                color: $color-base;
+                opacity: .4;
+            }
+        }
+
+        > span {
+            @include font(1.3rem,1.3rem);
+            transform: translateY(-1px);
+            display: inline-block;
+            opacity: .4;
+
+            &:not(:first-child) {
+                margin-left: 2rem;
+            }
+
+            margin-left: 2rem;
+        }
+
+    }
+}

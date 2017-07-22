@@ -1,0 +1,50 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            h1.section-box__page-title
+                span фильмы
+
+            .movies-catalog
+
+                .movies-catalog__grid
+
+                    article.movies-catalog__item
+                        .movies-catalog__image
+                            a.movies-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/580x360/b20054/ffffff' alt='title magazine')
+                        a.movies-catalog__link(href='#')
+                            h2.movies-catalog__title Майор Гром
+
+                        p.movies-catalog__desctiption Игорь Гром — опытный следователь из Санкт-Петербурга, известный своим пробивным характером и непримиримой позицией по отношению...
+                        .movies-catalog__statistics
+                            i.mdi.mdi-calendar-today(data-quantity='2017')
+                            span КП: 6,138
+
+                    article.movies-catalog__item
+                        .movies-catalog__image
+                            a.movies-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/580x360/b20054/ffffff' alt='title magazine')
+                        a.movies-catalog__link(href='#')
+                            h2.movies-catalog__title Метеора
+
+                        p.movies-catalog__desctiption Игорь Гром — опытный следователь из Санкт-Петербурга, известный своим пробивным характером и непримиримой позицией по отношению...
+                        .movies-catalog__statistics
+                            i.mdi.mdi-calendar-today(data-quantity='2017')
+                            span КП: 6,138
+
+                    article.movies-catalog__item
+                        .movies-catalog__image
+                            a.movies-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/580x360/b20054/ffffff' alt='title magazine')
+                        a.movies-catalog__link(href='#')
+                            h2.movies-catalog__title Бесобой
+
+                        p.movies-catalog__desctiption Игорь Гром — опытный следователь из Санкт-Петербурга, известный своим пробивным характером и непримиримой позицией по отношению...
+                        .movies-catalog__statistics
+                            i.mdi.mdi-calendar-today(data-quantity='2017')
+                            span КП: 6,138

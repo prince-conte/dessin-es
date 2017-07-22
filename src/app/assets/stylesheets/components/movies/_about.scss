@@ -1,0 +1,134 @@
+.movies-about {
+
+    @include mq(md) {
+        margin: 0 10rem;
+    }
+
+    &__trailer-box {
+
+    }
+
+    &__title-block {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 5rem;
+        }
+
+        > h1 {
+            @include h2();
+
+            @include mq(xs) {
+                display: block;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            @include mq(md) {
+                width: 50%;
+                text-align: left;
+            }
+        }
+    }
+
+    &__share {
+        margin-top: 1rem;
+    }
+
+    &__description {
+        @include font(1.7rem,2.5rem);
+        margin: 4.5rem 0 6.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include mq(md) {
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+
+        > dl {
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+
+            @include mq(md) {
+                display: flex;
+                justify-content: flex-end;
+                margin-left: 13rem;
+            }
+
+            > dt {
+                @include font(1.5rem,2.2rem);
+                opacity: .7;
+
+                @include mq(xs) {
+                    display: block;
+                }
+
+                @include mq(md) {
+                    margin-right: 2rem;
+                }
+            }
+
+            > dd {
+                @include font(1.5rem,2.2rem);
+                font-weight: 500;
+
+                @include mq(md) {
+                    width: 38rem;
+                }
+
+                > a.is-all {
+                    @include interact(color, $color-brand);
+                    @include interact(opacity, .7);
+                    display: inline-block;
+                    color: #5e5e5e;
+                    text-decoration: underline;
+
+                    &::after {
+                        content: 'посмотреть всех';
+                    }
+                }
+
+
+                > .is-all.is-active {
+                    display: none;
+
+                }
+            }
+
+        }
+
+    }
+
+    &__next-link {
+        @include interact(color, $color-brand);
+        display: inline-block;
+        margin-right: .4rem;
+        color: $color-base;
+
+        &:not(:last-child) {
+            &::after {
+                content: ',';
+            }
+        }
+    }
+
+    &__hidden-content {
+        display: none;
+    }
+
+    &__hidden-content.is-active {
+        display: inline;
+    }
+
+
+}

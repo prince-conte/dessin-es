@@ -2,8 +2,15 @@
     margin: 4.5rem 0 3.5rem;
 
     @include mq(xs) {
-        overflow-x: auto;
-        margin: 4.5rem 0 2rem;
+
+        margin: 4.5rem -2rem 2rem;
+    }
+
+    &--movies {
+        @include mq(md) {
+            margin-left: -10rem;
+            margin-right: -10rem;
+        }
     }
 
     &__box {
@@ -11,11 +18,17 @@
         justify-content: center;
         border-bottom: 1px solid $color-border;
 
+        @include mq(xs) {
+            overflow-x: auto;
+            width: auto;
+            padding: 0 3rem;
+        }
+
         > a {
             @include font(2rem,2rem);
             @include interact(color, $color-brand);
             @include interact(opacity, 1);
-            display: inline-block;
+            display: block;
             padding-bottom: 1.5rem;
             border-bottom: 4px solid transparent;
             transform: translateY(1px);
@@ -24,6 +37,11 @@
             font-weight: 500;
             color: $color-base;
             opacity: .7;
+
+            @include mq(xs) {
+                flex: 1;
+                width: 100%;
+            }
 
             &:not(:last-child) {
                 margin-right: 3rem;

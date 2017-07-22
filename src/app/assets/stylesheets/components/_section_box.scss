@@ -117,4 +117,14 @@
         border-bottom: 1px solid $color-border;
     }
 
+
+    hr {
+        margin-top: 5rem;
+        width: 100%;
+        height: 1px;
+        background: $color-border;
+        border: 0;
+        box-shadow: none;
+    }
+
 }

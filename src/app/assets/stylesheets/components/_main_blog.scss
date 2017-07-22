@@ -9,6 +9,19 @@
         @include mq(md) {
             @include grid(x, flex-start, stretch);
         }
+
+        &--alt {
+            padding-bottom: 5rem;
+            border-bottom: 1px solid $color-border;
+
+            @include mq(md) {
+                margin-left: -10rem;
+                margin-right: -10rem;
+            }
+
+        }
+
+
     }
 
     &__item {

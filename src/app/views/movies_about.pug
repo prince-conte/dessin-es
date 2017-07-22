@@ -1,0 +1,273 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            .movies-about
+                .movies-about__trailer.wysiwyg
+                    iframe(width='720', height='405', src='//rutube.ru/play/embed/7265075', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+
+                .movies-about__title-block
+                    h1 Бульвары разбитых витрин: последнее дело майора
+
+                    .movies-about__share
+
+                        .social-share
+
+                            a.social-share__twitter(href='#')
+                                i.mdi.mdi-twitter
+                                .social-share__title Твитнуть
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__facebook(href='#')
+                                i.mdi.mdi-facebook
+                                .social-share__title Поделиться
+                                .social-share__counter(data-counter='4')
+
+                            a.social-share__vk(href='#')
+                                i.mdi.mdi-vk
+                                .social-share__title Поделиться
+                                .social-share__counter(data-counter='2')
+
+                            a.social-share__google(href='#')
+                                i.mdi.mdi-google-plus
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__ok(href='#')
+                                i.mdi.mdi-odnoklassniki
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__alt(href='#')
+                                i
+
+
+                .private-navigate.private-navigate--movies
+                    .private-navigate__box
+                        a.is-current(href='#') О фильме
+                        a(href='#') За кадром
+                        a(href='#') Саундтрек
+
+                .movies-about__description
+                    p Игорь Гром — опытный следователь из Санкт-Петербурга, известный своим пробивным характером и непримиримой позицией по отношению к преступникам всех мастей. Неимоверная сила, аналитический склад ума и неподкупность — всё это делает майора Грома идеальным полицейским. Работая не покладая рук, он всегда доводит начатое до конца и никогда не пасует перед трудностями, стоящими на пути.
+                .movies-about__description
+
+                    dl
+                        dt Режиссер:
+                        dd
+                            a.movies-about__next-link(href='#') Владимир Беседин
+
+                    dl
+                        dt Сценарий:
+                        dd
+                            a.movies-about__next-link(href='#') Артем Габрелянов,
+                            a.movies-about__next-link(href='#') Владимир Беседин
+
+                    dl
+                        dt В главных ролях:
+                        dd
+                            a.movies-about__next-link(href='#') Артем Габрелянов
+                            a.movies-about__next-link(href='#') Александр Горбатов
+                            a.movies-about__next-link(href='#') Иван Фоминов
+                            a.movies-about__next-link(href='#') Антон Кузнецов
+                            a.movies-about__next-link(href='#') Ойсель Море
+                            a.movies-about__next-link(href='#') Деспайгне
+                            a.movies-about__next-link(href='#') Анатолий Кощеев
+                            a.movies-about__next-link(href='#') Виталий Альшанский
+                            a.movies-about__next-link(href='#') Екатерина Куликова
+
+                            a.is-all.js-link-open(href='#')
+
+                            .movies-about__hidden-content
+
+                                a.movies-about__next-link(href='#') Антон Кузнецов
+                                a.movies-about__next-link(href='#') Ойсель Море
+                                a.movies-about__next-link(href='#') Деспайгне
+                                a.movies-about__next-link(href='#') Анатолий Кощеев
+                                a.movies-about__next-link(href='#') Виталий Альшанский
+                                a.movies-about__next-link(href='#') Екатерина Куликова
+
+                    dl
+                        dt Год:
+                        dd
+                            span.movies-about__next-link 2017
+
+                    dl
+                        dt Продолжительность:
+                        dd
+                            span.movies-about__next-link 25 мин.
+
+                    dl
+                        dt Рейтинг КиноПоиск:
+                        dd
+                            a.movies-about__next-link(href='#') 6.794
+
+    .section-box
+        .container
+            img(src='img/dis.png' alt='здесь будет дискус' style='display: block; margin: 0 auto')
+            hr
+
+
+    .section-box.section-box--post-promo
+        .container
+            h2.section-box__title
+                a(href='#') комиксы майор гром
+
+            .magazine-catalog
+
+                .magazine-catalog__grid
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+            hr
+
+    .section-box.section-box--post-promo
+        .container
+
+            .clothes-catalog.clothes-catalog--no-buffer
+                h2.section-box__title
+                    a(href='https://burdastyle.ru/') толстовки майор гром
+
+                .clothes-catalog__grid
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+                            a.tape-tag(href='https://www.buro247.ru/' data-hit) хит
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Толстовка худи Майор Гром</a>
+                            .clothes-catalog__price 1950<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='https://burdastyle.ru/') в корзину
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+                            a.tape-tag(href='#' data-new) новинка
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Свитшот Майор Гром</a>
+                            .clothes-catalog__price 1750<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+                            a.tape-tag(href='#' data-new) новинка
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Футболка с вышивкой</a>
+                            .clothes-catalog__price 900<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+
+                    article.clothes-catalog__item
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/280x280/8072b5/ffffff' alt='title magazine')
+
+                        .clothes-catalog__item-information
+
+                            h3.clothes-catalog__title <a href='#' class='clothes-catalog__link'>Стикерпак Майор Гром #1</a>
+                            .clothes-catalog__price 490<span>&#8381;</span>
+                            .clothes-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+    include layouts/components/_main_subscription
