@@ -12,7 +12,7 @@ $(function() {
                 breakpoint: 768,
                 settings: {
                     arrows: false,
-                    centerMode: true,
+                    centerMode: false,
                     centerPadding: '65px',
                     slidesToShow: 1
                 }
