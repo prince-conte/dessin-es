@@ -212,3 +212,9 @@ select {
 .ui-selectmenu-disabled {
     background: #f1f1f1;
 }
+
+
+.ui-state-placeholder {
+    color: $color-base;
+    opacity: .3;
+}
