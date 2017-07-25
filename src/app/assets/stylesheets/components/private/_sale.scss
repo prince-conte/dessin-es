@@ -75,7 +75,7 @@
 
     &__item.is-current {
 
-        .private-sale__item-content {
+        .private-sale__item-content-title, .private-sale__item-content-value {
             opacity: 1;
         }
     }
@@ -128,7 +128,6 @@
     &__item-content {
         margin-top: 1.8rem;
         color: $color-base;
-        opacity: .7;
 
         > span {
             display: block;
@@ -139,15 +138,18 @@
 
     &__item-content-title {
         @include font(1.5rem,2rem);
+        opacity: .5;
         font-weight: 500;
     }
 
     &__item-content-value {
         @include font(1.9rem,2.5rem);
+        opacity: .5;
     }
 
     &__item-content-price {
         @include font(1.5rem,2.5rem);
+        opacity: .5;
     }
 
 

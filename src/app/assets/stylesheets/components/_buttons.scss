@@ -62,7 +62,7 @@
     &:active {
 
         @include mq(md) {
-            box-shadow: none;
+            transform: translateY(2px);
         }
     }
 
@@ -109,6 +109,7 @@
 
         @include mq(md) {
             box-shadow: none;
+            transform: translateY(2px);
         }
     }
 

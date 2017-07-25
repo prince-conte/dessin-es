@@ -21,13 +21,17 @@ $(function() {
     });
 
 
+    // On before slide change
+    $('.js-filter-slider').on('init', function(event, slick, currentSlide, nextSlide){
+        $('.slick-center').addClass('is-active');
+    });
+
+
     $('.js-filter-slider a').on('click',function(){
 
-        var cuttentTo =  $(this).data('slick-index');
+        $('.filter-slider__item').removeClass('is-active');
 
-        $('.js-filter-slider').slick('slickGoTo',cuttentTo);
-
-        return false;
+        $(this).addClass('is-active');
 
     });
 

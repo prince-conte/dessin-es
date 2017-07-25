@@ -31,6 +31,17 @@
         }
     }
 
+    &__form-sub {
+        @include text-large();
+        margin-bottom: 3rem;
+        text-align: center;
+
+        @include mq(md) {
+            margin-left: -30rem;
+            margin-right: -30rem;
+        }
+    }
+
     &__title {
         @include h3();
         text-align: center;
@@ -467,6 +478,7 @@
 
 
     &__information-label {
+        position: relative;
         padding: 2.5rem 2rem;
         background: #f2f2f2;
 
@@ -476,6 +488,18 @@
             padding: 2rem;
             margin: 0 -10rem 0;
         }
+
+
+        &::before {
+            @include size(3rem);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+            background: #f2f2f2;
+            content: '';
+        }
+
     }
 
     &__information-label-item {

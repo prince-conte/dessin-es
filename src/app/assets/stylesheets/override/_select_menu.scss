@@ -214,7 +214,7 @@ select {
 }
 
 
-.ui-state-placeholder {
+.ui-state-placeholder, .ui-state-disabled {
     color: $color-base;
     opacity: .3;
 }

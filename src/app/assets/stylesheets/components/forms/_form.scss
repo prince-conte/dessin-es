@@ -57,6 +57,39 @@
 
             }
         }
+
+        &--absolute-label-top {
+
+            > label {
+                display: block;
+                white-space: nowrap;
+
+                @include mq(xs) {
+                    margin-bottom: .8rem;
+                }
+
+                @include mq(md) {
+                    @include font(1.5rem,1.5rem);
+                    position: absolute;
+                    left: -3rem;
+                    top: 0;
+                    transform: translateX(-100%);
+                }
+
+                &::after {
+                    display: inline-block;
+                    margin-left: .5rem;
+                    color: #ff6464;
+                }
+
+                &[data-pflichtfeld] {
+                    &::after {
+                        content: '*';
+                    }
+                }
+
+            }
+        }
     }
 
     &__input-block.is-error {

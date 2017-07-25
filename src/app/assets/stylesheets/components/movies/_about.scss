@@ -4,8 +4,11 @@
         margin: 0 10rem;
     }
 
-    &__trailer-box {
-
+    &__trailer {
+        .wysiwyg__video {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
     }
 
     &__title-block {
