@@ -39,13 +39,6 @@
             font-weight: 500;
             text-transform: uppercase;
             white-space: nowrap;
-
-            > img {
-                width: auto;
-                height: auto;
-                vertical-align: top;
-                transform: translateY(-.1rem);
-            }
         }
 
 
@@ -298,6 +291,17 @@
 
         > i {
             @include font(3.2rem);
+        }
+    }
+
+
+    &__club-img {
+
+        > img {
+            width: 8.2rem;
+            height: auto;
+            vertical-align: top;
+            transform: translateY(-.1rem);
         }
     }
 
