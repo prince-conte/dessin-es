@@ -4,10 +4,6 @@
     border-bottom: 1px solid $color-border;
 
     @include mq(md) {
-
-    }
-
-    @include mq(md) {
         padding: 0 20rem 4rem;
         margin-bottom: 3rem;
     }
@@ -67,7 +63,6 @@
     &__line-label-description {
         color: $color-base;
 
-
         @include mq(xs) {
             order: 1;
             margin-bottom: 1.4rem;
@@ -112,7 +107,6 @@
         @include mq(md) {
             width: 50%;
         }
-
     }
 
     &__delete {
@@ -185,10 +179,5 @@
         }
 
     }
-
-
-
-
-
 }
 
