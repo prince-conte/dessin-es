@@ -134,4 +134,106 @@
     }
 
 
+    // sound list
+
+    &__sound-list {
+        margin: 3.6rem 0;
+        counter-reset: li;
+
+        @include mq(md) {
+            margin: 5rem 10rem;
+        }
+    }
+
+    &__sound-line {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 4rem;
+
+        @include mq(md) {
+            padding-left: 6rem;
+        }
+
+        span, b {
+            @include font(1.5rem,3.3rem);
+        }
+
+        span {
+            color: $color-base-lighter;
+        }
+
+
+        &::before {
+            @include font(1.5rem,3.3rem);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            width: 2.2rem;
+            text-align: right;
+            content: counter(li) '. ';
+            counter-increment: li;
+            color: $color-base-lighter;
+
+            @include mq(md) {
+                left: 2rem;
+            }
+
+
+        }
+
+        &[data-flash='true'] {
+            .movies-about__track-icon {
+                visibility: visible;
+            }
+        }
+
+
+    }
+
+    &__sound-link {
+        color: inherit;
+    }
+
+    &__track-time {
+        margin-left: auto;
+
+        @include mq(xs) {
+            width: 4rem;
+            text-align: right;
+        }
+    }
+
+    &__track-name {
+        color: #5e5e5e;
+
+        > b {
+            font-weight: 500;
+            color: $color-base;
+        }
+
+        @include mq(xs) {
+            @include ellipsis();
+            width: calc(100% - 4rem);
+        }
+
+    }
+
+    &__track-icon {
+        @include font(1.8rem,2rem);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        color: $color-base-lighter;
+        visibility: hidden;
+
+        @include mq(xs) {
+            display: none;
+        }
+    }
+
+
 }
