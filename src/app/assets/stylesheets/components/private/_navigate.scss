@@ -6,6 +6,20 @@
         overflow-x: auto;
     }
 
+    &--universe {
+        margin: 4.5rem 0 2rem;
+
+        + .filter-slider {
+            margin-top: 2rem;
+
+            @include mq(md) {
+                margin-top: 2rem;
+            }
+
+        }
+
+    }
+
     &--movies {
         @include mq(md) {
             margin-left: -10rem;

@@ -111,4 +111,21 @@
         margin-top: auto;
     }
 
+
+    // for universe
+
+    &__universe-title {
+        @include text-large();
+        text-align: center;
+        color: $color-base;
+    }
+
+    &__universe-description {
+        @include font(1.5rem,2.5rem);
+        margin-top: .4rem;
+        text-align: center;
+        color: $color-base-lighter;
+    }
+
+
 }
