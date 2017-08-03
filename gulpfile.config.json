@@ -39,6 +39,7 @@
           "src/app/assets/javascripts/components/history-drop.js",
           "src/app/assets/javascripts/components/new-magazine-slider.js",
           "src/app/assets/javascripts/components/open-links.js",
+          "src/app/assets/javascripts/components/shops_hide_txt.js",
           "src/app/assets/javascripts/components/delivery-point-hide.js"
 
         ],
