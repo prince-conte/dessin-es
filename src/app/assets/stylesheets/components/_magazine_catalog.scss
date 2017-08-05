@@ -37,6 +37,10 @@
         @include mq(md) {
             margin-bottom: -5rem;
         }
+
+        &--center {
+            @include grid(x, center, stretch);
+        }
     }
 
     &__slider {
@@ -60,6 +64,14 @@
             @include grid-col;
             @include col-size(1/6);
             margin-bottom: 5rem;
+        }
+
+        &--1-4 {
+            @include mq(md) {
+                @include grid-col;
+                @include col-size(1/4);
+                margin-bottom: 5rem;
+            }
         }
 
         &--col-8 {
