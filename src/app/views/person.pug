@@ -1,0 +1,335 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box.section-box--over
+        .container
+
+            .person
+                .person__image-box
+                    img.is-desktop(src='http://via.placeholder.com/1180x280/b20054/ffffff' alt='person name')
+                    img.is-mobile(src='http://via.placeholder.com/320x140/b20054/ffffff' alt='person name')
+                    .person__avatar
+                        img(src='http://via.placeholder.com/280x280/0e85c1/ffffff' alt='person name')
+
+                .person__information
+                    h1 Василиса Премудрая
+
+                    .person__description Василиса Премудрая — возлюбленная одного из Иванов. Узница Кощея в Чёрной башне в Эдеме. Имеет птичью форму, которая называет себя Сютой.
+
+                    .person__share
+
+                        .social-share.social-share--center
+
+                            a.social-share__twitter(href='#')
+                                i.mdi.mdi-twitter
+                                .social-share__title Твитнуть
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__facebook(href='#')
+                                i.mdi.mdi-facebook
+                                .social-share__title Поделиться
+                                .social-share__counter(data-counter='4')
+
+                            a.social-share__vk(href='#')
+                                i.mdi.mdi-vk
+                                .social-share__title Поделиться
+                                .social-share__counter(data-counter='2')
+
+                            a.social-share__google(href='#')
+                                i.mdi.mdi-google-plus
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__ok(href='#')
+                                i.mdi.mdi-odnoklassniki
+                                .social-share__counter(data-counter='0')
+
+                            a.social-share__alt(href='#')
+                                i
+
+                    .description-information.description-information--no-margin
+                        p Игорь Гром — опытный следователь из Санкт-Петербурга, известный своим пробивным характером и непримиримой позицией по отношению к преступникам всех мастей. Неимоверная сила, аналитический склад ума и неподкупность — всё это делает майора Грома идеальным полицейским. Работая не покладая рук, он всегда доводит начатое до конца и никогда не пасует перед трудностями, стоящими на пути.
+
+                    .description-information.description-information--no-margin
+
+                        dl
+                            dt Режиссер:
+                            dd
+                                a.movies-about__next-link(href='#') Владимир Беседин
+
+                        dl
+                            dt Сценарий:
+                            dd
+                                a.movies-about__next-link(href='#') Артем Габрелянов,
+                                a.movies-about__next-link(href='#') Владимир Беседин
+
+                        dl
+                            dt В главных ролях:
+                            dd
+                                a.movies-about__next-link(href='#') Артем Габрелянов
+                                a.movies-about__next-link(href='#') Александр Горбатов
+                                a.movies-about__next-link(href='#') Иван Фоминов
+                                a.movies-about__next-link(href='#') Антон Кузнецов
+                                a.movies-about__next-link(href='#') Ойсель Море
+                                a.movies-about__next-link(href='#') Деспайгне
+                                a.movies-about__next-link(href='#') Анатолий Кощеев
+                                a.movies-about__next-link(href='#') Виталий Альшанский
+                                a.movies-about__next-link(href='#') Екатерина Куликова
+
+                                a.is-all.js-link-open(href='#')
+
+                                .movies-about__hidden-content
+
+                                    a.movies-about__next-link(href='#') Антон Кузнецов
+                                    a.movies-about__next-link(href='#') Ойсель Море
+                                    a.movies-about__next-link(href='#') Деспайгне
+                                    a.movies-about__next-link(href='#') Анатолий Кощеев
+                                    a.movies-about__next-link(href='#') Виталий Альшанский
+                                    a.movies-about__next-link(href='#') Екатерина Куликова
+
+                        dl
+                            dt Год:
+                            dd
+                                span.movies-about__next-link 2017
+
+                        dl
+                            dt Продолжительность:
+                            dd
+                                span.movies-about__next-link 25 мин.
+
+                        dl
+                            dt Рейтинг КиноПоиск:
+                            dd
+                                a.movies-about__next-link(href='#') 6.794
+
+                    .description-information.description-information--no-margin.wysiwyg
+                        h2 История
+                        h5 «Высокое напряжение»
+
+                        p Серый волк попытался уговорить королевича Иву отправиться на битву с Кощеем. Он заявил, что тот похитил Василису столетия назад и удерживает её в Чёрной башне. Но это было так давно, что королевич уверовал, что девушки никогда и не было. Ива же сказал, что сперва сразит тривурма Горнача, а уж потом отправится за Василисой.
+
+                        p После поражения королевича, Волк объяснил ему, что нить судьбы — это пряжа Василисы. Позже Ива сбежал с поля боя и с помощью нити и иглы попал в Эдем. Там он пал от руки Кощея. Василиса наблюдала за его смертью с помощью одной из птиц.
+
+                        h5 «Калинов мост»
+
+                        p Владыка рассказал Иноку, что Кощей похитил его невесту и заточил в Чёрной башне. Иоанн отправился за Василисой, но погиб. После смерти он стал слугой Бабы Яги, но не перестал желать спасти возлюбленную. Тогда стражница мира мёртвых посоветовала ему выпить воды забвения. Что он и сделал.
+
+                        p Василиса перенесла своё сознание в птицу Сюту и помогла Андрею и Ксюше покинуть Навь. После чего согласилась сопроводить их в мир живой воды, если Радов пообещает её освободить.
+
+                        h5 «Сердце монстра»
+
+                        p Птица уселась на левое плечо Ксюши. Когда начался дождь, она сотворила над девушкой небольшой прозрачный защитный экран. Вскоре Ксюша стала исчезать и Сюта пояснила, что, чтобы воскреснуть, ей требуется три глотка живой воды. Иначе с каждым рассветом невеста Андрея будет таять, пока не испарится совсем.
+
+                        p Когда парочка зашла в болото, Сюта создала для Радова шар света для освещения пути, а сама воспарила ввысь, чтобы наблюдать за ними сверху. Вскоре она вернулась и сообщила, что в сторону пары направляется болотник. Птица взяла шар в лапы и помогла Ксюше выбраться из трясины, пока Инок разделывался с чудовищем.
+
+                        blockquote Это всё софистика, и меня она не касается. Мне нужен тот, <br> кто спасёт моего любимого.
+
+                        p Позже Сюта тайно спряталась в сумке девушки, чтобы не привлекать внимания. И вылезла только тогда, когда та решила помыться в доме Бивня. Затем на кухне она рассказала Ксюше, что Андрей нужен ей, чтобы спасти её любимого. В комнату вошла дочь Бивня, Нина, и удивилась, увидев живую птицу, сочтя ту за чудо.
+
+                        p Вскоре на дом напал отряд Града и Шквала. Сюта накрыла всех защитным полем. Когда военные пустили усыпляющий газ, она создала поля вокруг себя и Ксюши и помогла им сбежать. Велев оставить Нину, чтобы не подвергать девочку опасности.
+
+                        p Некоторое время спустя Ксюша снова начала таять. В этот момент пару настигли преследователи. Сюта защитила себя полем, а потом сбила военных с ног телекинезом и обрушила на них дом. Чуть позже пара наткнулась на отряд <a hre='#'>Раны.</a>
+
+                        h5 «Мертвая хватка»
+
+                        p Когда Ксюша опять начала исчезать, Сюта отдала ей свои последние силы, став куклой. Напоследок она попросила девушку дождаться возвращения её и Андрея и не лезть на рожон.
+
+                        p В то же время Серый волк показал Владыке с помощью скатерти-самобранки его забытые воспоминания. Он рассказал, что тот жил в Эдеме и любил Василису больше всего на свете. И напомнил как её похитил Кощей и как Иоанн вместе с Волком ходили её выручать, но потерпели поражение.
+
+                        h5 «Время ворона: Эпилог»
+
+                        p Сюта встретила Андрея в Междумирье и привела парня в Эдем. Там она предстала перед ним в человеческой форме и попросила отнести её тело к основанию башни, чтобы восстановить силы. Радов рассказал ей, что теперь он самый обычный человек и вряд ли чем-то сможет помочь. Но Василиса ответила, что это именно то, что нужно.
+
+                        p Внизу девушка полноценно представилась и показала ему янтарную комнату, наполненную сценами возможного будущего. Василиса заявила, что милосердие Андрея спасёт всех. И пояснила это тем, что он одолел Кутха, совершив жертву ради людей из бескорыстных побуждений. Затем она сказала, что приведёт парня в мир, нуждающийся в нём.
+
+                        p Андрей продолжал сомневаться, тогда девушка показала ему сцену, в которой Магистр побеждает Кощея. Радов пообещал остановить его, но сперва захотел спасти Ксюшу. Василиса напомнила, что позаботится о ней, и сказала, что Иноку следует кое с кем увидеться перед уходом.
+
+                        h2 Способности
+
+                        p Может превращаться в птицу с человеческим лицом по имени Сюта. Когда у Василисы полно сил, она может трансформироваться полностью. Когда сил мало, девушка может управлять птицей дистанционно. И создавать с её помощью прозрачные защитные экраны, светящиеся шары или пользоваться телекинезом. Также она способна проецировать человеческое лицо на птиц и через них осуществлять удалённое наблюдение.
+
+                        h2 Появления
+
+                        .description-information__list-grid
+
+                            ul
+                                li <a href='#'>Инок #29</a> (упоминание)
+
+                                li <a href='#'>Инок #30</a> (упоминание)
+
+                                li <a href='#'>Инок #31</a> (упоминание)
+
+                                li <a href='#'>Инок #32</a> (упоминание)
+
+                                li <a href='#'>Инок #33</a> (упоминание)
+
+                                li <a href='#'>Инок #34</a> (упоминание)
+
+                                li <a href='#'>Инок #35</a> (упоминание)
+
+                                li <a href='#'>Инок #36</a> (упоминание)
+
+                            ul
+                                li <a href='#'>Инок #29</a> (упоминание)
+
+                                li <a href='#'>Инок #30</a> (упоминание)
+
+                                li <a href='#'>Инок #31</a> (упоминание)
+
+                                li <a href='#'>Инок #32</a> (упоминание)
+
+                                li <a href='#'>Инок #33</a> (упоминание)
+
+
+
+    section.section-box
+        .container
+            img(src='img/dis.png' alt='здесь будет дискус' style='display: block; margin: 0 auto')
+            hr
+
+
+    .section-box.section-box--post-promo
+        .container
+            h2.section-box__title
+                a(href='#') комиксы с участием василисы
+
+            .magazine-catalog
+
+                .magazine-catalog__grid
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/b20054/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-at
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-bubble(href='#') bubble club
+
+
+                    article.magazine-catalog__item
+                        .magazine-catalog__item-image
+                            a.magazine-catalog__link(href='#')
+                                img(src='http://via.placeholder.com/180x280/000000/ffffff' alt='title magazine')
+                            a.tag-white-gray(href='#')
+                                i.mdi.mdi-book-open-variant
+
+                        .magazine-catalog__item-information
+
+                            h3.magazine-catalog__title <a href='#' class='magazine-catalog__link'>Бумажный порез #1</a>
+                            .magazine-catalog__price 50<span>&#8381;</span>
+                            .magazine-catalog__button-block
+                                a.button-in-basket(href='#') в корзину
+
+            hr
+
+    .section-box.section-box--post-promo
+        .container
+
+            .clothes-catalog.clothes-catalog--no-buffer
+                h2.section-box__title
+                    a(href='https://burdastyle.ru/') обои с василисой
+
+                .clothes-catalog__grid
+
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+                    article.clothes-catalog__item.js-open-image
+                        .clothes-catalog__item-image
+                            a.clothes-catalog__link(href='https://www.vogue.ru/')
+                                img(src='http://via.placeholder.com/280x160/598cb2/ffffff' alt='title magazine')
+
+
+
+    include layouts/components/_main_subscription

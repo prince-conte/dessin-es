@@ -1,0 +1,91 @@
+.description-information {
+    @include font(1.7rem,2.5rem);
+    margin: 4.5rem 0 6.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq(md) {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    &--no-margin {
+        @include mq(md) {
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+}
+
+
+    > dl {
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        @include mq(md) {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 13rem;
+        }
+
+        > dt {
+            @include font(1.5rem,2.2rem);
+            opacity: .7;
+
+            @include mq(xs) {
+                display: block;
+            }
+
+            @include mq(md) {
+                margin-right: 2rem;
+            }
+        }
+
+        > dd {
+            @include font(1.5rem,2.2rem);
+            font-weight: 500;
+
+            @include mq(md) {
+                width: 38rem;
+            }
+
+            > a.is-all {
+                @include interact(color, $color-brand);
+                @include interact(opacity, .7);
+                display: inline-block;
+                color: #5e5e5e;
+                text-decoration: underline;
+
+                &::after {
+                    content: 'посмотреть всех';
+                }
+            }
+
+
+            > .is-all.is-active {
+                display: none;
+
+            }
+        }
+
+    }
+
+    &__list-grid {
+
+        @include mq(md) {
+            @include grid(x, flex-start, stretch);
+        }
+
+        > ul {
+            @include mq(md) {
+                @include grid-col;
+                @include col-size(1/2);
+            }
+        }
+
+    }
+
+}
