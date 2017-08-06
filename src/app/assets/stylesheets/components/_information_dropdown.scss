@@ -1,0 +1,114 @@
+.information-dropdown {
+
+    &:not(:first-child) {
+        transform: translateY(-1px);
+    }
+
+    &--negative {
+
+        @include mq(md) {
+            margin-left: -10rem;
+            margin-right: -10rem;
+        }
+
+    }
+
+    &--negative-plus {
+
+        @include mq(md) {
+            margin-left: -20rem;
+            margin-right: -20rem;
+        }
+
+    }
+
+
+
+    &__title-line {
+        position: relative;
+        display: block;
+        padding-right: 3rem;
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+
+        @include mq(md) {
+
+            &:hover {
+
+                > i {
+                    color: $color-brand;
+                }
+
+            }
+
+        }
+
+        span {
+            @include font(1.9rem,2.5rem);
+            @include ellipsis();
+            padding: 3rem 0;
+            display: block;
+            color: $color-base;
+        }
+
+
+        > i {
+            @include font(3rem,3rem);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            color: #bababa;
+            transition: $transition-duration-base;
+        }
+    }
+
+    &__content.wysiwyg {
+        display: none;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $color-border;
+
+        @include mq(md) {
+            margin-bottom: 4rem;
+        }
+
+        > p {
+            @include font(1.7rem,2.5rem);
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+
+        > img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            vertical-align: top;
+
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+
+            @include mq(md) {
+                &:not(:last-child) {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+
+    .information-dropdown__title-line.is-active {
+        border-bottom: 0;
+
+        > i {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        + .information-dropdown__content {
+            display: block;
+        }
+
+    }
+
+}
