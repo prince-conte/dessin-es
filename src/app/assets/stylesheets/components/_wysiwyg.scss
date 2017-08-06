@@ -46,6 +46,13 @@
                     margin-bottom: 2.2rem;
                 }
             }
+
+            > a {
+                @include interact(color,$color-brand);
+                color: $color-base;
+                text-decoration: underline;
+            }
+
         }
 
         dl {
