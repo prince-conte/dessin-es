@@ -3,6 +3,10 @@
     border-bottom: 1px solid $color-border;
     z-index:99;
 
+    &--no-border {
+        border: 0;
+    }
+
     &__grid {
 
         @include mq(md) {
