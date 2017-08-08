@@ -1,0 +1,29 @@
+.blog-section {
+
+    &__grid {
+
+        @include mq(md) {
+            @include grid(x, flex-start, flex-start);
+        }
+    }
+
+
+
+    &__blog-box {
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(3/4);
+        }
+    }
+
+    &__popular-box {
+
+        @include mq(md) {
+            @include grid-col;
+            @include col-size(1/4);
+
+        }
+    }
+
+}

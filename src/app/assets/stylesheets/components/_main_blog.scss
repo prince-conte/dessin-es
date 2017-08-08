@@ -1,4 +1,68 @@
 .main-blog {
+    margin-top: 4rem;
+
+    &--blog-page {
+
+        > .main-blog__item-box {
+
+            > .main-blog__item {
+                width: 100%;
+
+                @include mq(xs) {
+                    &:not(:last-child) {
+                        margin-bottom: 2rem;
+                        padding-bottom: 1.4rem;
+                        border-bottom: 1px solid $color-border;
+                    }
+                }
+
+
+                @include mq(md) {
+                    flex-direction: row;
+                    padding: 0;
+
+                    &:not(:last-child) {
+                        margin-bottom: 5rem;
+                    }
+                }
+
+
+                .main-blog__title {
+                    @include font(2.5remrem,3.5rem);
+
+                    @include mq(md) {
+                        @include font(3rem,4rem);
+                    }
+                }
+
+                .main-blog__statistics {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    @include mq(md) {
+                        margin-bottom: 2rem;
+                    }
+
+                    > i, > .main-blog__time {
+                        @include font(1.3rem,1.3rem);
+                        display: inline-block;
+                    }
+
+                    > .main-blog__time {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    &__item-box {
+
+    }
 
     &__link {
         color: inherit;
@@ -51,6 +115,19 @@
 
     }
 
+    &__information {
+
+        @include mq(xs) {
+            margin-top: 2rem;
+        }
+
+        @include mq(md) {
+            margin-left: 3rem;
+            flex: 1;
+        }
+
+    }
+
     &__time {
         @include font(1.3rem,1.3rem);
         margin: 1.6rem 0 1.2rem;
@@ -67,6 +144,10 @@
 
     &__statistics {
         color: $color-base;
+
+        > .main-blog__time {
+            margin-right: 1rem;
+        }
 
 
         > i {
