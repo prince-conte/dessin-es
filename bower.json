@@ -21,6 +21,7 @@
     "normalize-css": "^7.0.0",
     "mdi": "^1.9.33",
     "slick-carousel": "^1.6.0",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "magnific-popup": "^1.1.0"
   }
 }

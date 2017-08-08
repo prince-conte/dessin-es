@@ -1,0 +1,139 @@
+
+.form-popup.mfp-hide#registration
+    .form-popup__nav
+        a(href='#') Вход
+        a.is-current(href='#') Регистрация
+
+    form.form-popup__form-body.form
+
+
+        .form-popup__social-links
+            .form-popup__social-grid
+                a.icon-button-big.icon-button-big--facebook(href='#' target='_blank')
+                    i.mdi.mdi-facebook
+                a.icon-button-big.icon-button-big--twitter(href='#' target='_blank')
+                    i.mdi.mdi-twitter
+                a.icon-button-big.icon-button-big--ok(href='#' target='_blank')
+                    i.mdi.mdi-odnoklassniki
+                a.icon-button-big.icon-button-big--telegram(href='#' target='_blank')
+                    i.mdi.mdi-vk
+
+        p.form-popup__txt-line или
+
+        .form-popup__input-box
+
+            .form-popup__input-line
+                input(type='text' placeholder='Имя')
+
+            .form-popup__input-line.is-error
+                input(type='text' placeholder='Эл. почта')
+
+            .form-popup__input-line
+                input.js-input-password(type='password' placeholder='Пароль')
+                a.form__password-button.js-show-password(href='#')
+                    i.mdi.mdi-eye
+                    i.mdi.mdi-eye-off
+
+        .form-popup__check-line
+
+            .form__input-block
+                label.form__label-checkbox
+                    span.form__checkbox.form__checkbox--valign-top
+                        input(type='checkbox' checked)
+                        span
+                        i.mdi.mdi-check
+                    span.form__label-checkbox-txt.form__label-checkbox-txt--font-min Получать информацию о скидках и распродажах
+
+        .form-popup__errror-message.is-active
+            p Заполните поля, отмеченные красным
+
+
+        .form-popup__button-box
+            button.button-in-basket.button-in-basket--for-card зарегистрироваться
+
+        .form-popup__privacy-box
+            p Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с <a href='#'>Правилами сервиса</a> и <a href='#'>Политикой конфиденциальности</a>
+
+.form-popup.mfp-hide#login-in
+    .form-popup__nav
+        a(href='#') Вход
+        a.is-current(href='#') Регистрация
+
+    form.form-popup__form-body.form
+
+
+        .form-popup__social-links
+            .form-popup__social-grid
+                a.icon-button-big.icon-button-big--facebook(href='#' target='_blank')
+                    i.mdi.mdi-facebook
+                a.icon-button-big.icon-button-big--twitter(href='#' target='_blank')
+                    i.mdi.mdi-twitter
+                a.icon-button-big.icon-button-big--ok(href='#' target='_blank')
+                    i.mdi.mdi-odnoklassniki
+                a.icon-button-big.icon-button-big--telegram(href='#' target='_blank')
+                    i.mdi.mdi-vk
+
+        p.form-popup__txt-line или
+
+        .form-popup__input-box
+
+            .form-popup__input-line
+                input(type='text' placeholder='Имя')
+
+            .form-popup__input-line.is-error
+                input(type='text' placeholder='Эл. почта')
+
+            .form-popup__input-line
+                input.js-input-password(type='password' placeholder='Пароль')
+                a.form__password-button.js-show-password(href='#')
+                    i.mdi.mdi-eye
+                    i.mdi.mdi-eye-off
+
+        .form-popup__check-line
+
+            .form__input-block
+                label.form__label-checkbox
+                    span.form__checkbox.form__checkbox--valign-top
+                        input(type='checkbox' checked)
+                        span
+                        i.mdi.mdi-check
+                    span.form__label-checkbox-txt.form__label-checkbox-txt--font-min Получать информацию о скидках и распродажах
+
+        .form-popup__errror-message.is-active
+            p Заполните поля, отмеченные красным
+
+
+        .form-popup__button-box
+            button.button-in-basket.button-in-basket--for-card зарегистрироваться
+
+        .form-popup__privacy-box
+            p Нажимая на кнопку «Зарегистрироваться», вы подтверждаете свое согласие с <a href='#'>Правилами сервиса</a> и <a href='#'>Политикой конфиденциальности</a>
+
+
+
+.form-popup.mfp-hide#callback
+    form.form-popup__form-body.form
+
+
+        .form-popup__header
+
+            .form-popup__title Оставьте контактные данные
+
+            .form-popup__description Наши менеджеры свяжутся с вами для уточнения деталей заказа
+
+        .form-popup__input-box
+
+            .form-popup__input-line
+                input(type='text' placeholder='Имя')
+
+            .form-popup__input-line
+                input(type='text' placeholder='Телефон')
+
+            .form-popup__input-line
+                input(type='text' placeholder='Эл. почта')
+
+        .form-popup__errror-message
+            p Заполните поля, отмеченные красным
+
+        .form-popup__button-box
+            button.button-in-basket.button-in-basket--for-card отправить заказ

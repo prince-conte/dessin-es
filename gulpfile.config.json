@@ -16,6 +16,7 @@
         "src/app/assets/vendor/slick-carousel/slick/slick.js",
         "src/app/assets/vendor/slick-carousel/slick/slick.js",
         "src/app/assets/javascripts/vendor/jquery.smoothscroll.js",
+        "src/app/assets/vendor/magnific-popup/dist/jquery.magnific-popup.js",
         "src/app/assets/vendor/jquery-ui/jquery-ui.js"
       ],
       "scripts": {
@@ -42,6 +43,8 @@
           "src/app/assets/javascripts/components/shops_hide_txt.js",
           "src/app/assets/javascripts/components/information-dropdown.js",
           "src/app/assets/javascripts/components/shares-slider.js",
+          "src/app/assets/javascripts/components/popup.js",
+          "src/app/assets/javascripts/components/show-password.js",
           "src/app/assets/javascripts/components/delivery-point-hide.js"
 
         ],

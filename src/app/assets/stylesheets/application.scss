@@ -1,6 +1,7 @@
 @import "../vendor/normalize-css/normalize";
 @import "../vendor/mdi/css/materialdesignicons";
 @import "../vendor/slick-carousel/slick/slick.scss";
+@import "../vendor/magnific-popup/dist/magnific-popup";
 
 @import "config";
 @import "functions";
@@ -11,6 +12,7 @@
 
 @import "override/spinnerui";
 @import "override/select_menu";
+@import "override/magnific_popup";
 
 @import "components/forms/buttons";
 @import "components/forms/inputs";
@@ -22,6 +24,7 @@
 @import "components/tags";
 @import "components/rating";
 @import "components/forms/form";
+@import "components/forms/popup";
 
 @import "components/container";
 @import "components/icons";

@@ -41,6 +41,7 @@ a {
     color: $color-brand;
     text-decoration: none;
     transition: all $transition-duration-base;
+    outline: none !important;
 
     &.is-current {
         cursor: default;
