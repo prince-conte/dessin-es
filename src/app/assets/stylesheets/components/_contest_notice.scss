@@ -1,0 +1,65 @@
+.contest-notice {
+    position: relative;
+
+
+    &__image {
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+
+    }
+
+    &__container {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    &__tag,
+    &__title {
+        display: block;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    &__description {
+        > p {
+            @include font(1.5rem,2.2rem);
+            text-align: center;
+            opacity: .8;
+            color: #fff;
+        }
+    }
+
+    &__button-box {
+        margin-top: 2.6rem;
+        text-align: center;
+    }
+
+    &__tag {
+        @include font(1.5rem,2rem);
+
+        > span {
+            display: inline-block;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #fff;
+        }
+
+    }
+
+    &__title {
+        @include font(3rem,4rem);
+
+    }
+
+}
