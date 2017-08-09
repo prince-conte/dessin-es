@@ -75,11 +75,10 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 2rem;
         margin-bottom: -1rem;
 
-        &:first-child {
-            margin-top: 0;
+        &:not(:first-child) {
+            margin-top: 2rem;
         }
 
         > a {

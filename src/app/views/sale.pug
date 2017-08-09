@@ -1,0 +1,27 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    .section-box
+        .container
+            .section-box__title-nav
+
+                a(href='#') Главная
+                span |
+
+                a(href='#') Скидки
+                span |
+
+                a(href='#') Все акции
+                span |
+
+                a.is-active(href='#') Все выпуски серии Майор Гром одной посылкой
+
+            h1.section-box__page-title
+                span КОмиксы
+
+
+
+    include layouts/components/_main_subscription

@@ -5,6 +5,12 @@
         @include mq(md) {
             @include grid(x, flex-start, flex-start);
         }
+
+        &--center {
+            @include mq(md) {
+                @include grid(x, center, flex-start);
+            }
+        }
     }
 
 
