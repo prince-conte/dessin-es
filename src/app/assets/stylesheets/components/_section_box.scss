@@ -71,15 +71,19 @@
     }
 
     &__title-nav {
+        margin-bottom: 1.5rem;
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+    }
+
+    &__title-nav-grid {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: -1rem;
-
-        &:not(:first-child) {
-            margin-top: 2rem;
-        }
 
         > a {
             @include interact(color,$color-brand);
@@ -98,6 +102,7 @@
             margin: 0 1.2rem 1rem;
             opacity: .3;
         }
+
     }
 
     + .teaser,

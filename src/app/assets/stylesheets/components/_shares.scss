@@ -128,11 +128,6 @@
 
     // slick arrows
 
-    &__slider-next,
-    &__slider-prev {
-        display: none;
-    }
-
     &__slider-next {
         @include interact(color,#b3b3b3);
         position: absolute;
@@ -141,6 +136,10 @@
         right: -.5rem;
         color: $color-brand;
         transform: translate(100%,-50%);
+
+        @include mq(xs) {
+            display: none;
+        }
 
         > i {
             @include font(3.4rem);
@@ -155,6 +154,10 @@
         left: -.5rem;
         color: $color-brand;
         transform: translate(-100%,-50%);
+
+        @include mq(xs) {
+            display: none;
+        }
 
         > i {
             @include font(3.4rem);
