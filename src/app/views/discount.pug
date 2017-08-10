@@ -1,0 +1,80 @@
+extends layouts/app_map_shop
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            h1.section-box__page-title
+                span накопительная скидка
+
+            p.section-box__description Следующий этап развития отечественной комиксографии связан с именем Владимира Даля. Его произведение «Похождения Христиана Христиановича Виольдамура и его Аршета» во многом напоминало современные комиксы, так как в основу сюжета.
+
+
+            .private-sale.private-sale--section
+
+                .private-sale__box.js-private-sale-slider
+
+                    .private-sale__item.private-sale__item--big.is-active.is-current
+                        .private-sale__item-image
+                            img(src='img/sale/01-02.jpg' class='open' alt='0%')
+                            img(src='img/sale/01-01.jpg' class='disabled' alt='0%')
+                        .private-sale__item-content
+                            span.private-sale__item-content-title Новичок
+                            span.private-sale__item-content-value 0%
+                            span.private-sale__item-content-price 7 000 Р
+
+                    .private-sale__item.private-sale__item--big.is-active
+                        .private-sale__item-image
+                            img(src='img/sale/02-02.jpg' class='open' alt='0%')
+                            img(src='img/sale/02-01.jpg' class='disabled' alt='0%')
+                        .private-sale__item-content
+                            span.private-sale__item-content-title Любитель
+                            span.private-sale__item-content-value 2%
+                            span.private-sale__item-content-price 15 000 Р
+
+                    .private-sale__item.private-sale__item--big.is-active
+                        .private-sale__item-image
+                            img(src='img/sale/03-02.jpg' class='open' alt='0%')
+                            img(src='img/sale/03-01.jpg' class='disabled' alt='0%')
+                        .private-sale__item-content
+                            span.private-sale__item-content-title Фанат
+                            span.private-sale__item-content-value 4%
+                            span.private-sale__item-content-price 25 000 Р
+
+                    .private-sale__item.private-sale__item--big.is-active
+                        .private-sale__item-image
+                            img(src='img/sale/04-02.jpg' class='open' alt='0%')
+                            img(src='img/sale/04-01.jpg' class='disabled' alt='0%')
+                        .private-sale__item-content
+                            span.private-sale__item-content-title Знаток
+                            span.private-sale__item-content-value 6%
+                            span.private-sale__item-content-price 40 000 Р
+
+                    .private-sale__item.private-sale__item--big.is-active
+                        .private-sale__item-image
+                            img(src='img/sale/05-02.jpg' class='open' alt='0%')
+                            img(src='img/sale/05-01.jpg' class='disabled' alt='0%')
+                        .private-sale__item-content
+                            span.private-sale__item-content-title Эксперт
+                            span.private-sale__item-content-value 8%
+                            span.private-sale__item-content-price 60 000 Р
+
+                    .private-sale__item.private-sale__item--big.is-active
+                        .private-sale__item-image
+                            img(src='img/sale/06-02.jpg' class='open' alt='0%')
+                            img(src='img/sale/06-01.jpg' class='disabled' alt='0%')
+                        .private-sale__item-content
+                            span.private-sale__item-content-title Новичок
+                            span.private-sale__item-content-value 10%
+                            span.private-sale__item-content-price 0 Р
+
+
+    .section-box
+        .container
+            .main-about.wysiwyg.align-center
+                p Следующий этап развития отечественной комиксографии связан с именем Владимира Даля. Его произведение «Похождения Христиана Христиановича Виольдамура и его Аршета» во многом напоминало современные комиксы, так как в основу сюжета, а точнее — повествования был положен рассказ в картинках. Такая своеобразная форма подачи материала не была по достоинству оценена современниками Даля, поэтому дальнейшего развития «рассказы в картинках» не получили.
+
+
+    include layouts/components/_main_subscription

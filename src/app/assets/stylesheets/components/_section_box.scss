@@ -47,7 +47,6 @@
                 color: $color-brand;
             }
         }
-
     }
 
 
@@ -68,6 +67,15 @@
         text-transform: uppercase;
         text-align: center;
         color: $color-base;
+    }
+
+    &__description {
+        @include font(1.7rem,2.5rem);
+        text-align: center;
+
+        @include mq(md) {
+            margin: 0 20rem;
+        }
     }
 
     &__title-nav {
@@ -114,12 +122,10 @@
         }
     }
 
-
     &__page-buffer {
         padding-bottom: 2rem;
         border-bottom: 1px solid $color-border;
     }
-
 
     hr {
         margin-top: 4rem;
@@ -132,7 +138,6 @@
         @include mq(md) {
             margin-top: 5rem;
         }
-
     }
 
 }
