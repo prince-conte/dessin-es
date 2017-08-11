@@ -6,6 +6,23 @@
         text-align: center;
     }
 
+    &__time {
+        @include font(1.9rem,2.8rem);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $color-brand;
+
+        @include mq(xs) {
+            margin: 1.6rem 0 2rem;
+        }
+
+        @include mq(md) {
+            margin: 1.6rem 0 5rem;
+        }
+
+    }
+
     &__article-label {
         margin: 2.4rem 0 3rem;
         padding-bottom: 3rem;

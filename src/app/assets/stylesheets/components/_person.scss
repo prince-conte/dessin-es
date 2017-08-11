@@ -1,0 +1,55 @@
+.person {
+
+    &__image-box {
+        position: relative;
+
+        @include mq(xs) {
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__avatar {
+        @include size(14rem);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,4rem);
+        border: 4px solid #fff;
+
+        @include mq(md) {
+            @include size(28rem);
+            transform: translate(-50%,5rem);
+        }
+    }
+
+    &__information {
+        margin: 7rem 0 0;
+
+        @include mq(md) {
+            margin: 8rem 20rem 0;
+        }
+
+        > h1 {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        @include font(1.9rem,3rem);
+        margin: 3rem 0;
+        text-align: center;
+    }
+
+    &__share {
+        padding-bottom: 4.5rem;
+        border-bottom: 1px solid $color-border;
+    }
+
+}

@@ -1,6 +1,7 @@
 @import "../vendor/normalize-css/normalize";
 @import "../vendor/mdi/css/materialdesignicons";
 @import "../vendor/slick-carousel/slick/slick.scss";
+@import "../vendor/magnific-popup/dist/magnific-popup";
 
 @import "config";
 @import "functions";
@@ -11,6 +12,7 @@
 
 @import "override/spinnerui";
 @import "override/select_menu";
+@import "override/magnific_popup";
 
 @import "components/forms/buttons";
 @import "components/forms/inputs";
@@ -22,6 +24,7 @@
 @import "components/tags";
 @import "components/rating";
 @import "components/forms/form";
+@import "components/forms/popup";
 
 @import "components/container";
 @import "components/icons";
@@ -60,7 +63,20 @@
 @import "components/private/social_checks";
 @import "components/private/history";
 
+@import "components/blog_section";
+@import "components/contest_notice";
+@import "components/news_subscription";
+@import "components/faq";
+@import "components/shares";
+@import "components/information_dropdown";
+@import "components/logo_grid";
+@import "components/subscribe";
 @import "components/shops";
+@import "components/jobs_catalog";
+@import "components/description-information";
+@import "components/person";
+@import "components/about_us";
+@import "components/blog_popular_article";
 
 @import "components/movies/catalog";
 @import "components/movies/about";

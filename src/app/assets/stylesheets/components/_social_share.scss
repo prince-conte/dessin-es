@@ -6,6 +6,10 @@
         justify-content: center;
     }
 
+    &--center {
+        justify-content: center;
+    }
+
     > a {
         @include interact(color, #fff);
         @include interact(opacity, .9);

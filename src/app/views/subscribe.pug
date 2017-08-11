@@ -1,0 +1,93 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            h1.section-box__page-title
+                span Подписка
+            .subscribe.wysiwyg
+                p.align-center Специально для наших преданных читателей, мы создали единую подписку на все комиксы BUBBLE. Раз в месяц Вы будете получать 6 синглов, бережно упакованных в защищенные пакеты
+                .subscribe__plan-box
+                    .subscribe__plan
+
+
+                        .subscribe__plan-item
+                            .subscribe__plan-item-body.wysiwyg
+                                h4.subscribe__plan-item-title уровень герой
+                                span.subscribe__plan-item-price 1 380 Р
+                                span.subscribe__plan-item-description 18 синглов
+                                span.subscribe__plan-item-time Подписка на 3 месяца
+
+                                .subscribe__plan-item-more
+                                    .subscribe__plan-item-more-item Вы получаете по 6 комиксов ежемесячно
+
+                                a.button-in-basket.button-in-basket--for-card(href='#')
+                                    i.mdi.mdi-cart
+                                    span оплатить
+
+
+                        .subscribe__plan-item
+                            .subscribe__plan-item-body.wysiwyg.is-popular
+                                h4.subscribe__plan-item-title уровень супергерой
+                                span.subscribe__plan-item-price 2 760 Р
+                                span.subscribe__plan-item-description 36 синглов
+                                span.subscribe__plan-item-time Подписка на 6 месяцев
+
+                                .subscribe__plan-item-more
+                                    .subscribe__plan-item-more-item Вы получаете по 6 комиксов ежемесячно
+                                    .subscribe__plan-item-more-item-bonus
+                                        i.mdi.mdi-checkbox-marked-circle
+                                        span Случайный арт из нашей коллекции
+
+                                a.button-in-basket.button-in-basket--for-card(href='#')
+                                    i.mdi.mdi-cart
+                                    span оплатить
+
+
+                        .subscribe__plan-item
+                            .subscribe__plan-item-body.wysiwyg
+                                h4.subscribe__plan-item-title уровень бог
+                                span.subscribe__plan-item-price 5 490 Р
+                                span.subscribe__plan-item-description 72+6 синглов
+                                span.subscribe__plan-item-time Подписка на 12+1 месяцев
+
+                                .subscribe__plan-item-more
+                                    .subscribe__plan-item-more-item Вы получаете по 6 комиксов ежемесячно
+                                    .subscribe__plan-item-more-item-bonus
+                                        i.mdi.mdi-checkbox-marked-circle
+                                        span Случайный арт из нашей коллекции
+                                    .subscribe__plan-item-more-item-bonus
+                                        i.mdi.mdi-checkbox-marked-circle
+                                        span Дополнительный месяц подписки в подарок
+
+                                a.button-in-basket.button-in-basket--for-card(href='#')
+                                    i.mdi.mdi-cart
+                                    span оплатить
+
+
+                .information-dropdown-container
+
+                    .information-dropdown.information-dropdown--negative.is-active
+                        a.information-dropdown__title-line.js-information-dropdown-title(href='#')
+                            span Что я получу?
+                            i.mdi.mdi-chevron-down
+                        .information-dropdown__content.wysiwyg
+                            img(src='img/10-subscribe.jpg' alt='subscribe')
+                            p Следующий этап развития отечественной комиксографии связан с именем Владимира Даля. Его произведение «Похождения Христиана Христиановича Виольдамура и его Аршета» во многом напоминало современные комиксы, так как в основу сюжета, а точнее — повествования был положен рассказ в картинках. Такая своеобразная форма подачи материала не была по достоинству оценена современниками Даля, поэтому дальнейшего развития «рассказы в картинках» не получили.
+                            p В августе 1914 года в Москве появилось объединение «Сегодняшний лубок», участниками которого стали такие представители отечественной культурной элиты, как Казимир Малевич. Аристарх Лентулов, Давид Бурлюк, Владимир Маяковский. Общество выпускало агитационные листки на военную тематику. в которых содержались как картинки, так и текстовая информация.
+
+
+                    .information-dropdown.information-dropdown--negative
+                        a.information-dropdown__title-line.js-information-dropdown-title(href='#')
+                            span Доставка и оплата
+                            i.mdi.mdi-chevron-down
+                        .information-dropdown__content.wysiwyg
+                            img(src='img/10-subscribe.jpg' alt='subscribe')
+                            p Следующий этап развития отечественной комиксографии связан с именем Владимира Даля. Его произведение «Похождения Христиана Христиановича Виольдамура и его Аршета» во многом напоминало современные комиксы, так как в основу сюжета, а точнее — повествования был положен рассказ в картинках. Такая своеобразная форма подачи материала не была по достоинству оценена современниками Даля, поэтому дальнейшего развития «рассказы в картинках» не получили.
+                            p В августе 1914 года в Москве появилось объединение «Сегодняшний лубок», участниками которого стали такие представители отечественной культурной элиты, как Казимир Малевич. Аристарх Лентулов, Давид Бурлюк, Владимир Маяковский. Общество выпускало агитационные листки на военную тематику. в которых содержались как картинки, так и текстовая информация.
+
+
+        include layouts/components/_main_subscription

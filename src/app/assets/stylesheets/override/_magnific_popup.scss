@@ -1,0 +1,21 @@
+.mfp-bg {
+    background: #404040;
+    opacity: 1;
+}
+
+.mfp-close-btn-in .mfp-close {
+    @include interact(color, $color-brand);
+    @include font(1.5rem,2rem);
+    position: relative;
+    display: block;
+    margin: 6rem auto 4rem;
+    color: rgba($color-base, .7);
+    text-decoration: underline;
+}
+
+.mfp-container {
+    @include mq(xs) {
+        padding: 0;
+    }
+}
+

@@ -1,0 +1,126 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    .section-box
+        .container
+            article.article
+
+                header
+
+                    .section-box__title-nav
+                        .section-box__title-nav-grid
+
+                            a(href='#') Главная
+                            span |
+
+                            a(href='#') Скидки
+                            span |
+
+                            a(href='#') Все акции
+                            span |
+
+                            a.is-active(href='#')
+                                span.is-mobile Все выпуски Майор Гром
+                                span.is-desktop Все выпуски серии Майор Гром одной посылкой
+
+                    h1.article__title Все выпуски серии Майор Гром одной посылкой
+
+                    .article__time 1 июня – 31 августа
+
+                .article__content.wysiwyg
+
+                    figure
+                        img(src='http://via.placeholder.com/780x510/b20054/ffffff' alt='title magazine')
+                        figcaption
+
+                    p Хронология развития такого жанра, как комиксы является весьма длинной и продолжительной, изобилующей многочисленными датами, поэтому, перечисляя основные вехи развития комиксов, мы ограничимся путешествием по XIX и XX столетиям, так как именно в этот период произошел качественный скачок в развитии жанра и появились известные нам герои.
+
+                    p Говоря о комиксах, следует начать с личности Родольфа Тепфера, франкоязычного швейцарского художника, который стал ключевой фигурой в истории развития современного комикса. В начале XIX столетия он стал последовательно иллюстрировать истории, помещая текст под изображениями. Эти его комиксы переиздавались по всей Европе и США. Из-за отсутствия законов об авторском праве пиратские выпуски «рисованных рассказов» стали переводиться и издаваться повсеместно во всем мире.
+
+                    a.button-bubble.button-bubble--block(href='#') перейти к покупкам
+
+
+    section.section-box
+        .container
+            h2.section-box__black-title Еще акции
+            .shares
+                .shares__slider-box
+
+                    a.shares__slider-prev.js-shares-slider-prev(href='#')
+                        i.mdi.mdi-chevron-left
+                    a.shares__slider-next.js-shares-slider-next(href='#')
+                        i.mdi.mdi-chevron-right
+
+                    .shares__slider.js-shares-slider
+
+                        .shares__item-slide.js-shares-slide
+                            .shares__item-image
+                                a.shares__link(href='#')
+                                    img(src='http://via.placeholder.com/380x240/cd8faf/ffffff' alt='title magazine')
+                            .shares__item-informtion
+                                a.shares__link(href='#')
+                                    h3.shares__item-title Все выпуски серии Майор Гром одной посылкой
+                                    .shares__item-time-line 1 июня – 31 августа
+                                    p.shares__item-description Узнайте всю историю Майора Грома. Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре.
+                            .shares__item-button-box
+                                a.button-bubble(href='#') подробнее
+
+
+                        .shares__item-slide.js-shares-slide
+                            .shares__item-image
+                                a.shares__link(href='#')
+                                    img(src='http://via.placeholder.com/380x240/cd8faf/ffffff' alt='title magazine')
+                            .shares__item-informtion
+                                a.shares__link(href='#')
+                                    h3.shares__item-title Все выпуски серии Майор Гром одной посылкой
+                                    .shares__item-time-line 1 июня – 31 августа
+                                    p.shares__item-description Зарегистрируйся на сайте, сделай первый заказ и мы добавим к нему 6 случайных комиксов.
+                            .shares__item-button-box
+                                a.button-bubble(href='#') подробнее
+
+
+                        .shares__item-slide.js-shares-slide
+                            .shares__item-image
+                                a.shares__link(href='#')
+                                    img(src='http://via.placeholder.com/380x240/cd8faf/ffffff' alt='title magazine')
+                            .shares__item-informtion
+                                a.shares__link(href='#')
+                                    h3.shares__item-title Все выпуски серии Майор Гром одной посылкой
+                                    .shares__item-time-line 1 июня – 31 августа
+                                    p.shares__item-description Узнайте всю историю Майора Грома. Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре.
+                            .shares__item-button-box
+                                a.button-bubble(href='#') подробнее
+
+
+                        .shares__item-slide.js-shares-slide
+                            .shares__item-image
+                                a.shares__link(href='#')
+                                    img(src='http://via.placeholder.com/380x240/cd8faf/ffffff' alt='title magazine')
+                            .shares__item-informtion
+                                a.shares__link(href='#')
+                                    h3.shares__item-title Все выпуски серии Майор Гром одной посылкой
+                                    .shares__item-time-line 1 июня – 31 августа
+                                    p.shares__item-description Узнайте всю историю Майора Грома. Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре.
+                            .shares__item-button-box
+                                a.button-bubble(href='#') подробнее
+
+
+                        .shares__item-slide.js-shares-slide
+                            .shares__item-image
+                                a.shares__link(href='#')
+                                    img(src='http://via.placeholder.com/380x240/cd8faf/ffffff' alt='title magazine')
+                            .shares__item-informtion
+                                a.shares__link(href='#')
+                                    h3.shares__item-title Все выпуски серии Майор Гром одной посылкой
+                                    .shares__item-time-line 1 июня – 31 августа
+                                    p.shares__item-description Узнайте всю историю Майора Грома. Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре.
+                            .shares__item-button-box
+                                a.button-bubble(href='#') подробнее
+
+
+            hr
+
+    include layouts/components/_main_subscription

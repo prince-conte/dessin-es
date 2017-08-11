@@ -6,6 +6,9 @@
         padding-bottom: 4rem ;
         border-bottom: 1px solid $color-border;
 
+        &:first-child {
+            margin-top: 0;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -37,11 +40,14 @@
         @include mq(md) {
             margin-bottom: -5rem;
         }
+
+        &--center {
+            @include grid(x, center, stretch);
+        }
     }
 
     &__slider {
         outline: none;
-        margin-bottom: -2rem;
 
         @include mq(xs) {
             margin-left: -2rem;
@@ -60,6 +66,14 @@
             @include grid-col;
             @include col-size(1/6);
             margin-bottom: 5rem;
+        }
+
+        &--1-4 {
+            @include mq(md) {
+                @include grid-col;
+                @include col-size(1/4);
+                margin-bottom: 5rem;
+            }
         }
 
         &--col-8 {
@@ -141,20 +155,9 @@
         transition: $transition-duration-base;
         min-height: 1px;
 
-        &:not(:last-child) {
-            margin-bottom: .8rem;
+        @include mq(xs) {
+            @include ellipsis();
         }
-    }
-
-    &__title,
-    &__price {
-        @include text-base();
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        color: $color-base;
-        transition: $transition-duration-base;
-        min-height: 1px;
 
         &:not(:last-child) {
             margin-bottom: .8rem;

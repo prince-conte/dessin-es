@@ -1,0 +1,145 @@
+.news-subscription {
+    position: relative;
+
+    @include mq(xs) {
+        margin: 4rem 0;
+        background-image: linear-gradient( -135deg, rgb(144,232,219) 0%, rgb(255,234,200) 100%);
+        background-image: -moz-linear-gradient( -135deg, rgb(144,232,219) 0%, rgb(255,234,200) 100%);
+        background-image: -webkit-linear-gradient( -135deg, rgb(144,232,219) 0%, rgb(255,234,200) 100%);
+        background-image: -ms-linear-gradient( -135deg, rgb(144,232,219) 0%, rgb(255,234,200) 100%);
+    }
+
+    @include mq(md) {
+        margin: 5rem 0;
+    }
+
+    &__image {
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+
+            @include mq(xs) {
+                display: none;
+            }
+
+        }
+
+
+    }
+
+    &__form-box {
+        padding: 3rem 4rem;
+
+        @include mq(xs) {
+            text-align: center;
+        }
+
+        @include mq(md) {
+            @include size(100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 4rem;
+            padding-right: 20rem;
+        }
+
+        > form {
+            display: block;
+
+            @include mq(xs) {
+                margin: 0 -3rem;
+            }
+        }
+    }
+
+
+    &__title {
+        @include h3();
+        text-align: left;
+        margin-bottom: 1.6rem;
+
+        @include mq(xs) {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        @include text-base();
+        margin-bottom: 2.4rem;
+    }
+
+    &__form {
+
+    }
+
+    &__input-block {
+
+        @include mq(md) {
+            display: flex;
+            align-items: center;
+            max-width: 53rem;
+        }
+
+        > input {
+            @include font(1.5rem,1.5rem);
+            flex: 1;
+            display: block;
+            width: 100%;
+            padding: 1.6rem 1.8rem;
+            background: #fff;
+            color: rgba(26,26,26, .7);
+
+            &::placeholder {
+                color: $color-base;
+            }
+
+        }
+
+        > button {
+            @include font(1.3rem,1.5rem);
+            @include interact(opacity,.8);
+            display: block;
+            width: 100%;
+            padding: 1.8rem 1.8rem 1.7rem;
+            background: $color-brand;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            transition: $transition-duration-base;
+
+            @include mq(md) {
+                width: 14rem;
+
+                &:active,
+                &:focus {
+                    opacity: .8;
+                }
+
+            }
+        }
+    }
+
+    &__without-spam {
+        @include font(1.5rem,1.5rem);
+        padding: 1.5rem 0;
+        display: block;
+        text-align: center;
+        color: rgba($color-base, .7);
+
+        @include mq(md) {
+            margin-left: 2rem;
+        }
+
+        > i {
+            margin-right: 1rem;
+            color: #81bc00;
+        }
+    }
+
+
+
+
+
+}
