@@ -41,6 +41,12 @@
         transform: translateX(-.4rem);
         pointer-events: none;
 
+
+        &::before {
+            position: absolute;
+
+        }
+
         label {
             font-size: 1.8rem;
         }
