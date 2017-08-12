@@ -1,3 +1,36 @@
 .reviews-section {
+    position: relative;
+
+    @include mq(md) {
+        padding: 4rem 20rem 0;
+        border-top: 1px solid $color-border;
+    }
+
+    &__all-link {
+        @include font(1.5rem, 2rem);
+        @include interact(color, $color-brand);
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-decoration: underline;
+        color: rgba($color-base, .7);
+
+        @include mq(xs) {
+            margin-bottom: 4rem;
+        }
+
+        @include mq(md) {
+            position: absolute;
+            top: 4rem;
+            left: 0;
+        }
+
+        > i {
+            @include font(1.8rem,1.8rem);
+            margin-right: .5rem;
+        }
+
+
+    }
 
 }

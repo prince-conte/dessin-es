@@ -2,6 +2,7 @@
 @import "../vendor/mdi/css/materialdesignicons";
 @import "../vendor/slick-carousel/slick/slick.scss";
 @import "../vendor/magnific-popup/dist/magnific-popup";
+@import "../vendor/redactor-js/redactor/redactor";
 
 @import "config";
 @import "functions";
@@ -64,6 +65,7 @@
 @import "components/private/history";
 
 @import "components/blog_section";
+@import "components/add_comment_block";
 @import "components/reviews_section";
 @import "components/contest_section";
 @import "components/contest_notice";
