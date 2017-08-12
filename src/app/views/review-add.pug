@@ -9,4 +9,23 @@ block main
             h1.section-box__page-title
                 span написать отзыв
 
-        .add-comment-block
+            .add-comment-block
+                .add-comment-block__form.form
+
+                    .add-comment-block__form-line
+
+                        .form__input-block
+                            select.js-select-menu
+                                option(selected disabled) Выберите линейку
+                                option л1
+                                option л2
+
+                    .add-comment-block__form-line
+                        .form__input-block
+                            input(type='text' placeholder='Заголовок отзыва')
+
+
+                    .add-comment-block__form-line
+                        .form__input-block#redactor
+
+
