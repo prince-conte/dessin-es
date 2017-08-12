@@ -1,0 +1,52 @@
+.contest-section {
+    position: relative;
+    margin-top: 3.5rem;
+
+    @include mq(xs) {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+
+    @include mq(md) {
+        margin-top: 7rem;
+    }
+
+    &__beyond-the-container-80 {
+
+        @include mq(md) {
+            margin-left: -8rem;
+            margin-right: -8rem;
+
+        }
+    }
+
+    &__image {
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+
+    &__content-box {
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+
+    &__content {
+        margin: 17rem 2rem 0;
+
+        @include mq(md) {
+            margin: 19.5rem auto 0;
+            max-width: 78rem;
+        }
+
+    }
+
+}

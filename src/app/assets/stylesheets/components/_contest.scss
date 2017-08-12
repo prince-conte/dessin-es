@@ -47,6 +47,21 @@
             width: 62rem;
             padding: 6rem 5.6rem;
         }
+
+        &--for-page-reviews {
+
+            @include mq(md) {
+                width: 100%;
+                background: transparent;
+            }
+
+            .contest__elips {
+                top: 1rem;
+                right: 1rem;
+            }
+
+        }
+
     }
 
 

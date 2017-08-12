@@ -1,0 +1,153 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            h1.section-box__page-title Рецензии
+
+            .private-navigate
+                .private-navigate__box
+                    a.is-current(href='#') Конкурс
+                    a(href='#') Правила
+
+            .section-box__description
+                p Специально для наших преданных читателей, мы создали единую подписку на все комиксы BUBBLE. Раз в месяц Вы будете получать 6 синглов, бережно<br>упакованных в защищенные пакеты
+
+            .section-box__description
+                p
+                    a.button-in-basket.button-in-basket--go-button(href='#') Написать рецензию
+
+
+            .contest-section
+                .contest-section__beyond-the-container-80
+                    .contest-section__image
+                        img.is-desktop(src='img/contest-desktop-bg.jpg' alt='contest')
+                        img.is-mobile(src='img/contest-mobile-bg.jpg' alt='contest')
+
+                    .contest-section__content-box
+                        .contest-section__content
+                            .contest
+                                .contest__card-info-body.contest__card-info-body--for-page-reviews
+                                    .contest__card-info-title
+                                        i.mdi.mdi-seal
+                                        span Лед тронулся, господа присяжные заседатели!
+                                    a.contest__time-and-name(href='#') иван философ, 26 мая
+
+                                    .contest__rating
+                                        include layouts/components/_rating
+
+                                    .contest__card-info-description
+                                        p Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать.
+                                        p.is-desktop После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+                                    .contest__elips
+                                        span МАЙОР ГРОМ
+
+
+    .section-box
+        .container
+            .private-navigate
+                .private-navigate__box
+                    a.is-current(href='#') Все отзывы
+                    a(href='#') Победители
+
+            .rewiew-box
+
+                .review
+                    .review__title-grid
+                        .review__title-block
+                            .review__name Павел Слесарев
+                            .review__date 26 мая  |  мироходцы
+
+                        a.review__like-block.is-active(href='#')
+                            i.mdi.mdi-heart
+                            span 6
+
+                    .review__content Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать. После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+                .review
+                    .review__title-grid
+                        .review__title-block
+                            .review__name Павел Слесарев
+                            .review__date 26 мая  |  мироходцы
+
+                        a.review__like-block(href='#')
+                            i.mdi.mdi-heart
+                            span 6
+
+                    .review__content Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать. После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+                .review
+                    .review__title-grid
+                        .review__title-block
+                            .review__name Павел Слесарев
+                            .review__date 26 мая  |  мироходцы
+
+                        a.review__like-block(href='#')
+                            i.mdi.mdi-heart
+                            span 12
+
+                    .review__content Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать. После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+                .review
+                    .review__title-grid
+                        .review__title-block
+                            .review__name Павел Слесарев
+                            .review__date 26 мая  |  мироходцы
+
+                        a.review__like-block.is-active(href='#')
+                            i.mdi.mdi-heart
+                            span 6
+
+                    .review__content Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать. После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+                .review
+                    .review__title-grid
+                        .review__title-block
+                            .review__name Павел Слесарев
+                            .review__date 26 мая  |  мироходцы
+
+                        a.review__like-block(href='#')
+                            i.mdi.mdi-heart
+                            span 6
+
+                    .review__content Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать. После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+                .review
+                    .review__title-grid
+                        .review__title-block
+                            .review__name Павел Слесарев
+                            .review__date 26 мая  |  мироходцы
+
+                        a.review__like-block(href='#')
+                            i.mdi.mdi-heart
+                            span 12
+
+                    .review__content Действие переносится в настоящее время, где Андрей в Атропосе расспрашивает о монстре. Далее он идет в харчевню где сидит Волк, и рассказывает что удалось узнать. После ответа Серого, Андрей приходит к выводу что чудовище — это Минотавр. Затем к героям присоединяется Ксюша с маленькой собачкой и говорит что Клубок (да, так зовут собаку) отведет их прямо в логово монстра. Затем начинается спор по поводу его роли в команде...
+
+
+            .pagination
+
+                a.pagination__nav-button(href='#')
+                    i.mdi.mdi-chevron-left
+
+                a.is-active(href='#') 1
+
+                a(href='#') 2
+
+                a.is-desktop(href='#') 3
+
+                a(href='#') ...
+
+                a.is-desktop(href='#') 17
+
+                a(href='#') 18
+
+                a.pagination__nav-button(href='#')
+                    i.mdi.mdi-chevron-right
+
+
+    include layouts/components/_main_subscription

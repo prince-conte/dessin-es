@@ -83,6 +83,54 @@
 
         }
 
+        ol {
+            @include text-base();
+            counter-reset: li;
+
+            &:not(:last-child) {
+                margin-bottom: 1.8rem;
+            }
+
+            @include mq(md) {
+                &:not(:last-child) {
+                    margin-bottom: 2.2rem;
+                }
+            }
+
+            > li {
+                position: relative;
+                display: block;
+                padding-left: 2.5rem;
+
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: inline-block;
+                    counter-increment: li;
+                    content: counter(li) '. ';
+                }
+
+
+                &:not(:last-child) {
+                    margin-bottom: 2.2rem;
+                }
+
+                @include mq(md) {
+                    &:not(:last-child) {
+                        margin-bottom: 1.6rem;
+                    }
+                }
+
+                > a {
+                    @include interact(color,$color-brand);
+                    color: $color-base;
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
 
         ul {
             @include text-base();

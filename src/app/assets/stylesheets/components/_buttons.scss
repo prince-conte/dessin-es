@@ -68,7 +68,26 @@
 
     &--for-card {
         @include font(1.5rem,1.5rem);
-        padding: 1.8rem 1.5rem 1.5rem;
+        padding: 1.9rem 1.5rem 1.6rem;
+
+        @include mq(xs) {
+            display: block;
+            width: 100%;
+        }
+
+        @include mq(md) {
+            flex: 1;
+        }
+
+        > i {
+            @include font(1.6rem,1.6rem);
+            margin-right: 1rem;
+        }
+    }
+
+    &--go-button {
+        @include font(1.5rem,1.5rem);
+        padding: 1.9rem 3rem 1.6rem;
 
         @include mq(xs) {
             display: block;
