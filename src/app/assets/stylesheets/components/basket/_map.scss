@@ -54,10 +54,6 @@
         text-align: center;
         padding: 2rem;
 
-        @include mq(xs) {
-            padding-top: 0;
-        }
-
         @include mq(md) {
             border-bottom: 1px solid $color-border;
         }

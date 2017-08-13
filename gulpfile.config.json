@@ -27,6 +27,8 @@
           "src/app/assets/javascripts/variables.babel.js",
           "src/app/assets/javascripts/utilities.babel.js",
           "src/app/assets/javascripts/components/icons.babel.js",
+          "src/app/assets/javascripts/components/mobile-menu-init.js",
+          "src/app/assets/javascripts/components/main-mobile-init.js",
           "src/app/assets/javascripts/components/menu_slider.js",
           "src/app/assets/javascripts/components/in_slider.js",
           "src/app/assets/javascripts/components/filter_slider.js",

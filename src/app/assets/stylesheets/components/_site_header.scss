@@ -2,6 +2,15 @@
 
 .site-header {
 
+    @include mq(xs) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 105;
+    }
+
     &__top-line {
         display: flex;
         justify-content: space-between;
@@ -86,7 +95,8 @@
 
     // basket
 
-    &__basket {
+    &__basket,
+    &__burger {
         display: flex;
         justify-content: flex-end;
 
@@ -136,10 +146,24 @@
             }
         }
 
+        .mdi-close {
+            display: none;
+        }
+
     }
 
 
+    &__burger.is-active {
 
+        .mdi-close {
+            display: block;
+        }
+
+        .mdi-menu {
+            display: none;
+        }
+
+    }
 
 
 }
