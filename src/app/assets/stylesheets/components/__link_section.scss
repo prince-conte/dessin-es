@@ -30,18 +30,18 @@
     }
 
     &__title {
-        @include font(3rem,5rem);
+        @include font(2.5rem,3rem);
         text-align: center;
         text-transform: uppercase;
         font-weight: 500;
         color: $color-base;
 
         @include mq(xs) {
-            margin-bottom: 2rem;
+            margin-bottom: 1.6rem;
         }
 
         @include mq(md) {
-
+            @include font(3rem,5rem);
         }
     }
 

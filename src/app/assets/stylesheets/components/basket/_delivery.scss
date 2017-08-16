@@ -112,6 +112,19 @@
             display: flex;
             justify-content: space-between;
         }
+
+        &--center {
+            justify-content: center;
+
+            .basket-delivery__check-label-pay-box {
+
+                @include mq(md) {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+
     }
 
     &__check-label-box {
@@ -441,6 +454,12 @@
                 color: $color-base;
             }
 
+        }
+
+        &--min {
+            @include font(1.9rem, 4rem);
+            justify-content: center;
+            font-weight: 500;
         }
 
     }

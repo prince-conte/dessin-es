@@ -49,6 +49,7 @@
           "src/app/assets/javascripts/components/popup.js",
           "src/app/assets/javascripts/components/show-password.js",
           "src/app/assets/javascripts/components/redactor.js",
+          "src/app/assets/javascripts/components/blog-slider.js",
           "src/app/assets/javascripts/components/delivery-point-hide.js"
 
         ],

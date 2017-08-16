@@ -1,64 +1,11 @@
 section.basket-delivery
     h2.basket-delivery__title 1. Куда доставить заказ
 
-    .basket-delivery__description Доставка осуществляется Почтой России в течение 7-10 дней с момента отправки.<br>Комиксы отправляются в конце каждого месяца вашей подписки.
+    .basket-delivery__description Доставка осуществляется Почтой России в течение 7-10 дней с момента отправки. Комиксы отправляются в конце каждого месяца вашей подписки.
 
-    .basket-delivery__forms
-
-        .basket-delivery__forms-grid
-            .form__input-block
-                input(type='text' value='Мурманск')
-                i.form__icon.mdi.mdi-map-marker
-
-
-        .basket-delivery__forms-grid.is-mobile
-            .form__input-block
-                select.js-select-menu
-                    option Доставка курьером до двери
-                    option Доставка до пункта выдачи
-                    option Доставка Почтой России
 
 
         .basket-delivery__check-grid
-
-
-
-            .basket-delivery__check-label-box
-                label
-                    span.basket-delivery__checkbox
-                        input(type='radio' name='delivery')
-                        span
-                            span
-                                i.mdi.mdi-truck.basket-delivery__check-img.basket-delivery__check-img--icon
-                            span.basket-delivery__check-title Доставка курьером<br>до двери
-                            span 415 Р
-                            span 3-5 дней
-
-
-
-            .basket-delivery__check-label-box
-                label
-                    span.basket-delivery__checkbox
-                        input(type='radio' name='delivery')
-                        span
-                            span
-                                i.mdi.mdi-store.basket-delivery__check-img.basket-delivery__check-img--icon
-                            span.basket-delivery__check-title Доставка до пункта<br>выдачи
-                            span 200 Р
-                            span 3-5 дней
-
-
-
-            .basket-delivery__check-label-box
-                label
-                    span.basket-delivery__checkbox
-                        input(type='radio' name='delivery' checked)
-                        span
-                            span
-                                i.basket-delivery__check-img.basket-delivery__check-img--post
-                            span.basket-delivery__check-title Доставка Почтой <br>России
-                            span 519 Р
-                            span 3-5 дней
 
 
         .basket-delivery__forms-grid.basket-delivery__forms-grid--full-col-1-3
@@ -158,7 +105,7 @@ section.basket-delivery.basket-delivery--alt
                     option Сбербанк-онлайн
                     option Наличными при получении
 
-        .basket-delivery__check-grid
+        .basket-delivery__check-grid.basket-delivery__check-grid--center
 
             .basket-delivery__check-label-pay-box
                 label
@@ -205,34 +152,10 @@ section.basket-delivery.basket-delivery--alt
 
                             span Сбербанк-онлайн
 
-
-            .basket-delivery__check-label-pay-box
-                label
-                    span.basket-delivery__checkbox-pay
-                        input(type='radio' name='pay1')
-                        span
-                        span
-                            span
-                                i.mdi.mdi-database.basket-delivery__check-img.basket-delivery__check-img--icon-pay-card
-
-                            span Наличными<br>при получении
-
         .basket-delivery__total
 
-            .basket-delivery__total-line
-                a(href='#') Есть купон на скидку?
-
-            .basket-delivery__total-line
-                span Доставка
-                span Бесплатно
-
-            .basket-delivery__total-line
-                span Скидка
-                span – 50 Р
-
-            .basket-delivery__total-line.basket-delivery__total-line--totals
-                span Итого к оплате
-                span 1600 Р
+            .basket-delivery__total-line.basket-delivery__total-line--min
+                span Итого к оплате 1600 <span>&#8381;</span>
 
             .basket-delivery__total-button
                 a.button-in-basket.button-in-basket--for-card

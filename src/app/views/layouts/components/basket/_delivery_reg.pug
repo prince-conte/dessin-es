@@ -5,7 +5,7 @@ section.basket-delivery
 
         .basket-delivery__forms-grid
             .form__input-block
-                input(type='text' value='Мурманск')
+                input(type='text' placeholder='Введите город доставки' value='Мурманск')
                 i.form__icon.mdi.mdi-map-marker
 
 
@@ -80,7 +80,7 @@ section.basket-delivery
 
             .basket-delivery__forms-col(data-col='1/3')
                 .form__input-block.form__input-block--absolute-label
-                    label(data-pflichtfeld) Строение, корпус
+                    label(data-pflichtfeld) Квартира
                     input(type='text')
 
 
@@ -88,12 +88,12 @@ section.basket-delivery
 
             .basket-delivery__forms-col(data-col='1/3')
                 .form__input-block.form__input-block--absolute-label
-                    label Подъезд
+                    label Строение, корпус
                     input(type='text')
 
             .basket-delivery__forms-col(data-col='1/3')
                 .form__input-block.form__input-block--absolute-label
-                    label(data-pflichtfeld) Квартира
+                    label(data-pflichtfeld) Подъезд
                     input(type='text')
 
 
@@ -210,7 +210,7 @@ section.basket-delivery.basket-delivery--alt
         .basket-delivery__total
 
             .basket-delivery__total-line
-                a(href='#') Есть купон на скидку?
+                a(href='#') Кодовое слово или сертификат?
 
             .basket-delivery__total-line
                 span Доставка

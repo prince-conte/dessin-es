@@ -94,9 +94,7 @@
         color: $color-base;
 
         @include mq(xs) {
-            &:not(:last-child) {
-                margin-bottom: 2rem;
-            }
+            margin: 0 1rem;
         }
 
         @include mq(md) {
@@ -167,6 +165,34 @@
                 opacity: .4;
             }
         }
-
     }
+
+    // style for slick
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.8rem;
+
+        > li {
+
+            &:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+
+            span {
+                @include size(.7rem);
+                display: block;
+                border-radius: 50%;
+                background: #b3b3b3;
+            }
+        }
+
+        li.slick-active {
+            span {
+                background: $color-brand;
+            }
+        }
+    }
+
 }
