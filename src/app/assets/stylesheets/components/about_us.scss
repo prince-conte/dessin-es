@@ -76,8 +76,8 @@
             display: block;
             margin: 3rem auto;
             height: 5rem;
-            width: 1px;
-            background: $color-border;
+            width: 2px;
+            background: #e8e8e8;
             content: '';
 
             @include mq(md) {

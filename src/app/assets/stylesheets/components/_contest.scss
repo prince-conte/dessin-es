@@ -193,6 +193,7 @@
         @include font(1.3rem,2rem);
         text-transform: uppercase;
         color: $color-base;
+        font-weight: 500;
         opacity: .3;
     }
 

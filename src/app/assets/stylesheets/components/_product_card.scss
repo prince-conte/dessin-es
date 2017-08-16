@@ -86,6 +86,7 @@
     }
 
     &__slider-item {
+        position: relative;
 
         > img {
             width: auto;
@@ -96,6 +97,27 @@
                 width: 100%;
             }
         }
+    }
+
+    &__limitation-info {
+        @include size(5rem);
+        position: absolute;
+        display: block;
+        top: 2rem;
+        right: 2rem;
+        background: #ee4623;
+
+        &::before {
+            @include font(1.9rem,1.9rem);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-weight: 500;
+            content: attr(data-quantity);
+        }
+
+
     }
 
 

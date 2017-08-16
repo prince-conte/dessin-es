@@ -7,7 +7,7 @@ block main
     section.section-box
         .container
             h2.section-box__title
-                a(href='#') все акции
+                a(href='#') акции
             .shares
                 .shares__slider-box
 
@@ -85,15 +85,12 @@ block main
 
             hr
 
-    section.section-box
-        .container
-            h2.section-box__title
-                span скидки
+
+            h2.section-box__black-title скидки
 
             .private-navigate
                 .private-navigate__box
-                    a.is-current(href='#') О фильме
-                    a(href='#') Книги
+                    a.is-current(href='#') Книги
                     a(href='#') Синглы
                     a(href='#') Одежда
                     a(href='#') Аттрибутика
@@ -513,3 +510,6 @@ block main
                                 .magazine-catalog__price <span class='magazine-catalog__old-price'>2500Р</span>  1950<span>&#8381;</span>
                                 .magazine-catalog__button-block
                                     a.button-in-basket(href='#') в корзину
+
+
+    include layouts/components/_main_subscription

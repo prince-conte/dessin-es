@@ -74,8 +74,8 @@
 
     &__plan-item-body.is-popular {
         position: relative;
-        border: 2px solid $color-brand;
-        padding: 3.9rem 2.9rem;
+        border: 3px solid $color-brand;
+        padding: 3.8rem 2.8rem;
 
         @include mq(md) {
             padding: 3.9rem 4.4rem;
@@ -98,6 +98,10 @@
         }
 
 
+    }
+
+    &__plan-item-title {
+        text-transform: uppercase;
     }
 
     &__plan-item-price {

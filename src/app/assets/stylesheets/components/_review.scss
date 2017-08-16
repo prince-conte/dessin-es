@@ -75,7 +75,7 @@
 
     &__content {
         @include text-base();
-        color: $color-base;
+        color: rgba($color-base, .7);
     }
 
 

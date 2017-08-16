@@ -3,7 +3,7 @@ $(function() {
     $('.js-new-magazine').slick({
         slidesToShow: 6,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         arrows: false,
         responsive: [

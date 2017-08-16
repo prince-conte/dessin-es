@@ -5,15 +5,19 @@
 
                 .product-card__slider-item
                     img(src='http://via.placeholder.com/90x90/000000/ffffff' alt='title magazine')
+                    .product-card__limitation-info(data-quantity='16+')
 
                 .product-card__slider-item
                     img(src='http://via.placeholder.com/90x90/2d83e4/ffffff' alt='title magazine')
+                    .product-card__limitation-info(data-quantity='16+')
 
                 .product-card__slider-item
                     img(src='http://via.placeholder.com/90x90/000000/ffffff' alt='title magazine')
+                    .product-card__limitation-info(data-quantity='16+')
 
                 .product-card__slider-item
                     img(src='http://via.placeholder.com/90x90/2d83e4/ffffff' alt='title magazine')
+
 
 
             .product-card__slider.js-card-slider
@@ -45,7 +49,7 @@
 
             .product-card__version-information Печатная версия
 
-            .product-card__price 50 Р
+            .product-card__price 50 <span>&#8381;</span>
 
             .product-card__button-block
                 a.button-in-basket.button-in-basket--for-card
@@ -57,7 +61,7 @@
                 h6.product-card__information-sub-title Доставка в г. Москва
 
                 ul
-                    li Курьером (стандартная) — 1-2 дня, 250 Р
+                    li Курьером (стандартная) — 1-2 дня, 250 <span>&#8381;</span>
                     li Самовывоз (16 пунктов выдачи) — бесплатно
 
                 p Бесплатная доставка от 3000 рублей.
@@ -205,34 +209,35 @@
 
         .review-livelibe
 
+            .review-livelibe__box
+
+                .review-livelibe__item
+                    .review-livelibe__title-block
+                        .review-livelibe__name
+                            img(src='http://via.placeholder.com/30x30/2d83e4/ffffff' alt='ava')
+                            span Ksusha Shusha
+                            .review-livelibe__date 29 января 2017 г., 15:27
+
+                        .review-livelibe__rating-block
+                            include ../_rating
 
 
-            .review-livelibe__item
-                .review-livelibe__title-block
-                    .review-livelibe__name
-                        img(src='http://via.placeholder.com/30x30/2d83e4/ffffff' alt='ava')
-                        span Ksusha Shusha
-                        .review-livelibe__date 29 января 2017 г., 15:27
-
-                    .review-livelibe__rating-block
-                        include ../_rating
-
-
-                .review-livelibe__content Эта та книга, которую хочется растянуть как можно дольше! Поначалу так и было) Я вроде бы читаю ее в каждую свободную минуту, а она стоит на месте и не продвигается! В хорошем смысле. А начиная с середины книги страницы летят друг за другом.
-
-
-
-            .review-livelibe__item
-
-                .review-livelibe__title-block
-                    .review-livelibe__name
-                        img(src='http://via.placeholder.com/30x30/2d83e4/ffffff' alt='ava')
-                        span h_traveler
-                        .review-livelibe__date 29 января 2017 г., 15:27
-
-                    .review-livelibe__rating-block
-                        include ../_rating
+                    .review-livelibe__content Эта та книга, которую хочется растянуть как можно дольше! Поначалу так и было) Я вроде бы читаю ее в каждую свободную минуту, а она стоит на месте и не продвигается! В хорошем смысле. А начиная с середины книги страницы летят друг за другом.
 
 
 
-                .review-livelibe__content На удивление хорошо. Больше всего удивляет, что я не люблю ни детективы, ни полицейскую тему, но комикс вышел весьма годным развлечением, хотя после отряда самоубийц любой адекватный линейный сюжет меня радует. И все же перечислю минусы: абсолютно все представители женского пола нарисованы как порно актрисы, я не преувеличивают - губки уточкой, огромная грудь, сексуальная фигура, обтягивающая одежда, ну и подбор женщин каков: проститутка, журналистка, ведущие новостей (самые горячие цыпы) крупье, официантка - ну порно же!)))
+                .review-livelibe__item
+
+                    .review-livelibe__title-block
+                        .review-livelibe__name
+                            img(src='http://via.placeholder.com/30x30/2d83e4/ffffff' alt='ava')
+                            span h_traveler
+                            .review-livelibe__date 29 января 2017 г., 15:27
+
+                        .review-livelibe__rating-block
+                            include ../_rating
+
+                    .review-livelibe__content На удивление хорошо. Больше всего удивляет, что я не люблю ни детективы, ни полицейскую тему, но комикс вышел весьма годным развлечением, хотя после отряда самоубийц любой адекватный линейный сюжет меня радует. И все же перечислю минусы: абсолютно все представители женского пола нарисованы как порно актрисы, я не преувеличивают - губки уточкой, огромная грудь, сексуальная фигура, обтягивающая одежда, ну и подбор женщин каков: проститутка, журналистка, ведущие новостей (самые горячие цыпы) крупье, официантка - ну порно же!)))
+
+            .review-livelibe__open-all
+                a(href='#') Все отзывы

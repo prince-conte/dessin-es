@@ -18,6 +18,20 @@
             margin-right: -2rem;
         }
 
+        .slick-track {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .slick-slide {
+            display: flex;
+            align-self: stretch;
+            flex-direction: column;
+            height: auto;
+            float: none;
+            padding-bottom: 0;
+        }
+
     }
 
     &__grid {

@@ -1,8 +1,9 @@
 .review-livelibe {
+    padding-bottom: 3rem;
     border-bottom: 1px solid $color-border;
 
     @include mq(md) {
-        padding: 0 20rem;
+        padding: 0 20rem 3rem;
     }
 
 
@@ -84,4 +85,18 @@
     &__content {
         @include text-base();
     }
+
+    &__open-all {
+        text-align: right;
+
+
+        a {
+            white-space: nowrap;
+            text-decoration: underline;
+            @include font(1.5rem,3.3rem);
+            @include interact(color, $color-brand);
+            color: $color-base;
+        }
+    }
+
 }

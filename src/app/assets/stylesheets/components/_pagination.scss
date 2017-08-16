@@ -4,13 +4,16 @@
     justify-content: center;
     align-items: center;
 
-
-
     @include mq(md) {
         margin-top: 5rem;
     }
 
+    &--right {
 
+        @include mq(md) {
+            justify-content: flex-end;
+        }
+    }
 
     > a,span {
         @include font(1.9rem,1.9rem);
