@@ -12,6 +12,7 @@
     }
 
     &__top-line {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -35,14 +36,28 @@
             height: 5rem;
 
             @include mq(xs) {
-                margin: 0 2.5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 13rem;
+
+                > a {
+                    display: block;
+
+                    > img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
             }
 
             @include mq(md) {
                 width: 50%;
                 height: auto;
 
-                > img {
+                img {
                     width: auto;
                     height: auto;
                 }

@@ -1,0 +1,30 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    .section-box
+        .container
+            h1.section-box__page-title
+                span Ошибка 404
+
+            .section-box__description.wysiwyg
+                p Запрашиваемая страница не найдена — возможно она удалена, перемещена или никогда не существовала. Проверьте правильность написания адреса или перейдите на <a href='#'>главную</a>.
+
+            .promo-sale
+                .promo-sale__content
+                    .promo-sale__sub-title Специальное предложение для тех, кто ошибся
+                    .promo-sale__title Скидка 5% на 24 часа
+                    .promo-sale__sub-title Ваш персональный код: <b>SDFGHJKL</b>
+
+
+
+    include layouts/components/_main_subscription
+
+
+
+
+
+
+
