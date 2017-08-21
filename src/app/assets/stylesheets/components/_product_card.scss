@@ -47,6 +47,7 @@
     }
 
     &__slider {
+        position: relative;
 
 
         .slick-dots {
@@ -105,6 +106,8 @@
         display: block;
         top: 2rem;
         right: 2rem;
+        border-radius: 50%;
+        color: #fff;
         background: #ee4623;
 
         &::before {
