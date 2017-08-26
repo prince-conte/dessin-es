@@ -2,7 +2,7 @@
   "paths": {
     "src": {
       "views": {
-        "build": "src/app/views/*.pug",
+        "build": "src/app/views/mail.pug",
         "watch": "src/app/views/**/*.pug"
       },
       "styles": {
