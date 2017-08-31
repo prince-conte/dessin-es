@@ -133,6 +133,7 @@
         > p {
             @include text-base;
             color: #fff;
+            opacity: .7;
         }
     }
 
@@ -178,6 +179,7 @@
 
         > p {
             @include text-base();
+            opacity: .7;
 
             &:not(:last-child) {
                 margin-bottom: 2rem;

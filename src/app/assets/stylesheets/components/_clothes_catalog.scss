@@ -40,17 +40,28 @@
             @include grid-col;
             @include col-size(1/4);
             margin-bottom: 5rem;
+
+            &:hover {
+                .magazine-catalog__item-image {
+
+                    img {
+                        opacity: .8;
+                    }
+                }
+            }
         }
     }
 
     &__item-image {
         position: relative;
+        background: #000;
 
         img {
             margin: 0 auto;
             width: 100%;
             height: auto;
             vertical-align: top;
+            transition: all $transition-duration-base;
         }
     }
 

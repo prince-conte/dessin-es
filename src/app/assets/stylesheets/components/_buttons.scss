@@ -13,7 +13,7 @@
     outline: none;
 
     &:hover {
-        box-shadow: 0px 8px 16px 0px rgba(179, 179, 179, 0.5);
+        box-shadow: 0px 8px 16px 0px rgba(000, 000, 000, 0.5);
     }
 
     &:active {
@@ -40,6 +40,12 @@
         transform: rotate(90deg);
         z-index: 1;
         content: "";
+    }
+
+    &--big {
+        @include font(15px);
+        padding: 2.3rem 3.2rem 2.1rem;
+        min-width: 16rem;
     }
 }
 
@@ -145,7 +151,6 @@
         @include mq(md) {
             flex: 1;
         }
-
     }
 
     &--block {

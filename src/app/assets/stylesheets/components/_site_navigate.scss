@@ -42,7 +42,7 @@
         }
 
 
-        a.site-navigate__link-section::after {
+        a.site-navigate__link-section::before {
             @include size(2.2rem);
             position: absolute;
             bottom: -3.6rem;
@@ -57,7 +57,7 @@
 
         &:hover {
 
-            > a.site-navigate__link-section::after {
+            > a.site-navigate__link-section:before {
                 content: '';
             }
 
@@ -106,7 +106,7 @@
         border-width: 1px;
         border-color: rgb(237, 237, 237);
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 8px 16px 0px rgba(179, 179, 179, 0.5);
+        box-shadow: 0px 8px 16px 0px rgba(000, 000, 000, 0.5);
     }
 
     &__sub-menu-body-min {
@@ -121,7 +121,7 @@
         border-width: 1px;
         border-color: rgb(237, 237, 237);
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 8px 16px 0px rgba(179, 179, 179, 0.5);
+        box-shadow: 0px 8px 16px 0px rgba(000, 000, 000, 0.5);
 
 
         > ul {
@@ -133,7 +133,7 @@
 
                 > a {
                     @include font(1.5rem,1.5rem);
-                    @include interact(background,#ededed);
+                    @include interact(color,$color-brand);
                     position: relative;
                     display: block;
                     padding: .6rem 2rem;
@@ -241,7 +241,7 @@
 
 
     &__slide-information {
-        margin-top: 1.5rem;
+        margin-top: 1.2rem;
     }
 
     &__title,
