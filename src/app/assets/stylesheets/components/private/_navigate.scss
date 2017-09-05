@@ -2,6 +2,7 @@
     margin: 4.5rem 0 3.5rem;
 
     @include mq(xs) {
+        display: flex;
         margin: 4.5rem -2rem 2rem;
         overflow-x: auto;
     }
@@ -30,6 +31,7 @@
     &__box {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
         border-bottom: 1px solid $color-border;
 
         @include mq(xs) {

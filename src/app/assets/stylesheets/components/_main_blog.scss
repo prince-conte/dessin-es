@@ -93,10 +93,6 @@
         flex-direction: column;
         color: $color-base;
 
-        @include mq(xs) {
-            margin: 0 1rem;
-        }
-
         @include mq(md) {
             @include grid-col;
             @include col-size(1/4);

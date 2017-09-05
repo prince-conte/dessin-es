@@ -3,6 +3,10 @@
 
     &:first-child {
         margin-top: 0;
+
+        @include mq(xs) {
+            margin-top: 4rem;
+        }
     }
 
     &:last-child {

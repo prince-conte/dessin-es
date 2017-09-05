@@ -67,6 +67,11 @@
         color: #bababa;
         text-transform: uppercase;
 
+
+        @include mq(xs) {
+            margin-bottom: 2.8rem;
+        }
+
         > span {
             display: inline-block;
             margin: 0 1.5rem;
@@ -130,7 +135,7 @@
 
     &__rating {
         margin-top: 1rem;
-        margin-bottom: -2.2rem;
+        margin-bottom: -.9rem;
         transform: translateX(-.4rem);
         pointer-events: none;
 
