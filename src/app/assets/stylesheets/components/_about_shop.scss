@@ -55,7 +55,24 @@
             display: inline-block;
             pointer-events: none;
         }
+
+        .rating > label:before {
+            margin: 3px;
+        }
+
+        .Rectangle_25 {
+            background-color: rgb(72, 133, 197);
+            position: absolute;
+            left: 471px;
+            top: 2578px;
+            width: 155px;
+            height: 60px;
+            z-index: 522;
+        }
     }
+
+
+
 
 
 

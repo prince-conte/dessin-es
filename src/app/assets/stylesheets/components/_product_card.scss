@@ -321,6 +321,19 @@
 
     &__list-grid-item {
 
+        > dl {
+            margin: 1.4rem 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+
         @include mq(xs) {
 
             &:not(:last-child) {
