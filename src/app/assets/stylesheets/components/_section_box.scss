@@ -39,11 +39,12 @@
 
         > span, a  {
             @include font(2.5rem,3rem);
-            @include interact(color, $color-brand);
+            @include interact(color, rgba($color-brand, .7));
             display: inline-block;
             padding-bottom: .8rem;
             border-bottom: 1px solid;
             color: inherit;
+            transition: all $transition-duration-base;
 
             @include mq(md) {
                 @include font(3rem,3rem);
