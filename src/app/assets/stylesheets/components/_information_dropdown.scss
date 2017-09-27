@@ -1,3 +1,30 @@
+.information-dropdown-container {
+
+    &--search {
+
+        .information-dropdown:first-child {
+
+            .information-dropdown__title-line {
+
+                border-top: 1px solid transparent;
+
+                > span {
+                    padding-top: 0;
+                }
+
+                > i {
+                    top: 0;
+                }
+            }
+        }
+
+
+
+    }
+
+}
+
+
 .information-dropdown {
 
     + .information-dropdown {
