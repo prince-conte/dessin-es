@@ -1,0 +1,13 @@
+.empty {
+    text-align: center;
+
+    @include mq(md) {
+        margin: 0 20rem;
+    }
+
+    > p {
+        @include text-large;
+        font-weight: 500;
+        color: $color-base-lighter;
+    }
+}
