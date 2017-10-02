@@ -38,7 +38,7 @@
         }
 
         > span, a  {
-            @include font(2.5rem,3rem);
+            @include font(3rem,3.5rem);
             @include interact(color, rgba($color-brand, .7));
             display: inline-block;
             padding-bottom: .8rem;

@@ -28,3 +28,15 @@
 .fadeIn {
     opacity: 1;
 }
+
+.negative-margin {
+
+    @include mq(sm) {
+        margin-right: 22rem;
+        margin-left: 22rem;
+    }
+}
+
+.description {
+    @include font(1.7rem,2.5rem);
+}

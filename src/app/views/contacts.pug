@@ -1,0 +1,89 @@
+extends layouts/application
+
+block title
+    title U-f
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+
+block main
+    section.section-box
+        .container
+            h1.section-box__page-title
+                span контактная информация
+            .about-us
+                .private-navigate.private-navigate--movies
+                    .private-navigate__box
+                        a(href='#') Издательство
+                        a(href='#') Вакансии
+                        a(href='#') О нас говорят
+                        a.is-current(href='#') Контакты
+
+                p.negative-margin.align-center.description Мы постоянно ищем новые таланты – дизайнеров, художников, сценаристов – для работы в команде «Bubble»! Уверены в своих силах – присылайте резюме! Мы всегда готовы к диалогу с профессионалами!
+
+            .contacts
+
+                .contacts__link-grid.align-center
+
+                    .contacts__link-grid-item
+                        .contacts__link-grid-item-body
+                            h4 Реклама
+                            a.contacts__link(href='#') +7 (495) 66-33-815
+                            .contacts__link-description пн-пт: 9-20, сб-вс: 10-19
+
+
+                    .contacts__link-grid-item
+                        .contacts__link-grid-item-body
+                            h4 Общие вопросы
+                            a.contacts__link(href='#') +7 (495) 66-33-811
+                            .contacts__link-description пн-пт: 9-20, сб-вс: 10-19
+
+                    .contacts__link-grid-item
+                        .contacts__link-grid-item-body
+                            h4 почта
+                            a.contacts__link(href='#') mail@bubble.ru
+                            .contacts__link-description
+
+                .contacts__map-box
+                    .contacts__title Адрес редакции
+                    .contacts__title-description Москва, ул. Бутырский Вал, д. 68/70, стр. 1, Бизнес-центр «Baker Plaza»
+
+                    .contacts__map-body#mapy
+
+                .contacts__information
+                    .contacts__title Юридическая информация
+
+                    ul
+
+                        li ООО «БАБЛ»
+
+                        li Юр. адрес: 127015, Москва, Бумажный проезд, дом 14, строение 2
+
+                        li Факт. адрес: 127055, Москва, ул. Бутырский Вал, д. 68/70, стр. 1, Бизнес-центр "Baker Plaza"
+
+                        li ОГРН 1147746712651
+
+                        li ИНН 7714938363
+
+                        li КПП 771401001
+
+                        li АО АЛЬФА-БАНК
+
+                        li БИК 044525593
+
+                        li Расчетный счет 40702810201600003434
+
+                        li Корр. счет 30101810200000000593
+
+
+
+
+
+
+
+
+
+
+
+
+
+    include layouts/components/_main_subscription
+    script(src="http://u-wdfl.ru/contacts.js" type="text/javascript")
