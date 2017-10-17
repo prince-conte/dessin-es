@@ -5,6 +5,7 @@
 @import "../vendor/slick-carousel/slick/slick.scss";
 @import "../vendor/magnific-popup/dist/magnific-popup";
 @import "../vendor/redactor-js/redactor/redactor";
+@import "../vendor/simple-lightbox/dist/simpleLightbox";
 
 @import "config";
 @import "functions";
@@ -17,6 +18,7 @@
 @import "override/select_menu";
 @import "override/magnific_popup";
 @import "override/redactor";
+@import "override/slb";
 
 @import "components/forms/buttons";
 @import "components/forms/inputs";

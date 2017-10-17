@@ -17,6 +17,7 @@
         "src/app/assets/vendor/slick-carousel/slick/slick.js",
         "src/app/assets/vendor/slick-carousel/slick/slick.js",
         "src/app/assets/vendor/magnific-popup/dist/jquery.magnific-popup.js",
+        "src/app/assets/vendor/simple-lightbox/dist/simpleLightbox.js",
         "src/app/assets/vendor/jquery-ui/jquery-ui.js"
       ],
       "scripts": {
@@ -49,7 +50,8 @@
           "src/app/assets/javascripts/components/show-password.js",
           "src/app/assets/javascripts/components/redactor.js",
           "src/app/assets/javascripts/components/blog-slider.js",
-          "src/app/assets/javascripts/components/delivery-point-hide.js"
+          "src/app/assets/javascripts/components/delivery-point-hide.js",
+          "src/app/assets/javascripts/components/photo_gallery.js"
 
         ],
         "watch": "src/app/assets/javascripts/**/*.js"

@@ -1,0 +1,50 @@
+.slbOverlay {
+    opacity: 1;
+    animation: none;
+    transform: $transition-duration-base;
+}
+
+.slbCloseBtn {
+    @include size(2.2rem);
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    background: {
+        image: url(../img/svg/close.svg);
+        position: 50% 50%;
+        size: contain;
+        repeat: no-repeat;
+    };
+    color: transparent;
+}
+
+.slbArrow {
+    @include size(3.5rem,6.4rem);
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    background: {
+        image: url(../img/ph-nav.svg);
+        position: 50% 50%;
+        size: contain;
+        repeat: no-repeat;
+    };
+
+    &.prev {
+        left: 2rem;
+        transform: translateY(-50%) rotate(180deg);
+
+    }
+
+    &.next {
+        right: 2rem;
+    }
+
+}
+
+.slbArrow::before {
+    display: none;
+}
+

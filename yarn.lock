@@ -2782,6 +2782,10 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+jquery@>=1.7:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
+
 js-base64@^2.1.8:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
@@ -4228,6 +4232,12 @@ set-immediate-shim@^1.0.0, set-immediate-shim@^1.0.1:
 signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+simple-lightbox@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/simple-lightbox/-/simple-lightbox-1.2.9.tgz#7cf6b50239ce1cd00d25ed7afc268928746b050d"
+  dependencies:
+    jquery ">=1.7"
 
 slash@^1.0.0:
   version "1.0.0"
