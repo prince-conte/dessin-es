@@ -1,0 +1,25 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            .pay-info
+                .pay-info__image
+                    img(src='img/pay2.png' alt='')
+                h1.pay-info__title Ура, ваш платеж прошел успешно
+
+                dl
+                    dt Номер вашего заказа:
+                    dd
+                        a(href='#') 12614
+
+                dl
+                    dt Дата заказа:
+                    dd 28.09.2017 в 16:00
+
+                .pay-info__description Заказ будет сформирован и передан в службу доставки в течение 1 рабочего дня. Мы пришлем на вашу почту номер трекинга для отслеживания движения посылки.
+
+    include layouts/components/_main_subscription

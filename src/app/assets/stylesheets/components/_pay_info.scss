@@ -1,0 +1,95 @@
+
+.pay-info {
+    text-align: center;
+
+    &__image {
+        @include size(14rem);
+        margin: 0 auto 2.6rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @include mq(md) {
+            @include size(28rem);
+            margin-bottom: 3.5rem;
+        }
+
+        > img {
+            width: 100%;
+            height: auto;
+            vertical-align: top;
+        }
+    }
+
+    &__title {
+        @include h1;
+        margin-bottom: 3rem;
+    }
+
+    > dl {
+        margin-top: 1rem;
+
+        @include mq(md) {
+            @include grid(x, center, center);
+        }
+
+        dt,dd {
+            @include text-large;
+
+            @include mq(xs) {
+                &:not(:last-child) {
+                    margin-top: 2.6rem;
+                }
+            }
+
+            @include mq(md) {
+               @include grid-col;
+                @include col-size(1/2);
+            }
+        }
+
+        > dt {
+            font-weight: 600;
+
+            @include mq(md) {
+                text-align: right;
+            }
+        }
+
+        > dd {
+            color: $color-base-light;;
+
+            @include mq(md) {
+                text-align: left;
+            }
+
+            > a {
+                @include interact(color,$color-brand);
+                @include font(3rem,3rem);
+                font-weight: 600;
+                text-decoration: underline;
+                color: $color-brand;
+            }
+
+        }
+    }
+
+    &__description {
+        @include font(1.7rem,2.5rem);
+        margin-top: 2.6rem;
+        color: $color-base-light;
+
+        @include mq(md) {
+            margin-left: 18rem;
+            margin-right: 18rem;
+        }
+
+        > a {
+            @include interact(color,$color-brand);
+            color: $color-base-light;
+            text-decoration: underline;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,25 @@
+extends layouts/application
+
+block title
+    title U-f
+
+block main
+    section.section-box
+        .container
+            .pay-info
+                .pay-info__image
+                    img(src='img/pay1.png' alt='')
+                h1.pay-info__title Упс, оплата не прошла
+
+                dl
+                    dt Номер вашего заказа:
+                    dd
+                        a(href='#') 12614
+
+                dl
+                    dt Дата заказа:
+                    dd 28.09.2017 в 16:00
+
+                .pay-info__description Во время оплаты что-то пошло не так. Но волноваться не стоит. Свяжитесь с нами по телефону 8 (495) 150-26-63, по почте <a href='mailto:help@bubble.ru'>help@bubble.ru</a> или <a href='' target='_blank'>ВКонтакте</a>. Поможем все исправить!
+
+    include layouts/components/_main_subscription
