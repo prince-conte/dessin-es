@@ -118,3 +118,27 @@
         }
     }
 }
+
+
+// ovverides
+
+.likely-small {
+    margin: 0 -4px 0;
+}
+
+.likely-small .likely__widget {
+    margin: 0 4px 0;
+}
+
+.likely-small svg {
+    position: absolute;
+    top: 3px;
+}
+
+.likely__button, .likely__counter, .likely__icon, .likely__widget {
+    vertical-align: baseline;
+}
+
+.likely__widget {
+    display: inline-flex;
+}

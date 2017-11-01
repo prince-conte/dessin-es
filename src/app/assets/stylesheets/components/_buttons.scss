@@ -234,7 +234,17 @@
         &:last-child {
             margin-bottom: 0;
         }
-
-
     }
+
+    &--subscription {
+        @include interact(border-color,transparent);
+        border-color: transparent;
+    }
+
+    &:hover {
+        @include mq(md) {
+            box-shadow: none;
+        }
+    }
+
 }
