@@ -32,8 +32,8 @@
     }
 
     &__line-label {
+        position: relative;
         display: flex;
-
 
         @include mq(xs) {
             width: 65%;
@@ -44,6 +44,14 @@
             width: 50%;
             align-items: center;
         }
+
+        > a {
+            @include size(100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
     }
 
     &__line-label-image {

@@ -271,12 +271,12 @@
         position: absolute;
         display: block;
         top: 50%;
-        right: -.5rem;
+        right: -.2rem;
         color: #b3b3b3;
         transform: translate(100%,-50%);
 
         > i {
-            @include font(3.2rem);
+            @include font(3.6rem);
         }
     }
 
@@ -285,12 +285,12 @@
         position: absolute;
         display: block;
         top: 50%;
-        left: -.5rem;
+        left: -.2rem;
         color: #b3b3b3;
         transform: translate(-100%,-50%);
 
         > i {
-            @include font(3.2rem);
+            @include font(3.6rem);
         }
     }
 

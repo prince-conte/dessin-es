@@ -164,6 +164,11 @@
             margin-right: .5rem;
             color: #6fc054;
             top: .3rem;
+
+            &.mdi-close-circle {
+                color: $color-error;
+            }
+
         }
 
         &--vendor-code {

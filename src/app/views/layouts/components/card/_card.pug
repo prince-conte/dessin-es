@@ -42,9 +42,13 @@
         .product-card__information-box
             .product-card__vendor-grid
 
+                //.product-card__vendor-item
+                //    i.mdi.mdi-checkbox-marked-circle
+                //    span Товар в наличии
+
                 .product-card__vendor-item
-                    i.mdi.mdi-checkbox-marked-circle
-                    span Товар в наличии
+                    i.mdi.mdi-close-circle
+                    span Товар в отсутствует
 
                 .product-card__vendor-item.product-card__vendor-item--vendor-code Артикул: 34567890-09
 
@@ -73,13 +77,33 @@
             .product-card__sub-block
                 h6.product-card__information-sub-title Расскажите друзьям
                 .product-card__social-share
-                    .likely.likely-small
+                    .social-share
 
-                        .twitter Твитнуть
-                        .facebook Поделиться
-                        .vkontakte Поделиться
-                        .gplus +1
-                        .odnoklassniki
+                        a.social-share__twitter(href='#')
+                            i.mdi.mdi-twitter
+                            .social-share__title Твитнуть
+                            .social-share__counter(data-counter='0')
+
+                        a.social-share__facebook(href='#')
+                            i.mdi.mdi-facebook
+                            .social-share__title Поделиться
+                            .social-share__counter(data-counter='4')
+
+                        a.social-share__vk(href='#')
+                            i.mdi.mdi-vk
+                            .social-share__title Поделиться
+                            .social-share__counter(data-counter='2')
+
+                        a.social-share__google(href='#')
+                            i.mdi.mdi-google-plus
+                            .social-share__counter(data-counter='0')
+
+                        a.social-share__ok(href='#')
+                            i.mdi.mdi-odnoklassniki
+                            .social-share__counter(data-counter='0')
+
+                        a.social-share__alt(href='#')
+                            i
 
     .product-card__description.wysiwyg
         h2 Описание
